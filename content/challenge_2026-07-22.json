@@ -1,36 +1,105 @@
 {
-  "date": "2026-07-22",
-  "questions": [
+  "date": "2026-07-24",
+  "topic": "Library Classes, Arrays, and String Handling",
+  "mcq": [
     {
       "id": 1,
-      "type": "mcq",
-      "question": "Which of the following data structures is immutable in Python?",
-      "options": ["List", "Dictionary", "Tuple", "Set"],
-      "answer": "Tuple",
-      "explanation": "Tuples are immutable sequences, meaning their elements cannot be changed, added, or removed after creation, unlike Lists, Dictionaries, or Sets."
+      "question": "What is the automatic conversion of a primitive data type into an object of its equivalent wrapper class called?",
+      "options": ["Unboxing", "Typecasting", "Autoboxing", "Wrapping"],
+      "correct_answer": "Autoboxing",
+      "explanation": "Autoboxing automatically converts primitive types (like int) into their wrapper objects (like Integer)."
     },
     {
       "id": 2,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "x = [1, 2, 3]\nx.append(4)\nprint(len(x))",
-      "options": ["3", "4", "Error", "None"],
-      "answer": "4",
-      "explanation": "The append() method adds an item to the end of the list. The list goes from 3 elements to 4 elements, so len(x) returns 4."
+      "question": "In a double dimensional array m[3][4], what does the number 3 represent?",
+      "options": ["Number of columns", "Number of elements", "Number of rows", "Number of bytes"],
+      "correct_answer": "Number of rows",
+      "explanation": "In a double dimensional array, the first subscript always represents the number of rows."
     },
     {
       "id": 3,
-      "type": "error_finding",
-      "question": "Identify the error in the following loop snippet:",
-      "code_snippet": "for i in range(5)\n    print(i)",
-      "options": [
-        "Missing colon (:) after the for statement",
-        "Indent error on the print statement",
-        "range(5) should be range(1, 5)",
-        "No error"
-      ],
-      "answer": "Missing colon (:) after the for statement",
-      "explanation": "In Python, compound statements like 'for' loops must always terminate with a colon (:)."
+      "question": "What is the return type of the compareTo() string function?",
+      "options": ["int", "boolean", "String", "char"],
+      "correct_answer": "int",
+      "explanation": "The compareTo() method returns an integer representing the ASCII difference between the two strings."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following functions adds one string to the end of another string?",
+      "options": ["add()", "merge()", "append()", "concat()"],
+      "correct_answer": "concat()",
+      "explanation": "The concat() function is used to concatenate (add) two strings together."
+    },
+    {
+      "id": 5,
+      "question": "What is the ASCII code for the uppercase letter 'A'?",
+      "options": ["97", "65", "48", "32"],
+      "correct_answer": "65",
+      "explanation": "The ASCII code range for uppercase letters A-Z is 65 to 90."
+    }
+  ],
+  "error_finding": [
+    {
+      "id": 1,
+      "snippet": "String word = \"Exam\";\nint len = word.length;",
+      "correct_code": "String word = \"Exam\";\nint len = word.length();",
+      "explanation": "For strings, length is a method and requires parentheses: length()."
+    },
+    {
+      "id": 2,
+      "snippet": "char ch = \"X\";",
+      "correct_code": "char ch = 'X';",
+      "explanation": "Character literals must be enclosed in single quotes (' '), not double quotes."
+    },
+    {
+      "id": 3,
+      "snippet": "int arr[][] = new int[3, 4];",
+      "correct_code": "int arr[][] = new int[3][4];",
+      "explanation": "In Java, double dimensional arrays require separate square brackets for rows and columns."
+    },
+    {
+      "id": 4,
+      "snippet": "StringBuffer sb = \"ICSE\";",
+      "correct_code": "StringBuffer sb = new StringBuffer(\"ICSE\");",
+      "explanation": "Unlike Strings, StringBuffer requires the 'new' keyword for instantiation."
+    },
+    {
+      "id": 5,
+      "snippet": "double d = Double.valueOf('4.5');",
+      "correct_code": "double d = Double.valueOf(\"4.5\");",
+      "explanation": "The valueOf method requires a String (in double quotes), not a character."
+    }
+  ],
+  "predict_output": [
+    {
+      "id": 1,
+      "snippet": "System.out.println(\"School\".substring(2, 5));",
+      "output": "hoo",
+      "explanation": "Extracts characters starting from index 2 up to index 4 (index 5 is excluded)."
+    },
+    {
+      "id": 2,
+      "snippet": "String s1 = \"10\";\nString s2 = \"20\";\nSystem.out.println(s1 + s2);",
+      "output": "1020",
+      "explanation": "Since both operands are Strings, the '+' operator concatenates them instead of performing mathematical addition."
+    },
+    {
+      "id": 3,
+      "snippet": "int m[][] = {{1, 2}, {3, 4}};\nSystem.out.println(m[1][1]);",
+      "output": "4",
+      "explanation": "m[1] refers to the second row {3, 4}. m[1][1] refers to the second element of that row, which is 4."
+    },
+    {
+      "id": 4,
+      "snippet": "System.out.println(Character.toLowerCase('8'));",
+      "output": "8",
+      "explanation": "Applying toLowerCase() on a digit simply returns the same digit."
+    },
+    {
+      "id": 5,
+      "snippet": "System.out.println(\"apple\".compareTo(\"apple\"));",
+      "output": "0",
+      "explanation": "Since both strings are exactly identical, their ASCII difference is 0."
     }
   ]
 }
