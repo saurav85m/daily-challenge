@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "challenge-app-503116",
+  "private_key_id": "38cd91eadce91592d7e67c3a860b24cae4bbc8a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjKrx6U3bIo45b\ncDi7bA/B07XEc6DQv3JkJCeOr5aI4kIiNR8lUOK6T5eZ7jK867qlsYvspodS6gvR\n7hPeuDLB5+czguRg8gtrwG40+tSJoNjmRodRVAv1O4JQkMq4GIH7kb8XC1uTfOuL\nxFUCYPqV/RZ/+zBL/a8jTRmoLLgJwDeme6+RjQ6kX+oRTNm+NJGtiLcdM2H75BEb\nTBXTv2TTL2IMcivp/oMzkUakFd/8AOovbexz6WW9RBO8bieq/zo8YOtEVSA2UCZ7\nt/fbC+NDsPgImtuBjZibWgL0k5xJNd5nTZv4KYEd7b45nBW8CiQyQOo/a9JLbx3x\noeeKF7QrAgMBAAECggEAOMnjfmm1MmCmZ9G3lRenpkzCeyTJSE4RiKQCtokLSgoB\nfXlipTCxMKoJ+BOsyg77T7brHcrZ13RI9+A2PzJ5y/4j/Ewmo00qx25ajQrt1RbL\n1t2eNCKd5NS45sR2Ibu55a5UxTb5QOxd6K/E7IaHQJOs9I8ewJwDDDTF5L/nr9CN\n31VrtGxND/i7TpufIkvkDNP0BoqQE8UEI8XoM3EaXT1ClVkHFMH/n9Jjn1mM3Tv/\nG6YjUNcR3UgXfp4RsNQtD8hFqGM+4jpoEtJpu+DmXaGHMKSpL1DJapAuMMVKdXDS\ngoLtuZJUDze1q+7E+UB606HlINao4Yg7PSokbPfjNQKBgQDRUMEmWP2ZKCHRtAl4\nuzOdxvkUaLEmLEN9tfsdztCwXwgUsPmiK0uotCKpzBqGAYNN7Rix9Wj4CVrdtyhC\npLRd5mSeFqPRimdKsM+lqL/kvKxLbDPfxJuGGR/Nus7zbGvJCxx5dlwTm9LTpMYB\nGk5KCeWNKRLkm1I2V0/hbHJ/JQKBgQDHjwyBceOwzyKfbx1kAmFrZjXWvhCAAwpi\npMonWZqaxVBo67ZxBa4bekZYAJd9Ko5xDwLdswonc5zWnSFkh3J2soHpOgz3OYjL\nTYlnenY2wwrLA2DrRguXeVN9yoLK5RGwcmR6qrMsvjywUyQKEgB+WslmhJdvSEXW\nx7WKa+ntDwKBgGH33A9ow3l10S5nh69cXzJPuLEWtyNYwFYMYPZ4oDCMqimVE6IV\nhZn2herXPurNtnk4qcBRTsoZBtCTM2LN2CXC+gEMM6yVjPbmfqnYq8gRjsrWYAkx\n6mD/TWVrNAW3D1PPwYoQHdSHsEui6ZIGj/ITY7+II/GfyQDqKNcnfQeJAoGASSie\nMw5npLgrPzvjEHj28gKkljdToTp8IjG7krV8wmS3198iIUktzREEnNqKru5dDgGs\n0U4D2Pa/dsZgKZSmV/GVQsVvX2sORUoFp5PzppvWZxqz+0zQjxWBkEofrPZRh9hI\nEdhmm26anSG9wpta5vetghH12mwqflT0ruxk8+0CgYAJ6xwVW2mZflEB5Xvs4dsw\nNioH2YcdcT0qn4GxpalqLAV5lTWQdUDMbJe6WnyLI5pAa6uEHGyaOXo1nfRV/KQA\nrmQqseDstS5kak1e67f4KEeupWkX/Ky0DvQeGFCk7b6zPqJis8nGptFrNSQfrpLg\nkB7/rVk4SoPLq1EWD/zX1w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gagu-drive-bot@challenge-app-503116.iam.gserviceaccount.com",
+  "client_id": "111682154036803399435",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gagu-drive-bot%40challenge-app-503116.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
