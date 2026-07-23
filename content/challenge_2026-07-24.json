@@ -1,36 +1,105 @@
 {
-  "date": "2026-07-22",
-  "questions": [
+  "date": "2026-07-23",
+  "topic": "Library Classes, Arrays, and String Handling",
+  "mcq": [
     {
       "id": 1,
-      "type": "mcq",
-      "question": "Which of the following data structures is immutable in Python?",
-      "options": ["List", "Dictionary", "Tuple", "Set"],
-      "answer": "Tuple",
-      "explanation": "Tuples are immutable sequences, meaning their elements cannot be changed, added, or removed after creation, unlike Lists, Dictionaries, or Sets."
+      "question": "Which of the following is the correct wrapper class for the primitive data type 'int'?",
+      "options": ["int", "Integer", "Int", "String"],
+      "correct_answer": "Integer",
+      "explanation": "In Java, 'Integer' is the wrapper class that contains the primitive data type 'int'."
     },
     {
       "id": 2,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "x = [1, 2, 3]\nx.append(4)\nprint(len(x))",
-      "options": ["3", "4", "Error", "None"],
-      "answer": "4",
-      "explanation": "The append() method adds an item to the end of the list. The list goes from 3 elements to 4 elements, so len(x) returns 4."
+      "question": "Which string method is used to remove blank spaces from the beginning and the end of a string?",
+      "options": ["strip()", "remove()", "trim()", "deleteSpace()"],
+      "correct_answer": "trim()",
+      "explanation": "The trim() function removes all the white/blank spaces from the beginning as well as the end of a string."
     },
     {
       "id": 3,
-      "type": "error_finding",
-      "question": "Identify the error in the following loop snippet:",
-      "code_snippet": "for i in range(5)\n    print(i)",
-      "options": [
-        "Missing colon (:) after the for statement",
-        "Indent error on the print statement",
-        "range(5) should be range(1, 5)",
-        "No error"
-      ],
-      "answer": "Missing colon (:) after the for statement",
-      "explanation": "In Python, compound statements like 'for' loops must always terminate with a colon (:)."
+      "question": "In Java, what is the starting index (subscript) of an array?",
+      "options": ["1", "-1", "N", "0"],
+      "correct_answer": "0",
+      "explanation": "The declaration and storage of an array in Java always begin with the 0th subscript."
+    },
+    {
+      "id": 4,
+      "question": "What is the return type of the Character.isDigit() function?",
+      "options": ["int", "char", "boolean", "String"],
+      "correct_answer": "boolean",
+      "explanation": "It returns a boolean value: true if the argument is a digit, otherwise false."
+    },
+    {
+      "id": 5,
+      "question": "Which property is used to find the number of cells (elements) in a single dimensional array?",
+      "options": [".size", ".length()", ".length", ".capacity"],
+      "correct_answer": ".length",
+      "explanation": "The built-in length property (without brackets) is used to calculate the length of an array."
+    }
+  ],
+  "error_finding": [
+    {
+      "id": 1,
+      "snippet": "int a[] = new int(5);",
+      "correct_code": "int a[] = new int[5];",
+      "explanation": "Array sizes must be declared using square brackets [ ], not parentheses."
+    },
+    {
+      "id": 2,
+      "snippet": "String s = \"Hello\";\nchar c = s.charAt(5);",
+      "correct_code": "String s = \"Hello\";\nchar c = s.charAt(4);",
+      "explanation": "The word 'Hello' has 5 characters, so the valid indices are 0 to 4. Index 5 will cause a StringIndexOutOfBoundsException."
+    },
+    {
+      "id": 3,
+      "snippet": "boolean b = Character.isuppercase('A');",
+      "correct_code": "boolean b = Character.isUpperCase('A');",
+      "explanation": "Java methods are case-sensitive. It must be written in camelCase as isUpperCase()."
+    },
+    {
+      "id": 4,
+      "snippet": "int x = Integer.parseint(\"123\");",
+      "correct_code": "int x = Integer.parseInt(\"123\");",
+      "explanation": "The method must be written in camelCase as parseInt() with a capital 'I'."
+    },
+    {
+      "id": 5,
+      "snippet": "String str = \"Java\";\nstr.replace('a', \"A\");",
+      "correct_code": "String str = \"Java\";\nstr.replace('a', 'A');",
+      "explanation": "You cannot mix a char ('a') and a String (\"A\") in the replace method. Both must be characters or both must be strings."
+    }
+  ],
+  "predict_output": [
+    {
+      "id": 1,
+      "snippet": "System.out.println(\"computer\".toUpperCase().charAt(0));",
+      "output": "C",
+      "explanation": "The word becomes 'COMPUTER', and the character at index 0 is 'C'."
+    },
+    {
+      "id": 2,
+      "snippet": "int arr[] = {2, 4, 6, 8};\nSystem.out.println(arr[0] + arr[2]);",
+      "output": "8",
+      "explanation": "arr[0] is 2 and arr[2] is 6. 2 + 6 = 8."
+    },
+    {
+      "id": 3,
+      "snippet": "System.out.println(Character.isLetterOrDigit('*'));",
+      "output": "false",
+      "explanation": "An asterisk (*) is a special character, so it is neither a letter nor a digit."
+    },
+    {
+      "id": 4,
+      "snippet": "System.out.println(\"Malayalam\".indexOf('a'));",
+      "output": "1",
+      "explanation": "The indexOf() method returns the position of the first occurrence of 'a', which is at index 1."
+    },
+    {
+      "id": 5,
+      "snippet": "System.out.println(Integer.parseInt(\"10\") + 5);",
+      "output": "15",
+      "explanation": "parseInt converts the string \"10\" into an integer 10, and then adds 5 to it, resulting in 15."
     }
   ]
 }

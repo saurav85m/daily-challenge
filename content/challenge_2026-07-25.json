@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-22",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "question": "Which of the following data structures is immutable in Python?",
+      "options": ["List", "Dictionary", "Tuple", "Set"],
+      "answer": "Tuple",
+      "explanation": "Tuples are immutable sequences, meaning their elements cannot be changed, added, or removed after creation, unlike Lists, Dictionaries, or Sets."
+    },
+    {
+      "id": 2,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "x = [1, 2, 3]\nx.append(4)\nprint(len(x))",
+      "options": ["3", "4", "Error", "None"],
+      "answer": "4",
+      "explanation": "The append() method adds an item to the end of the list. The list goes from 3 elements to 4 elements, so len(x) returns 4."
+    },
+    {
+      "id": 3,
+      "type": "error_finding",
+      "question": "Identify the error in the following loop snippet:",
+      "code_snippet": "for i in range(5)\n    print(i)",
+      "options": [
+        "Missing colon (:) after the for statement",
+        "Indent error on the print statement",
+        "range(5) should be range(1, 5)",
+        "No error"
+      ],
+      "answer": "Missing colon (:) after the for statement",
+      "explanation": "In Python, compound statements like 'for' loops must always terminate with a colon (:)."
+    }
+  ]
+}
