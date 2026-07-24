@@ -5,6 +5,7 @@ import pandas as pd
 import requests
 import streamlit as st
 from github import Github
+import requests
 
 
 def get_github_repo():
@@ -15,23 +16,47 @@ def get_github_repo():
   return repo
 
 
+# def fetch_daily_challenge(date_str):
+#   """Fetch the daily challenge JSON file directly from GitHub."""
+#   cfg = st.secrets["github"]
+#   file_path = f"content/challenge_{date_str}.json"
+#   branch = cfg.get("branch", "main")
+
+#   # Use raw GitHub URL for fast, lightweight fetching
+#   raw_url = f"https://raw.githubusercontent.com/{cfg['repo_owner']}/{cfg['repo_name']}/{branch}/{file_path}"
+
+#   try:
+#     response = requests.get(raw_url)
+#     if response.status_code == 200:
+#       return response.json()
+#     else:
+#       return None
+#   except Exception:
+#     return None
+
+@st.cache_data(ttl=0) # ttl=0 ensures Streamlit doesn't cache old versions
 def fetch_daily_challenge(date_str):
-  """Fetch the daily challenge JSON file directly from GitHub."""
-  cfg = st.secrets["github"]
-  file_path = f"content/challenge_{date_str}.json"
-  branch = cfg.get("branch", "main")
-
-  # Use raw GitHub URL for fast, lightweight fetching
-  raw_url = f"https://raw.githubusercontent.com/{cfg['repo_owner']}/{cfg['repo_name']}/{branch}/{file_path}"
-
-  try:
-    response = requests.get(raw_url)
+    """
+    Fetches the challenge JSON for a specific date from the GitHub repository.
+    """
+    cfg = st.secrets["github"]
+    token = cfg["token"]
+    repo_owner = cfg["repo_owner"]
+    repo_name = cfg["repo_name"]
+    branch = cfg.get("branch", "main")
+    
+    # Dynamically targets the file matching the selected date
+    file_path = f"content/challenge_{date_str}.json"
+    
+    url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{file_path}"
+    
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    response = requests.get(url, headers=headers)
+    
     if response.status_code == 200:
-      return response.json()
+        return response.json()
     else:
-      return None
-  except Exception:
-    return None
+        return None
 
 
 def append_result_to_github(result_dict):
