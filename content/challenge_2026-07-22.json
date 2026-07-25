@@ -1,105 +1,161 @@
 {
   "date": "2026-07-22",
   "topic": "Library Classes, Arrays, and String Handling",
-  "mcq": [
+  "questions": [
     {
       "id": 1,
+      "type": "mcq",
       "question": "What is the automatic conversion of a primitive data type into an object of its equivalent wrapper class called?",
       "options": ["Unboxing", "Typecasting", "Autoboxing", "Wrapping"],
-      "correct_answer": "Autoboxing",
+      "answer": "Autoboxing",
       "explanation": "Autoboxing automatically converts primitive types (like int) into their wrapper objects (like Integer)."
     },
     {
       "id": 2,
+      "type": "mcq",
       "question": "In a double dimensional array m[3][4], what does the number 3 represent?",
       "options": ["Number of columns", "Number of elements", "Number of rows", "Number of bytes"],
-      "correct_answer": "Number of rows",
+      "answer": "Number of rows",
       "explanation": "In a double dimensional array, the first subscript always represents the number of rows."
     },
     {
       "id": 3,
+      "type": "mcq",
       "question": "What is the return type of the compareTo() string function?",
       "options": ["int", "boolean", "String", "char"],
-      "correct_answer": "int",
+      "answer": "int",
       "explanation": "The compareTo() method returns an integer representing the ASCII difference between the two strings."
     },
     {
       "id": 4,
+      "type": "mcq",
       "question": "Which of the following functions adds one string to the end of another string?",
       "options": ["add()", "merge()", "append()", "concat()"],
-      "correct_answer": "concat()",
+      "answer": "concat()",
       "explanation": "The concat() function is used to concatenate (add) two strings together."
     },
     {
       "id": 5,
+      "type": "mcq",
       "question": "What is the ASCII code for the uppercase letter 'A'?",
       "options": ["97", "65", "48", "32"],
-      "correct_answer": "65",
+      "answer": "65",
       "explanation": "The ASCII code range for uppercase letters A-Z is 65 to 90."
-    }
-  ],
-  "error_finding": [
+    },
     {
-      "id": 1,
-      "snippet": "String word = \"Exam\";\nint len = word.length;",
-      "correct_code": "String word = \"Exam\";\nint len = word.length();",
+      "id": 6,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "String word = \"Exam\";\nint len = word.length;",
+      "options": [
+        "length should be length()",
+        "Exam should be enclosed in single quotes",
+        "int should be String",
+        "No error"
+      ],
+      "answer": "length should be length()",
       "explanation": "For strings, length is a method and requires parentheses: length()."
     },
     {
-      "id": 2,
-      "snippet": "char ch = \"X\";",
-      "correct_code": "char ch = 'X';",
+      "id": 7,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "char ch = \"X\";",
+      "options": [
+        "Use single quotes for character literals",
+        "char should be String",
+        "Missing semicolon",
+        "No error"
+      ],
+      "answer": "Use single quotes for character literals",
       "explanation": "Character literals must be enclosed in single quotes (' '), not double quotes."
     },
     {
-      "id": 3,
-      "snippet": "int arr[][] = new int[3, 4];",
-      "correct_code": "int arr[][] = new int[3][4];",
+      "id": 8,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "int arr[][] = new int[3, 4];",
+      "options": [
+        "Use separate square brackets [3][4]",
+        "Use parentheses instead",
+        "Array type is incorrect",
+        "No error"
+      ],
+      "answer": "Use separate square brackets [3][4]",
       "explanation": "In Java, double dimensional arrays require separate square brackets for rows and columns."
     },
     {
-      "id": 4,
-      "snippet": "StringBuffer sb = \"ICSE\";",
-      "correct_code": "StringBuffer sb = new StringBuffer(\"ICSE\");",
+      "id": 9,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "StringBuffer sb = \"ICSE\";",
+      "options": [
+        "Use new StringBuffer(\"ICSE\")",
+        "StringBuffer should be String",
+        "Missing semicolon",
+        "No error"
+      ],
+      "answer": "Use new StringBuffer(\"ICSE\")",
       "explanation": "Unlike Strings, StringBuffer requires the 'new' keyword for instantiation."
     },
     {
-      "id": 5,
-      "snippet": "double d = Double.valueOf('4.5');",
-      "correct_code": "double d = Double.valueOf(\"4.5\");",
+      "id": 10,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "double d = Double.valueOf('4.5');",
+      "options": [
+        "Use double quotes around 4.5",
+        "Use parseDouble()",
+        "Change double to int",
+        "No error"
+      ],
+      "answer": "Use double quotes around 4.5",
       "explanation": "The valueOf method requires a String (in double quotes), not a character."
-    }
-  ],
-  "predict_output": [
-    {
-      "id": 1,
-      "snippet": "System.out.println(\"School\".substring(2, 5));",
-      "output": "hoo",
-      "explanation": "Extracts characters starting from index 2 up to index 4 (index 5 is excluded)."
     },
     {
-      "id": 2,
-      "snippet": "String s1 = \"10\";\nString s2 = \"20\";\nSystem.out.println(s1 + s2);",
-      "output": "1020",
-      "explanation": "Since both operands are Strings, the '+' operator concatenates them instead of performing mathematical addition."
+      "id": 11,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "System.out.println(\"School\".substring(2,5));",
+      "options": ["Sch", "hoo", "ool", "School"],
+      "answer": "hoo",
+      "explanation": "Extracts characters starting from index 2 up to index 4."
     },
     {
-      "id": 3,
-      "snippet": "int m[][] = {{1, 2}, {3, 4}};\nSystem.out.println(m[1][1]);",
-      "output": "4",
-      "explanation": "m[1] refers to the second row {3, 4}. m[1][1] refers to the second element of that row, which is 4."
+      "id": 12,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "String s1=\"10\";\nString s2=\"20\";\nSystem.out.println(s1+s2);",
+      "options": ["30", "1020", "Error", "2010"],
+      "answer": "1020",
+      "explanation": "The + operator concatenates strings."
     },
     {
-      "id": 4,
-      "snippet": "System.out.println(Character.toLowerCase('8'));",
-      "output": "8",
-      "explanation": "Applying toLowerCase() on a digit simply returns the same digit."
+      "id": 13,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "int m[][]={{1,2},{3,4}};\nSystem.out.println(m[1][1]);",
+      "options": ["3", "4", "2", "1"],
+      "answer": "4",
+      "explanation": "m[1][1] refers to the second element of the second row."
     },
     {
-      "id": 5,
-      "snippet": "System.out.println(\"apple\".compareTo(\"apple\"));",
-      "output": "0",
-      "explanation": "Since both strings are exactly identical, their ASCII difference is 0."
+      "id": 14,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "System.out.println(Character.toLowerCase('8'));",
+      "options": ["8", "Error", "null", "0"],
+      "answer": "8",
+      "explanation": "Digits remain unchanged."
+    },
+    {
+      "id": 15,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "System.out.println(\"apple\".compareTo(\"apple\"));",
+      "options": ["0", "1", "-1", "Error"],
+      "answer": "0",
+      "explanation": "Identical strings return 0."
     }
   ]
 }

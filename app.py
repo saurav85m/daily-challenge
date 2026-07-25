@@ -48,6 +48,7 @@ st.divider()
 # 3. Fetch Challenge from Google Drive
 with st.spinner("Fetching today's challenge..."):
     date_str = challenge_date.strftime("%Y-%m-%d")
+    #st.write(date_str) #Saurav
     challenge_data = fetch_daily_challenge(date_str)
 
 if not challenge_data:

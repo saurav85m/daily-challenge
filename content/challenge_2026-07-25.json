@@ -31,6 +31,135 @@
       ],
       "answer": "Missing colon (:) after the for statement",
       "explanation": "In Python, compound statements like 'for' loops must always terminate with a colon (:)."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "question": "Which Python keyword is used to define a function?",
+      "options": ["function", "define", "def", "fun"],
+      "answer": "def",
+      "explanation": "The 'def' keyword is used to define a function in Python."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "question": "Which operator is used for exponentiation in Python?",
+      "options": ["^", "**", "*", "//"],
+      "answer": "**",
+      "explanation": "The ** operator raises a number to a power."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "question": "Which built-in function is used to find the type of a variable?",
+      "options": ["typeof()", "type()", "datatype()", "class()"],
+      "answer": "type()",
+      "explanation": "The type() function returns the data type of an object."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": ["Tuple", "String", "List", "Integer"],
+      "answer": "List",
+      "explanation": "Lists are mutable, meaning their contents can be modified."
+    },
+    {
+      "id": 8,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(10 // 3)",
+      "options": ["3", "3.33", "4", "Error"],
+      "answer": "3",
+      "explanation": "The // operator performs floor division."
+    },
+    {
+      "id": 9,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "a = 'Python'\nprint(a[0])",
+      "options": ["P", "y", "Python", "Error"],
+      "answer": "P",
+      "explanation": "String indexing starts at 0."
+    },
+    {
+      "id": 10,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(len('Computer'))",
+      "options": ["7", "8", "9", "Error"],
+      "answer": "8",
+      "explanation": "'Computer' contains 8 characters."
+    },
+    {
+      "id": 11,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "x = [10, 20]\nprint(x * 2)",
+      "options": [
+        "[10, 20, 10, 20]",
+        "[20, 40]",
+        "[10,20]*2",
+        "Error"
+      ],
+      "answer": "[10, 20, 10, 20]",
+      "explanation": "Multiplying a list repeats its elements."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "if x == 10\n    print(x)",
+      "options": [
+        "Missing colon (:) after if statement",
+        "Indentation is wrong",
+        "== should be =",
+        "No error"
+      ],
+      "answer": "Missing colon (:) after if statement",
+      "explanation": "Python requires a colon after an if statement."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "numbers = [1,2,3]\nprint(numbers(0))",
+      "options": [
+        "Use square brackets instead of parentheses",
+        "numbers should be a tuple",
+        "print is incorrect",
+        "No error"
+      ],
+      "answer": "Use square brackets instead of parentheses",
+      "explanation": "Lists are accessed using square brackets []."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "for i in range(5):\nprint(i)",
+      "options": [
+        "print() should be indented",
+        "range() is incorrect",
+        "Colon should be removed",
+        "No error"
+      ],
+      "answer": "print() should be indented",
+      "explanation": "The body of a loop must be indented."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "name = input('Enter name: ')\nprint(Name)",
+      "options": [
+        "Variable names are case-sensitive",
+        "input() is incorrect",
+        "print() is incorrect",
+        "No error"
+      ],
+      "answer": "Variable names are case-sensitive",
+      "explanation": "The variable 'name' is different from 'Name'. Python is case-sensitive."
     }
   ]
 }

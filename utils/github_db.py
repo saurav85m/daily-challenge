@@ -34,7 +34,7 @@ def get_github_repo():
 #   except Exception:
 #     return None
 
-@st.cache_data(ttl=0) # ttl=0 ensures Streamlit doesn't cache old versions
+#@st.cache_data(ttl=0) # ttl=0 ensures Streamlit doesn't cache old versions
 def fetch_daily_challenge(date_str):
     """
     Fetches the challenge JSON for a specific date from the GitHub repository.
@@ -52,11 +52,15 @@ def fetch_daily_challenge(date_str):
     
     headers = {"Authorization": f"Bearer {token}"} if token else {}
     response = requests.get(url, headers=headers)
+    #Saurav
+    #st.write("URL:", url)
+    #st.write("Status:", response.status_code)
+    #st.write("Response:", response.text)
     
     if response.status_code == 200:
         return response.json()
-    else:
-        return None
+    #Saurav
+    return None
 
 
 def append_result_to_github(result_dict):
