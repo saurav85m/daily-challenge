@@ -4,7 +4,9 @@ import streamlit as st
 # To this:
 from utils.github_db import (
     append_result_to_github,
+    append_results_to_github,
     fetch_daily_challenge,
+    has_student_submitted,
 )
 
 # 1. Page Configuration for Mobile-First experience
@@ -48,6 +50,10 @@ st.divider()
 # 3. Fetch Challenge from Google Drive
 with st.spinner("Fetching today's challenge..."):
     date_str = challenge_date.strftime("%Y-%m-%d")
+    already_submitted = has_student_submitted(
+        student_name,
+        date_str
+    )
     #st.write(date_str) #Saurav
     challenge_data = fetch_daily_challenge(date_str)
 
@@ -58,6 +64,22 @@ if not challenge_data:
     st.stop()
 
 st.success(f"Loaded challenge for **{challenge_data.get('date')}**!")
+
+# score = df_filtered["is_correct"].sum()
+
+# total = len(df_filtered)
+
+# accuracy = score / total * 100
+
+if already_submitted:
+
+    st.success("✅ You have already completed today's challenge.")
+
+    st.info(
+        "Please choose another date or come back tomorrow."
+    )
+
+    st.stop()
 
 # 4. Render Questions & Collect Answers
 questions = challenge_data.get("questions", [])
@@ -101,6 +123,7 @@ if submitted:
         st.error("⚠️ Please answer all questions before submitting!")
     else:
         score = 0
+        rows_to_save = []
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
         with st.spinner("Saving your progress to Google Drive..."):
@@ -123,7 +146,18 @@ if submitted:
                 
                 # Append each question result back to Google Drive
                 #append_result_to_drive(result_row)
-                append_result_to_github(result_row)
+                #append_result_to_github(result_row)
+                
+                # Store in memory instead of saving immediately
+                rows_to_save.append(result_row)
+
+        # Save all rows in ONE GitHub commit
+        success = append_results_to_github(rows_to_save)
+
+        if success:
+            st.success("✅ Results saved successfully.")
+        else:
+            st.error("❌ Failed to save results.")
         
         # Display Results Dashboard
         st.balloons()

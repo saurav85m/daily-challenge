@@ -98,3 +98,102 @@ def append_result_to_github(result_dict):
         content=csv_content,
         branch=branch,
     )
+
+def append_results_to_github(results):
+    """
+    Append multiple submission results to progress_log.csv
+    using a single GitHub commit.
+    """
+
+    repo = get_github_repo()
+
+    file_path = "results/progress_log.csv"
+
+    branch = st.secrets["github"].get("branch", "main")
+
+    # Create DataFrame from all result rows
+    df_new_rows = pd.DataFrame(results)
+
+    try:
+        # Read existing CSV
+        file_content = repo.get_contents(file_path, ref=branch)
+
+        decoded_content = base64.b64decode(
+            file_content.content
+        ).decode("utf-8")
+
+        df_existing = pd.read_csv(
+            io.StringIO(decoded_content)
+        )
+
+        # Append ALL rows
+        df_updated = pd.concat(
+            [df_existing, df_new_rows],
+            ignore_index=True
+        )
+
+        csv_content = df_updated.to_csv(index=False)
+
+        # ONE GitHub commit
+        repo.update_file(
+            path=file_path,
+            message=f"Update progress log for {results[0]['date']}",
+            content=csv_content,
+            sha=file_content.sha,
+            branch=branch,
+        )
+
+    except Exception:
+
+        # CSV doesn't exist yet
+        csv_content = df_new_rows.to_csv(index=False)
+
+        repo.create_file(
+            path=file_path,
+            message="Initialize progress log",
+            content=csv_content,
+            branch=branch,
+        )
+
+    return True
+
+def has_student_submitted(student_name, date_str):
+    """
+    Returns True if the student has already submitted
+    the selected challenge date.
+    """
+
+    repo = get_github_repo()
+
+    file_path = "results/progress_log.csv"
+
+    branch = st.secrets["github"].get("branch", "main")
+
+    try:
+
+        file_content = repo.get_contents(
+            file_path,
+            ref=branch
+        )
+
+        decoded = base64.b64decode(
+            file_content.content
+        ).decode("utf-8")
+
+        df = pd.read_csv(io.StringIO(decoded))
+
+        # Empty CSV
+        if df.empty:
+            return False
+
+        submitted = (
+            (df["student_name"] == student_name)
+            &
+            (df["date"] == date_str)
+        ).any()
+
+        return submitted
+
+    except Exception:
+        # CSV doesn't exist yet
+        return False
