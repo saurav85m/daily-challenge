@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-31",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "question": "Which method is used to add multiple elements from another iterable to the end of a list?",
+      "options": ["append()", "extend()", "add()", "update()"],
+      "answer": "extend()",
+      "explanation": "The extend() method iterates over its argument and adds each element to the list."
+    },
+    {
+      "id": 2,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "print(list(range(1, 6, 2)))",
+      "options": ["[1, 2, 3, 4, 5]", "[1, 3, 5]", "[2, 4, 6]", "[1, 4]"],
+      "answer": "[1, 3, 5]",
+      "explanation": "range(1, 6, 2) starts at 1, stops before 6, and steps by 2, yielding 1, 3, and 5."
+    },
+    {
+      "id": 3,
+      "type": "error_finding",
+      "question": "Identify the error in the following conditional snippet:",
+      "code_snippet": "if x = 5:\n    print('Equal')",
+      "options": [
+        "Assignment operator '=' should be comparison operator '=='",
+        "Missing colon",
+        "Indentation error",
+        "No error"
+      ],
+      "answer": "Assignment operator '=' should be comparison operator '=='",
+      "explanation": "Conditional statements require comparison operators like '==' rather than assignment '='."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "question": "Which method is used to remove a key-value pair by key from a dictionary and return its value?",
+      "options": ["remove()", "discard()", "pop()", "strip()"],
+      "answer": "pop()",
+      "explanation": "The dictionary pop() method removes the specified key and returns its corresponding value."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "question": "What is the primary characteristic of a tuple compared to a list?",
+      "options": ["Tuples are mutable", "Tuples are immutable", "Tuples can only store numbers", "Tuples are unordered"],
+      "answer": "Tuples are immutable",
+      "explanation": "Tuples cannot be altered after creation, whereas lists are fully mutable."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "question": "Which operator is used for membership testing in Python collections?",
+      "options": ["is", "in", "contains", "has"],
+      "answer": "in",
+      "explanation": "The 'in' operator tests for membership in strings, lists, tuples, dictionaries, and sets."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "question": "Which method joins elements of an iterable into a single string using a specified separator?",
+      "options": ["concat()", "join()", "merge()", "combine()"],
+      "answer": "join()",
+      "explanation": "The string join() method concatenates iterable elements using the string separator it is called on."
+    },
+    {
+      "id": 8,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(all([True, True, False]))",
+      "options": ["True", "False", "None", "Error"],
+      "answer": "False",
+      "explanation": "The all() function returns True only if all elements in the iterable are truthy."
+    },
+    {
+      "id": 9,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "a = [1, 2, 3]\nb = a\nb.append(4)\nprint(len(a))",
+      "options": ["3", "4", "Error", "None"],
+      "answer": "4",
+      "explanation": "Variable 'b' references the same list object as 'a'. Modifying 'b' alters 'a' as well."
+    },
+    {
+      "id": 10,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print('Python'[::-1])",
+      "options": ["Python", "nohtyP", "P", "Error"],
+      "answer": "nohtyP",
+      "explanation": "A slice step of -1 reverses the sequence string completely."
+    },
+    {
+      "id": 11,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "d = {'x': 10, 'y': 20}\nprint(list(d.keys()))",
+      "options": ["['x', 'y']", "[10, 20]", "[('x', 10), ('y', 20)]", "Error"],
+      "answer": "['x', 'y']",
+      "explanation": "The keys() method extracts all keys from the dictionary."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "numbers = [1, 2, 3]\nnumbers.append([4, 5])\nprint(len(numbers))",
+      "options": [
+        "No error",
+        "append() takes only one argument, but a list inside a list was passed",
+        "Lists cannot contain other lists",
+        "len() cannot count nested lists"
+      ],
+      "answer": "No error",
+      "explanation": "A list can be appended as a single nested element, making the new length 4."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "x = 5\nassert x > 10, 'x is too small'",
+      "options": [
+        "AssertionError: x is too small",
+        "assert keyword is invalid",
+        "SyntaxError",
+        "No error"
+      ],
+      "answer": "AssertionError: x is too small",
+      "explanation": "Since x is 5, the condition x > 10 evaluates to False, triggering an AssertionError."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "def my_func(a, b=1, c):\n    return a + b + c",
+      "options": [
+        "Non-default argument follows default argument",
+        "Functions cannot have multiple default parameters",
+        "Return statement syntax is invalid",
+        "No error"
+      ],
+      "answer": "Non-default argument follows default argument",
+      "explanation": "Python requires all non-default arguments to appear before any default arguments in function signatures."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "import non_existent_module",
+      "options": [
+        "ModuleNotFoundError: No module named 'non_existent_module'",
+        "ImportError: module cannot be loaded",
+        "SyntaxError",
+        "No error"
+      ],
+      "answer": "ModuleNotFoundError: No module named 'non_existent_module'",
+      "explanation": "Trying to import a module that does not exist in standard libraries or local paths raises a ModuleNotFoundError."
+    }
+  ]
+}

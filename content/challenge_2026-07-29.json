@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-29",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "question": "Which keyword is used to skip the current iteration of a loop and move to the next one?",
+      "options": ["skip", "pass", "continue", "next"],
+      "answer": "continue",
+      "explanation": "The 'continue' statement halts the current iteration and forces the loop to start the next iteration."
+    },
+    {
+      "id": 2,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "print(round(4.6))",
+      "options": ["4", "5", "4.5", "Error"],
+      "answer": "5",
+      "explanation": "The round() function rounds a floating-point number to the nearest integer (or decimal place)."
+    },
+    {
+      "id": 3,
+      "type": "error_finding",
+      "question": "Identify the error in the following snippet:",
+      "code_snippet": "for i in range(3)\n    print(i)",
+      "options": [
+        "Missing colon (:) after the for loop statement",
+        "Variable i is undefined",
+        "range(3) is invalid syntax",
+        "No error"
+      ],
+      "answer": "Missing colon (:) after the for loop statement",
+      "explanation": "Python requires a colon at the end of loop declaration lines."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "question": "Which method is used to insert an item at a specific index in a list?",
+      "options": ["add()", "insert()", "append()", "put()"],
+      "answer": "insert()",
+      "explanation": "The insert() method inserts an item at a given index: list.insert(index, element)."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "question": "What is the return type of the expression `5 / 2` in Python 3?",
+      "options": ["int", "float", "double", "str"],
+      "answer": "float",
+      "explanation": "Standard division (/) in Python 3 always returns a floating-point number."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "question": "Which built-in function returns the sum of all items in an iterable list of numbers?",
+      "options": ["add()", "total()", "sum()", "aggregate()"],
+      "answer": "sum()",
+      "explanation": "The sum() function takes an iterable and returns the total sum of its elements."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "question": "Which dictionary method returns a view object displaying a list of a dictionary's key-value pairs?",
+      "options": ["keys()", "values()", "items()", "pairs()"],
+      "answer": "items()",
+      "explanation": "The items() method returns a view object containing key-value tuples."
+    },
+    {
+      "id": 8,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(abs(-7) + pow(2, 3))",
+      "options": ["15", "11", "-1", "17"],
+      "answer": "15",
+      "explanation": "abs(-7) evaluates to 7, and pow(2, 3) evaluates to 8. Their sum is 15."
+    },
+    {
+      "id": 9,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "s = 'Python'\nprint('th' in s)",
+      "options": ["True", "False", "Error", "None"],
+      "answer": "True",
+      "explanation": "The 'in' operator checks if substring 'th' exists within the string 'Python'."
+    },
+    {
+      "id": 10,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "x = [1, 2, 3]\nx.clear()\nprint(x)",
+      "options": ["[1, 2, 3]", "[]", "None", "Error"],
+      "answer": "[]",
+      "explanation": "The clear() method removes all items from the list, leaving an empty list."
+    },
+    {
+      "id": 11,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(max('apple', 'banana', 'cherry'))",
+      "options": ["apple", "banana", "cherry", "Error"],
+      "answer": "cherry",
+      "explanation": "The max() function evaluates strings lexicographically (alphabetical order), returning 'cherry'."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "x = 10\nif x == 10:\n    print('Ten')",
+      "options": [
+        "Comparison operator == is incorrect",
+        "Variables cannot be named x",
+        "No error",
+        "Missing colon"
+      ],
+      "answer": "No error",
+      "explanation": "The syntax, indentation, and structure of this conditional block are entirely correct."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "f = open('test.txt', 'r')\n# forgot to close file",
+      "options": [
+        "Leaving a file open can cause resource leaks",
+        "Files automatically delete themselves",
+        "open() function requires 3 arguments",
+        "No error"
+      ],
+      "answer": "Leaving a file open can cause resource leaks",
+      "explanation": "While syntactically valid, failing to close files or use context managers ('with' statement) causes resource leaks."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "def greet(name):\n    print('Hello ' + name)\n\ngreet()",
+      "options": [
+        "TypeError: missing 1 required positional argument 'name'",
+        "Function greet cannot take arguments",
+        "Print statement needs formatting",
+        "No error"
+      ],
+      "answer": "TypeError: missing 1 required positional argument 'name'",
+      "explanation": "The function expects one argument, but was called without arguments."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "my_list = [10, 20, 30]\nprint(my_list[3])",
+      "options": [
+        "IndexError: list index out of range",
+        "Lists cannot have 3 elements",
+        "print statement is incorrect",
+        "No error"
+      ],
+      "answer": "IndexError: list index out of range",
+      "explanation": "Valid indices for a 3-element list are 0, 1, and 2. Index 3 triggers an IndexError."
+    }
+  ]
+}

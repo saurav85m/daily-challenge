@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-26",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "question": "Which method is used to add an item to the end of a list in Python?",
+      "options": ["add()", "append()", "insert()", "push()"],
+      "answer": "append()",
+      "explanation": "The append() method adds a single element to the end of the existing list."
+    },
+    {
+      "id": 2,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "s = 'hello'\nprint(s.upper())",
+      "options": ["HELLO", "hello", "Hello", "Error"],
+      "answer": "HELLO",
+      "explanation": "The upper() string method converts all lowercase characters in a string to uppercase."
+    },
+    {
+      "id": 3,
+      "type": "error_finding",
+      "question": "Identify the error in the following function definition snippet:",
+      "code_snippet": "def my_func()\n    return True",
+      "options": [
+        "Missing colon (:) after the function definition",
+        "return statement cannot be used inside functions",
+        "Function name is invalid",
+        "No error"
+      ],
+      "answer": "Missing colon (:) after the function definition",
+      "explanation": "Function headers in Python must conclude with a colon (:)."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "question": "Which of the following methods removes and returns the last item from a list by default?",
+      "options": ["remove()", "delete()", "pop()", "clear()"],
+      "answer": "pop()",
+      "explanation": "The pop() method removes the item at the specified index (default is the last item) and returns it."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "question": "What is the correct file extension for Python files?",
+      "options": [".pt", ".pyt", ".py", ".python"],
+      "answer": ".py",
+      "explanation": "Python source code files use the .py extension."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "question": "Which function converts an integer string like '123' into an actual integer number?",
+      "options": ["str()", "float()", "int()", "number()"],
+      "answer": "int()",
+      "explanation": "The int() function constructs an integer number from an integer string or float literal."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "question": "Which logical operator returns True if both statements are true?",
+      "options": ["or", "and", "not", "in"],
+      "answer": "and",
+      "explanation": "The 'and' operator returns True only if all operands evaluate to True."
+    },
+    {
+      "id": 8,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(bool(0))",
+      "options": ["True", "False", "0", "Error"],
+      "answer": "False",
+      "explanation": "In Python, the integer 0 evaluates to False when passed to the bool() function."
+    },
+    {
+      "id": 9,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "colors = ['red', 'blue', 'green']\nprint(colors[-1])",
+      "options": ["red", "blue", "green", "Error"],
+      "answer": "green",
+      "explanation": "Negative indexing starts from the end of the sequence, where -1 represents the last element."
+    },
+    {
+      "id": 10,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(3 * 'Abc')",
+      "options": ["AbcAbcAbc", "Abc3", "Error", "9"],
+      "answer": "AbcAbcAbc",
+      "explanation": "Multiplying a string by an integer repeats the string that many times."
+    },
+    {
+      "id": 11,
+      "type": "output_prediction",
+      "question": "What will be the output of the following code?",
+      "code_snippet": "print(type(5.0))",
+      "options": ["<class 'int'>", "<class 'float'>", "<class 'double'>", "<class 'number'>"],
+      "answer": "<class 'float'>",
+      "explanation": "Numbers with decimal points are treated as floating-point numbers in Python."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "x = 5\nif x > 2:\nprint('Big')",
+      "options": [
+        "print('Big') must be indented",
+        "if condition cannot use numbers",
+        "Colon is missing",
+        "No error"
+      ],
+      "answer": "print('Big') must be indented",
+      "explanation": "Indentation is mandatory inside blocks following control flow statements."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "my_dict = {'name': 'Alice'}\nprint(my_dict[0])",
+      "options": [
+        "Dictionaries are accessed by keys, not integer indices like 0",
+        "Dictionaries cannot contain strings",
+        "print statement format is invalid",
+        "No error"
+      ],
+      "answer": "Dictionaries are accessed by keys, not integer indices like 0",
+      "explanation": "Dictionaries use key-based lookups rather than positional numeric indexing."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "total = 10 + '20'",
+      "options": [
+        "Cannot concatenate or add an integer and a string directly",
+        "10 should be written as '10'",
+        "Addition operator '+' is not supported in Python",
+        "No error"
+      ],
+      "answer": "Cannot concatenate or add an integer and a string directly",
+      "explanation": "Python does not implicitly coerce strings and integers during arithmetic operations."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "question": "Identify the error in the following code.",
+      "code_snippet": "text = 'Python'\ntext[0] = 'J'",
+      "options": [
+        "Strings are immutable and item assignment is not supported",
+        "Index 0 is out of bounds",
+        "Variable text must be a list",
+        "No error"
+      ],
+      "answer": "Strings are immutable and item assignment is not supported",
+      "explanation": "Individual characters in strings cannot be modified in place because strings are immutable."
+    }
+  ]
+}
