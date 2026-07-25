@@ -1,160 +1,151 @@
 {
   "date": "2026-07-26",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which method is used to add an item to the end of a list in Python?",
-      "options": ["add()", "append()", "insert()", "push()"],
-      "answer": "append()",
-      "explanation": "The append() method adds a single element to the end of the existing list."
+      "question": "Which Math class function is used to find the cube root of a number?",
+      "options": ["Math.sqrt()", "Math.cbrt()", "Math.pow()", "Math.cube()"],
+      "answer": "Math.cbrt()",
+      "explanation": "Math.cbrt() returns the cube root of a given double value."
     },
     {
       "id": 2,
       "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "s = 'hello'\nprint(s.upper())",
-      "options": ["HELLO", "hello", "Hello", "Error"],
-      "answer": "HELLO",
-      "explanation": "The upper() string method converts all lowercase characters in a string to uppercase."
+      "question": "What will be the output of: System.out.println(Math.floor(-4.7));",
+      "options": ["-4.0", "-5.0", "-4", "-5"],
+      "answer": "-5.0",
+      "explanation": "Math.floor() rounds down to the nearest mathematical integer. For negative numbers, rounding down moves further away from zero."
     },
     {
       "id": 3,
       "type": "error_finding",
-      "question": "Identify the error in the following function definition snippet:",
-      "code_snippet": "def my_func()\n    return True",
+      "question": "Identify the error in this code snippet: String s = \"BlueJ\"; char c = s.charAt(\"1\");",
       "options": [
-        "Missing colon (:) after the function definition",
-        "return statement cannot be used inside functions",
-        "Function name is invalid",
+        "String cannot use charAt",
+        "Index must be an integer, not a string",
+        "BlueJ should be in single quotes",
         "No error"
       ],
-      "answer": "Missing colon (:) after the function definition",
-      "explanation": "Function headers in Python must conclude with a colon (:)."
+      "answer": "Index must be an integer, not a string",
+      "explanation": "The charAt() method expects an integer index like 1, not a string literal like \"1\"."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which of the following methods removes and returns the last item from a list by default?",
-      "options": ["remove()", "delete()", "pop()", "clear()"],
-      "answer": "pop()",
-      "explanation": "The pop() method removes the item at the specified index (default is the last item) and returns it."
+      "question": "Which of these StringBuffer methods reverses the characters within the buffer?",
+      "options": ["flip()", "reverse()", "invert()", "back()"],
+      "answer": "reverse()",
+      "explanation": "The reverse() method in the StringBuffer class reverses the sequence of characters."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "What is the correct file extension for Python files?",
-      "options": [".pt", ".pyt", ".py", ".python"],
-      "answer": ".py",
-      "explanation": "Python source code files use the .py extension."
+      "question": "What does the function Character.isLetterOrDigit('?') return?",
+      "options": ["true", "false", "null", "Error"],
+      "answer": "false",
+      "explanation": "The character '?' is a special symbol, so it is neither a letter nor a digit."
     },
     {
       "id": 6,
       "type": "mcq",
-      "question": "Which function converts an integer string like '123' into an actual integer number?",
-      "options": ["str()", "float()", "int()", "number()"],
-      "answer": "int()",
-      "explanation": "The int() function constructs an integer number from an integer string or float literal."
+      "question": "Which function converts a string representation of a number into a long data type?",
+      "options": ["Long.parseLong()", "Long.toLong()", "Long.valueOf()", "Both A and C"],
+      "answer": "Both A and C",
+      "explanation": "Both parseLong() and valueOf() from the Long wrapper class can achieve this conversion."
     },
     {
       "id": 7,
       "type": "mcq",
-      "question": "Which logical operator returns True if both statements are true?",
-      "options": ["or", "and", "not", "in"],
-      "answer": "and",
-      "explanation": "The 'and' operator returns True only if all operands evaluate to True."
+      "question": "When defining an array int arr[] = new int[5], what does the number 5 represent?",
+      "options": ["The maximum index", "The number of elements the array can hold", "The value stored in the array", "The size in bytes"],
+      "answer": "The number of elements the array can hold",
+      "explanation": "The number inside the square brackets during initialization represents the total capacity of the array."
     },
     {
       "id": 8,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(bool(0))",
-      "options": ["True", "False", "0", "Error"],
-      "answer": "False",
-      "explanation": "In Python, the integer 0 evaluates to False when passed to the bool() function."
+      "question": "What will be the output of: System.out.println(\"Java\".replace('a', 'o'));",
+      "options": ["Jovo", "Jova", "Javo", "Error"],
+      "answer": "Jovo",
+      "explanation": "The replace() method replaces all occurrences of the first character with the second character."
     },
     {
       "id": 9,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "colors = ['red', 'blue', 'green']\nprint(colors[-1])",
-      "options": ["red", "blue", "green", "Error"],
-      "answer": "green",
-      "explanation": "Negative indexing starts from the end of the sequence, where -1 represents the last element."
+      "question": "What will be the output of: int a[] = {5, 10, 15}; System.out.println(a[1] * 2);",
+      "options": ["10", "20", "30", "Error"],
+      "answer": "20",
+      "explanation": "The element at index 1 is 10. Multiplying 10 by 2 gives 20."
     },
     {
       "id": 10,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(3 * 'Abc')",
-      "options": ["AbcAbcAbc", "Abc3", "Error", "9"],
-      "answer": "AbcAbcAbc",
-      "explanation": "Multiplying a string by an integer repeats the string that many times."
+      "question": "What will be the output of: System.out.println(\"Hello\".indexOf('l', 3));",
+      "options": ["2", "3", "-1", "Error"],
+      "answer": "3",
+      "explanation": "It searches for 'l' starting from index 3. The 'l' at index 3 is found."
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(type(5.0))",
-      "options": ["<class 'int'>", "<class 'float'>", "<class 'double'>", "<class 'number'>"],
-      "answer": "<class 'float'>",
-      "explanation": "Numbers with decimal points are treated as floating-point numbers in Python."
+      "question": "What will be the output of: System.out.println(Character.isWhitespace('\\t'));",
+      "options": ["true", "false", "null", "Error"],
+      "answer": "true",
+      "explanation": "The escape sequence '\\t' represents a tab, which is a whitespace character."
     },
     {
       "id": 12,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "x = 5\nif x > 2:\nprint('Big')",
+      "question": "Identify the error: int num = Math.abs(-15);",
       "options": [
-        "print('Big') must be indented",
-        "if condition cannot use numbers",
-        "Colon is missing",
-        "No error"
+        "Math.abs() returns double",
+        "-15 is invalid",
+        "No error",
+        "abs() requires a String"
       ],
-      "answer": "print('Big') must be indented",
-      "explanation": "Indentation is mandatory inside blocks following control flow statements."
+      "answer": "No error",
+      "explanation": "Math.abs() can accept an int and return an int, so this statement is perfectly valid."
     },
     {
       "id": 13,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "my_dict = {'name': 'Alice'}\nprint(my_dict[0])",
+      "question": "Identify the error: String names[] = new String(10);",
       "options": [
-        "Dictionaries are accessed by keys, not integer indices like 0",
-        "Dictionaries cannot contain strings",
-        "print statement format is invalid",
+        "String cannot be an array",
+        "Size must use square brackets []",
+        "10 must be in quotes",
         "No error"
       ],
-      "answer": "Dictionaries are accessed by keys, not integer indices like 0",
-      "explanation": "Dictionaries use key-based lookups rather than positional numeric indexing."
+      "answer": "Size must use square brackets []",
+      "explanation": "Array initialization requires square brackets: new String[10]."
     },
     {
       "id": 14,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "total = 10 + '20'",
+      "question": "Identify the error: String str = \"  Data  \"; str.trim;",
       "options": [
-        "Cannot concatenate or add an integer and a string directly",
-        "10 should be written as '10'",
-        "Addition operator '+' is not supported in Python",
+        "trim requires parentheses trim()",
+        "trim cannot be used on strings",
+        "trim must take an argument",
         "No error"
       ],
-      "answer": "Cannot concatenate or add an integer and a string directly",
-      "explanation": "Python does not implicitly coerce strings and integers during arithmetic operations."
+      "answer": "trim requires parentheses trim()",
+      "explanation": "trim() is a method and must be called with parentheses."
     },
     {
       "id": 15,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "text = 'Python'\ntext[0] = 'J'",
+      "question": "Identify the error: StringBuffer sb = new StringBuffer(\"Test\"); sb.delete(1);",
       "options": [
-        "Strings are immutable and item assignment is not supported",
-        "Index 0 is out of bounds",
-        "Variable text must be a list",
+        "delete() requires two arguments",
+        "StringBuffer does not have delete()",
+        "1 is out of bounds",
         "No error"
       ],
-      "answer": "Strings are immutable and item assignment is not supported",
-      "explanation": "Individual characters in strings cannot be modified in place because strings are immutable."
+      "answer": "delete() requires two arguments",
+      "explanation": "The delete() method requires a start index and an end index: delete(int start, int end)."
     }
   ]
 }

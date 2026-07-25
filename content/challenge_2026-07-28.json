@@ -1,160 +1,151 @@
 {
   "date": "2026-07-28",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which of the following functions opens a file in Python?",
-      "options": ["get_file()", "open()", "read_file()", "file()"],
-      "answer": "open()",
-      "explanation": "The built-in open() function opens a file and returns a corresponding file object."
+      "question": "Which of these is NOT a wrapper class in Java?",
+      "options": ["Character", "Boolean", "String", "Double"],
+      "answer": "String",
+      "explanation": "String is a regular Java class for text, whereas Wrapper classes (like Character, Boolean, Double) strictly wrap primitive data types."
     },
     {
       "id": 2,
       "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "print(type(range(5)))",
-      "options": ["<class 'list'>", "<class 'tuple'>", "<class 'range'>", "<class 'int'>"],
-      "answer": "<class 'range'>",
-      "explanation": "The range() function returns a immutable sequence object of type 'range'."
+      "question": "What will be the output of: System.out.println(\"Java\".substring(1, 3));",
+      "options": ["Jav", "av", "va", "Error"],
+      "answer": "av",
+      "explanation": "Extracts from index 1 ('a') up to index 2 ('v'). Index 3 is excluded."
     },
     {
       "id": 3,
       "type": "error_finding",
-      "question": "Identify the error in the following code snippet:",
-      "code_snippet": "def add(a, b):\nprint(a + b)",
+      "question": "Identify the error: char c = (char) 65.5;",
       "options": [
-        "The statement inside the function is not indented",
-        "Functions cannot take two arguments",
-        "return statement is missing",
+        "Cannot cast a decimal to a char",
+        "c must be a String",
+        "65.5 must be in quotes",
         "No error"
       ],
-      "answer": "The statement inside the function is not indented",
-      "explanation": "Python requires indentation to define code blocks under function headers."
+      "answer": "No error",
+      "explanation": "65.5 will be truncated to 65 during the explicit cast, and ASCII 65 is 'A'."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which keyword is used to exit a loop prematurely in Python?",
-      "options": ["stop", "exit", "break", "halt"],
-      "answer": "break",
-      "explanation": "The 'break' statement terminates the nearest enclosing loop."
+      "question": "In a double dimensional array, how are elements stored in memory conceptually?",
+      "options": ["As columns only", "As rows and columns (Matrix)", "As a binary tree", "As a single line"],
+      "answer": "As rows and columns (Matrix)",
+      "explanation": "A double dimensional array represents data in a tabular format, conceptually structured as rows and columns."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "What is the default mode when opening a file with the open() function if no mode is specified?",
-      "options": ["Write mode ('w')", "Read mode ('r')", "Append mode ('a')", "Binary mode ('b')"],
-      "answer": "Read mode ('r')",
-      "explanation": "By default, open() opens files for reading in text mode ('r')."
+      "question": "What will \"apple\".compareTo(\"Apple\") return?",
+      "options": ["0", "A positive value", "A negative value", "Error"],
+      "answer": "A positive value",
+      "explanation": "It returns the ASCII difference. 'a' (97) - 'A' (65) = 32, which is a positive value."
     },
     {
       "id": 6,
       "type": "mcq",
-      "question": "Which method removes all items from a dictionary?",
-      "options": ["delete()", "clear()", "empty()", "remove()"],
-      "answer": "clear()",
-      "explanation": "The clear() method removes all elements from a dictionary."
+      "question": "Which of the following is used to append text to the end of a StringBuffer?",
+      "options": ["concat()", "add()", "append()", "join()"],
+      "answer": "append()",
+      "explanation": "StringBuffer uses the append() method to add new characters to the end of the buffer sequence."
     },
     {
       "id": 7,
       "type": "mcq",
-      "question": "Which module in Python is used for generating random numbers?",
-      "options": ["math", "random", "os", "sys"],
-      "answer": "random",
-      "explanation": "The built-in random module implements pseudo-random number generators."
+      "question": "What happens when an object of a wrapper class is assigned back to its corresponding primitive variable?",
+      "options": ["Autoboxing", "Unboxing", "Typecasting", "Error"],
+      "answer": "Unboxing",
+      "explanation": "Converting an object of a wrapper class into its corresponding primitive data type is known as Unboxing."
     },
     {
       "id": 8,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "x = [1, 2, 3]\nprint(x.pop(1))",
-      "options": ["1", "2", "3", "[1, 3]"],
-      "answer": "2",
-      "explanation": "pop(1) removes and returns the element at index 1, which is 2."
+      "question": "What will be the output of: System.out.println(Character.toUpperCase('5'));",
+      "options": ["5", "Error", "null", "A"],
+      "answer": "5",
+      "explanation": "If the given character is not a letter, toUpperCase() simply returns the original character."
     },
     {
       "id": 9,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(abs(-15.5))",
-      "options": ["15.5", "-15.5", "0", "Error"],
-      "answer": "15.5",
-      "explanation": "The abs() function returns the absolute (positive) value of a number."
+      "question": "What will be the output of: int a[] = new int[3]; System.out.println(a[1]);",
+      "options": ["0", "null", "Garbage value", "Error"],
+      "answer": "0",
+      "explanation": "When an integer array is instantiated, all elements are automatically initialized to the default value of 0."
     },
     {
       "id": 10,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "nums = (10, 20, 30, 40)\nprint(nums.count(20))",
-      "options": ["1", "2", "20", "Error"],
-      "answer": "1",
-      "explanation": "The count() method returns the number of times a specified value appears in the tuple."
+      "question": "What will be the output of: System.out.println(\"Board\".indexOf('z'));",
+      "options": ["0", "-1", "null", "Error"],
+      "answer": "-1",
+      "explanation": "If a character is not found in the string, the indexOf() method returns -1."
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(min([5, 2, 9, 1]))",
-      "options": ["5", "9", "1", "2"],
-      "answer": "1",
-      "explanation": "The min() function returns the smallest item in an iterable."
+      "question": "What will be the output of: StringBuffer sb = new StringBuffer(\"TCS\"); System.out.println(sb.length());",
+      "options": ["3", "4", "2", "Error"],
+      "answer": "3",
+      "explanation": "The length() method for StringBuffer returns the number of characters currently present in the buffer."
     },
     {
       "id": 12,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "s = {1, 2, 3}\ns.add([4, 5])",
+      "question": "Identify the error: int arr[] = {1, 2, 3}; arr[0] = 5.5;",
       "options": [
-        "Lists are unhashable and cannot be elements of a set",
-        "add() method takes no arguments",
-        "Sets cannot contain integers",
+        "Array size is not defined",
+        "Cannot assign a double to an int array",
+        "Index 0 does not exist",
         "No error"
       ],
-      "answer": "Lists are unhashable and cannot be elements of a set",
-      "explanation": "Set elements must be hashable; mutable types like lists cannot be added to a set."
+      "answer": "Cannot assign a double to an int array",
+      "explanation": "An int array can only hold integers. Attempting to assign the decimal 5.5 results in a lossy conversion error."
     },
     {
       "id": 13,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "x = 10\nif x > 5:\n    pass\n else:\n    print('Small')",
+      "question": "Identify the error: String text = Integer.toString(25);",
       "options": [
-        "Indentation error on the 'else' statement",
-        "pass statement is invalid",
-        "Missing colon after else",
+        "toString() is not a method of Integer",
+        "25 must be a String",
+        "Cannot assign to String variable",
         "No error"
       ],
-      "answer": "Indentation error on the 'else' statement",
-      "explanation": "The 'else' keyword must align horizontally with its corresponding 'if' statement."
+      "answer": "No error",
+      "explanation": "Integer.toString(int) is the correct static method to convert an integer primitive into a String."
     },
     {
       "id": 14,
       "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "d = {'a': 1}\nprint(d['b'])",
+      "question": "Identify the error: boolean b = \"Cat\".equalsignorecase(\"cat\");",
       "options": [
-        "KeyError because key 'b' does not exist in the dictionary",
-        "Dictionaries cannot be printed directly",
-        "IndexError because 1 is out of range",
+        "Method must be camelCase: equalsIgnoreCase",
+        "String literals cannot invoke methods directly",
+        "boolean must be Boolean",
         "No error"
       ],
-      "answer": "KeyError because key 'b' does not exist in the dictionary",
-      "explanation": "Accessing a non-existent dictionary key directly via bracket notation raises a KeyError."
+      "answer": "Method must be camelCase: equalsIgnoreCase",
+      "explanation": "Java methods are strictly case-sensitive and must follow camelCase conventions."
     },
     {
       "id": 15,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "name = 'Python'\nname.append('ista')",
+      "question": "Identify the error: StringBuffer sb = new StringBuffer(\"Hello\"); sb.setCharAt(\"H\", 'M');",
       "options": [
-        "Strings do not have an append() method",
-        "append() requires two arguments",
-        "Variable name is reserved",
+        "The first argument must be an integer index",
+        "The second argument must be a String",
+        "StringBuffer doesn't support setCharAt()",
         "No error"
       ],
-      "answer": "Strings do not have an append() method",
-      "explanation": "The append() method is exclusive to lists, not strings."
+      "answer": "The first argument must be an integer index",
+      "explanation": "The setCharAt(int index, char ch) method requires the position (integer) as the first argument, not a String."
     }
   ]
 }

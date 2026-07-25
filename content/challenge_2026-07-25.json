@@ -1,165 +1,161 @@
 {
   "date": "2026-07-25",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which of the following data structures is immutable in Python?",
-      "options": ["List", "Dictionary", "Tuple", "Set"],
-      "answer": "Tuple",
-      "explanation": "Tuples are immutable sequences, meaning their elements cannot be changed, added, or removed after creation, unlike Lists, Dictionaries, or Sets."
+      "question": "What will the function Math.pow(2, 3) return in Java?",
+      "options": ["5.0", "6.0", "8.0", "9.0"],
+      "answer": "8.0",
+      "explanation": "Math.pow(base, exponent) returns the base raised to the power of the exponent as a double. 2 to the power of 3 is 8.0."
     },
     {
       "id": 2,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "x = [1, 2, 3]\nx.append(4)\nprint(len(x))",
-      "options": ["3", "4", "Error", "None"],
-      "answer": "4",
-      "explanation": "The append() method adds an item to the end of the list. The list goes from 3 elements to 4 elements, so len(x) returns 4."
+      "type": "mcq",
+      "question": "What is the default value stored in an integer array cell before any value is assigned?",
+      "options": ["null", "0", "1", "Garbage value"],
+      "answer": "0",
+      "explanation": "In Java, when an integer array is initialized using the 'new' keyword, all cells are automatically filled with the default value of 0."
     },
     {
       "id": 3,
-      "type": "error_finding",
-      "question": "Identify the error in the following loop snippet:",
-      "code_snippet": "for i in range(5)\n    print(i)",
-      "options": [
-        "Missing colon (:) after the for statement",
-        "Indent error on the print statement",
-        "range(5) should be range(1, 5)",
-        "No error"
-      ],
-      "answer": "Missing colon (:) after the for statement",
-      "explanation": "In Python, compound statements like 'for' loops must always terminate with a colon (:)."
+      "type": "mcq",
+      "question": "Which of the following methods correctly compares the contents of two strings for equality?",
+      "options": ["==", "equals()", "compare()", "isEqual()"],
+      "answer": "equals()",
+      "explanation": "The equals() method compares the actual characters inside the strings, whereas '==' compares their memory locations."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which Python keyword is used to define a function?",
-      "options": ["function", "define", "def", "fun"],
-      "answer": "def",
-      "explanation": "The 'def' keyword is used to define a function in Python."
+      "question": "What does the indexOf() method return if the searched character is NOT found in the string?",
+      "options": ["0", "null", "Error", "-1"],
+      "answer": "-1",
+      "explanation": "If the character or substring is not present, indexOf() always returns -1."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "Which operator is used for exponentiation in Python?",
-      "options": ["^", "**", "*", "//"],
-      "answer": "**",
-      "explanation": "The ** operator raises a number to a power."
+      "question": "Which wrapper class method is used to convert a String into a double data type?",
+      "options": ["Double.valueOf()", "Double.parseDouble()", "Both A and B", "None of the above"],
+      "answer": "Both A and B",
+      "explanation": "Both Double.parseDouble() and Double.valueOf() can be used to convert a numeric String into a double."
     },
     {
       "id": 6,
-      "type": "mcq",
-      "question": "Which built-in function is used to find the type of a variable?",
-      "options": ["typeof()", "type()", "datatype()", "class()"],
-      "answer": "type()",
-      "explanation": "The type() function returns the data type of an object."
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "int marks[] = {85, 90, 95};\nint total = marks.length();",
+      "options": [
+        "Array brackets should be empty",
+        "length should not have parentheses",
+        "int should be Integer",
+        "No error"
+      ],
+      "answer": "length should not have parentheses",
+      "explanation": "For arrays, length is a property, not a method. It must be written as marks.length."
     },
     {
       "id": 7,
-      "type": "mcq",
-      "question": "Which of the following is a mutable data type in Python?",
-      "options": ["Tuple", "String", "List", "Integer"],
-      "answer": "List",
-      "explanation": "Lists are mutable, meaning their contents can be modified."
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "String word = \"Computer\";\nchar letter = word.charAt('3');",
+      "options": [
+        "charAt expects an integer, not a character",
+        "Index '3' is out of bounds",
+        "word should use single quotes",
+        "No error"
+      ],
+      "answer": "charAt expects an integer, not a character",
+      "explanation": "The charAt() method takes an integer index. It should be word.charAt(3) without the single quotes around the number."
     },
     {
       "id": 8,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(10 // 3)",
-      "options": ["3", "3.33", "4", "Error"],
-      "answer": "3",
-      "explanation": "The // operator performs floor division."
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "int num = Math.sqrt(25);",
+      "options": [
+        "Math.sqrt is not a valid method",
+        "Math.sqrt returns a double, not an int",
+        "25 should be in quotes",
+        "No error"
+      ],
+      "answer": "Math.sqrt returns a double, not an int",
+      "explanation": "Math.sqrt() always returns a double value. It must either be stored in a double variable or explicitly cast to an int."
     },
     {
       "id": 9,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "a = 'Python'\nprint(a[0])",
-      "options": ["P", "y", "Python", "Error"],
-      "answer": "P",
-      "explanation": "String indexing starts at 0."
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "String name1 = \"Gagu\";\nString name2 = \"gagu\";\nboolean match = name1.EqualsIgnoreCase(name2);",
+      "options": [
+        "Method should be equalsIgnoreCase()",
+        "Strings cannot be compared",
+        "match should be an int",
+        "No error"
+      ],
+      "answer": "Method should be equalsIgnoreCase()",
+      "explanation": "Java methods are strictly camelCase. The correct method name starts with a lowercase 'e': equalsIgnoreCase()."
     },
     {
       "id": 10,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(len('Computer'))",
-      "options": ["7", "8", "9", "Error"],
-      "answer": "8",
-      "explanation": "'Computer' contains 8 characters."
+      "type": "error_finding",
+      "question": "Identify the error in the following code snippet.",
+      "code_snippet": "int arr[] = new int[5];\narr[5] = 100;",
+      "options": [
+        "new keyword is not required",
+        "Index 5 is out of bounds",
+        "100 is too large for an int",
+        "No error"
+      ],
+      "answer": "Index 5 is out of bounds",
+      "explanation": "An array of size 5 has valid indices from 0 to 4. Attempting to store data at arr[5] causes an ArrayIndexOutOfBoundsException."
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "x = [10, 20]\nprint(x * 2)",
-      "options": [
-        "[10, 20, 10, 20]",
-        "[20, 40]",
-        "[10,20]*2",
-        "Error"
-      ],
-      "answer": "[10, 20, 10, 20]",
-      "explanation": "Multiplying a list repeats its elements."
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "System.out.println(Math.ceil(4.1));",
+      "options": ["4.0", "4", "5.0", "5"],
+      "answer": "5.0",
+      "explanation": "Math.ceil() rounds the number up to the nearest integer and returns it as a double."
     },
     {
       "id": 12,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "if x == 10\n    print(x)",
-      "options": [
-        "Missing colon (:) after if statement",
-        "Indentation is wrong",
-        "== should be =",
-        "No error"
-      ],
-      "answer": "Missing colon (:) after if statement",
-      "explanation": "Python requires a colon after an if statement."
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "String s = \"Java\";\nSystem.out.println(s + 10 + 20);",
+      "options": ["Java1020", "Java30", "Error", "30Java"],
+      "answer": "Java1020",
+      "explanation": "Because the expression starts with a String, the '+' operator acts as text concatenation all the way through, not mathematical addition."
     },
     {
       "id": 13,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "numbers = [1,2,3]\nprint(numbers(0))",
-      "options": [
-        "Use square brackets instead of parentheses",
-        "numbers should be a tuple",
-        "print is incorrect",
-        "No error"
-      ],
-      "answer": "Use square brackets instead of parentheses",
-      "explanation": "Lists are accessed using square brackets []."
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "System.out.println(\"Application\".startsWith(\"app\"));",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "false",
+      "explanation": "String methods are case-sensitive. \"Application\" starts with a capital 'A', so checking for lowercase \"app\" returns false."
     },
     {
       "id": 14,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "for i in range(5):\nprint(i)",
-      "options": [
-        "print() should be indented",
-        "range() is incorrect",
-        "Colon should be removed",
-        "No error"
-      ],
-      "answer": "print() should be indented",
-      "explanation": "The body of a loop must be indented."
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "int arr[][] = {{5, 10}, {15, 20}, {25, 30}};\nSystem.out.println(arr.length);",
+      "options": ["2", "3", "6", "Error"],
+      "answer": "3",
+      "explanation": "Applying .length to a 2D array returns the number of rows. There are 3 rows in this array."
     },
     {
       "id": 15,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "name = input('Enter name: ')\nprint(Name)",
-      "options": [
-        "Variable names are case-sensitive",
-        "input() is incorrect",
-        "print() is incorrect",
-        "No error"
-      ],
-      "answer": "Variable names are case-sensitive",
-      "explanation": "The variable 'name' is different from 'Name'. Python is case-sensitive."
+      "type": "output_prediction",
+      "question": "What will be the output of the following code snippet?",
+      "code_snippet": "char c = 'A';\nc += 2;\nSystem.out.println(c);",
+      "options": ["A2", "C", "67", "Error"],
+      "answer": "C",
+      "explanation": "The ASCII value of 'A' is 65. Adding 2 makes it 67, which corresponds to the character 'C'."
     }
   ]
 }

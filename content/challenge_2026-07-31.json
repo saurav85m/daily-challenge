@@ -1,160 +1,151 @@
 {
   "date": "2026-07-31",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which method is used to add multiple elements from another iterable to the end of a list?",
-      "options": ["append()", "extend()", "add()", "update()"],
-      "answer": "extend()",
-      "explanation": "The extend() method iterates over its argument and adds each element to the list."
+      "question": "What does Character.toUpperCase('1') return?",
+      "options": ["true", "false", "Error", "'1'"],
+      "answer": "'1'",
+      "explanation": "If the given character is not a letter, the toUpperCase() method returns the exact same character."
     },
     {
       "id": 2,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "print(list(range(1, 6, 2)))",
-      "options": ["[1, 2, 3, 4, 5]", "[1, 3, 5]", "[2, 4, 6]", "[1, 4]"],
-      "answer": "[1, 3, 5]",
-      "explanation": "range(1, 6, 2) starts at 1, stops before 6, and steps by 2, yielding 1, 3, and 5."
+      "type": "mcq",
+      "question": "Which of the following is true about String concatenation in Java?",
+      "options": ["Only concat() can be used", "Only the '+' operator can be used", "Both concat() and '+' can be used", "Strings cannot be concatenated"],
+      "answer": "Both concat() and '+' can be used",
+      "explanation": "Java allows string concatenation using either the concat() method or the overloaded '+' operator."
     },
     {
       "id": 3,
-      "type": "error_finding",
-      "question": "Identify the error in the following conditional snippet:",
-      "code_snippet": "if x = 5:\n    print('Equal')",
-      "options": [
-        "Assignment operator '=' should be comparison operator '=='",
-        "Missing colon",
-        "Indentation error",
-        "No error"
-      ],
-      "answer": "Assignment operator '=' should be comparison operator '=='",
-      "explanation": "Conditional statements require comparison operators like '==' rather than assignment '='."
+      "type": "mcq",
+      "question": "What does the \"equals()\" method compare?",
+      "options": ["Memory locations", "String lengths", "Actual characters inside the string", "Object references"],
+      "answer": "Actual characters inside the string",
+      "explanation": "The equals() method compares the actual content/characters of the strings, whereas '==' compares memory references."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which method is used to remove a key-value pair by key from a dictionary and return its value?",
-      "options": ["remove()", "discard()", "pop()", "strip()"],
-      "answer": "pop()",
-      "explanation": "The dictionary pop() method removes the specified key and returns its corresponding value."
+      "question": "Which Wrapper class is used for the 'char' primitive data type?",
+      "options": ["Char", "String", "Character", "Characters"],
+      "answer": "Character",
+      "explanation": "The wrapper class for the primitive type 'char' is 'Character'."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "What is the primary characteristic of a tuple compared to a list?",
-      "options": ["Tuples are mutable", "Tuples are immutable", "Tuples can only store numbers", "Tuples are unordered"],
-      "answer": "Tuples are immutable",
-      "explanation": "Tuples cannot be altered after creation, whereas lists are fully mutable."
+      "question": "In a Single Dimensional Array, if the length is N, what is the last valid index?",
+      "options": ["N", "N+1", "N-1", "0"],
+      "answer": "N-1",
+      "explanation": "Because array indexing starts at 0, the last valid index is always the length minus 1."
     },
     {
       "id": 6,
-      "type": "mcq",
-      "question": "Which operator is used for membership testing in Python collections?",
-      "options": ["is", "in", "contains", "has"],
-      "answer": "in",
-      "explanation": "The 'in' operator tests for membership in strings, lists, tuples, dictionaries, and sets."
+      "type": "error_finding",
+      "question": "Identify the error: StringBuffer sb = \"Test\";",
+      "options": [
+        "StringBuffer requires the 'new' keyword",
+        "StringBuffer should be String",
+        "Test must be in single quotes",
+        "No error"
+      ],
+      "answer": "StringBuffer requires the 'new' keyword",
+      "explanation": "Unlike standard Strings, StringBuffer objects must be instantiated using the 'new' keyword: new StringBuffer(\"Test\")."
     },
     {
       "id": 7,
-      "type": "mcq",
-      "question": "Which method joins elements of an iterable into a single string using a specified separator?",
-      "options": ["concat()", "join()", "merge()", "combine()"],
-      "answer": "join()",
-      "explanation": "The string join() method concatenates iterable elements using the string separator it is called on."
+      "type": "error_finding",
+      "question": "Identify the error: Double d = Double.valueOf('A');",
+      "options": [
+        "valueOf() requires a String argument",
+        "d must be lowercase double",
+        "A must be a number",
+        "No error"
+      ],
+      "answer": "valueOf() requires a String argument",
+      "explanation": "The Double.valueOf() method expects a String containing a parsable number, not a character."
     },
     {
       "id": 8,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(all([True, True, False]))",
-      "options": ["True", "False", "None", "Error"],
-      "answer": "False",
-      "explanation": "The all() function returns True only if all elements in the iterable are truthy."
+      "type": "error_finding",
+      "question": "Identify the error: boolean b = Character.isuppercase('c');",
+      "options": [
+        "isuppercase should be isUpperCase",
+        "c must be a String",
+        "Character is not a valid class",
+        "No error"
+      ],
+      "answer": "isuppercase should be isUpperCase",
+      "explanation": "Java methods follow camelCase naming conventions. The correct method is isUpperCase()."
     },
     {
       "id": 9,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "a = [1, 2, 3]\nb = a\nb.append(4)\nprint(len(a))",
-      "options": ["3", "4", "Error", "None"],
-      "answer": "4",
-      "explanation": "Variable 'b' references the same list object as 'a'. Modifying 'b' alters 'a' as well."
+      "type": "error_finding",
+      "question": "Identify the error: int len = \"Board\".length;",
+      "options": [
+        "length should be length()",
+        "Strings do not have a length property",
+        "len must be a double",
+        "No error"
+      ],
+      "answer": "length should be length()",
+      "explanation": "For String objects, length is a method and must be called with parentheses: length()."
     },
     {
       "id": 10,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print('Python'[::-1])",
-      "options": ["Python", "nohtyP", "P", "Error"],
-      "answer": "nohtyP",
-      "explanation": "A slice step of -1 reverses the sequence string completely."
+      "type": "error_finding",
+      "question": "Identify the error: int arr[] = new int[3]; arr[3] = 5;",
+      "options": [
+        "Array brackets should be empty",
+        "Index 3 is out of bounds",
+        "Cannot assign 5 to int array",
+        "No error"
+      ],
+      "answer": "Index 3 is out of bounds",
+      "explanation": "An array of size 3 has valid indices 0, 1, and 2. Index 3 causes an ArrayIndexOutOfBoundsException."
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "d = {'x': 10, 'y': 20}\nprint(list(d.keys()))",
-      "options": ["['x', 'y']", "[10, 20]", "[('x', 10), ('y', 20)]", "Error"],
-      "answer": "['x', 'y']",
-      "explanation": "The keys() method extracts all keys from the dictionary."
+      "question": "What will be the output of: System.out.println(\"10\" + 20);",
+      "options": ["30", "1020", "Error", "2010"],
+      "answer": "1020",
+      "explanation": "Because one operand is a String, the '+' operator concatenates them into text rather than adding mathematically."
     },
     {
       "id": 12,
-      "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "numbers = [1, 2, 3]\nnumbers.append([4, 5])\nprint(len(numbers))",
-      "options": [
-        "No error",
-        "append() takes only one argument, but a list inside a list was passed",
-        "Lists cannot contain other lists",
-        "len() cannot count nested lists"
-      ],
-      "answer": "No error",
-      "explanation": "A list can be appended as a single nested element, making the new length 4."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(Math.abs(-10));",
+      "options": ["-10", "10", "10.0", "Error"],
+      "answer": "10",
+      "explanation": "Math.abs() returns the absolute (positive) value of the argument, maintaining its data type (int)."
     },
     {
       "id": 13,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "x = 5\nassert x > 10, 'x is too small'",
-      "options": [
-        "AssertionError: x is too small",
-        "assert keyword is invalid",
-        "SyntaxError",
-        "No error"
-      ],
-      "answer": "AssertionError: x is too small",
-      "explanation": "Since x is 5, the condition x > 10 evaluates to False, triggering an AssertionError."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(\"TCS\".length());",
+      "options": ["2", "3", "4", "Error"],
+      "answer": "3",
+      "explanation": "The length() method counts the total number of characters in the string."
     },
     {
       "id": 14,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "def my_func(a, b=1, c):\n    return a + b + c",
-      "options": [
-        "Non-default argument follows default argument",
-        "Functions cannot have multiple default parameters",
-        "Return statement syntax is invalid",
-        "No error"
-      ],
-      "answer": "Non-default argument follows default argument",
-      "explanation": "Python requires all non-default arguments to appear before any default arguments in function signatures."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(Character.isDigit('8'));",
+      "options": ["true", "false", "Error", "8"],
+      "answer": "true",
+      "explanation": "The character '8' is a digit, so the method evaluates to true."
     },
     {
       "id": 15,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "import non_existent_module",
-      "options": [
-        "ModuleNotFoundError: No module named 'non_existent_module'",
-        "ImportError: module cannot be loaded",
-        "SyntaxError",
-        "No error"
-      ],
-      "answer": "ModuleNotFoundError: No module named 'non_existent_module'",
-      "explanation": "Trying to import a module that does not exist in standard libraries or local paths raises a ModuleNotFoundError."
+      "type": "output_prediction",
+      "question": "What will be the output of: int arr[][] = {{1}, {2}}; System.out.println(arr[1][0]);",
+      "options": ["1", "2", "0", "Error"],
+      "answer": "2",
+      "explanation": "arr[1] accesses the second row {2}. arr[1][0] accesses the first element of that row, which is 2."
     }
   ]
 }

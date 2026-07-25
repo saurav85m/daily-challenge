@@ -1,165 +1,151 @@
 {
   "date": "2026-07-30",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which of the following statements is used to define a placeholder block of code that does nothing?",
-      "options": ["null", "pass", "nil", "continue"],
-      "answer": "pass",
-      "explanation": "The 'pass' statement is a null operation used as a placeholder when syntax requires a statement."
+      "question": "Which Math function rounds a floating-point value to the nearest integer?",
+      "options": ["Math.ceil()", "Math.floor()", "Math.round()", "Math.abs()"],
+      "answer": "Math.round()",
+      "explanation": "Math.round() rounds a float to the nearest int, or a double to the nearest long."
     },
     {
       "id": 2,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "text = 'Data Science'\nprint(text.split())",
-      "options": [
-        "['Data', 'Science']",
-        "['Data Science']",
-        "('Data', 'Science')",
-        "Error"
-      ],
-      "answer": "['Data', 'Science']",
-      "explanation": "The split() method splits a string into a list of substrings based on whitespace by default."
+      "type": "mcq",
+      "question": "Which method compares two Strings lexicographically, ignoring case differences?",
+      "options": ["equals()", "equalsIgnoreCase()", "compareTo()", "compareToIgnoreCase()"],
+      "answer": "compareToIgnoreCase()",
+      "explanation": "compareToIgnoreCase() compares two strings lexicographically, ignoring lower/upper case."
     },
     {
       "id": 3,
-      "type": "error_finding",
-      "question": "Identify the error in the following dictionary declaration:",
-      "code_snippet": "d = {key1: 'value1', key2: 'value2'}",
-      "options": [
-        "Keys must be enclosed in quotes if they are strings",
-        "Dictionaries cannot use commas",
-        "Values must be numeric",
-        "No error"
-      ],
-      "answer": "Keys must be enclosed in quotes if they are strings",
-      "explanation": "Unquoted words like key1 and key2 are interpreted as undefined variables rather than string keys."
+      "type": "mcq",
+      "question": "In a 2D array defined as int m[][] = new int[4][5]; what does 5 represent?",
+      "options": ["Number of rows", "Number of columns", "Starting index", "Total capacity"],
+      "answer": "Number of columns",
+      "explanation": "In Java 2D arrays, the second bracket determines the number of columns."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which module provides mathematical functions like sin(), cos(), and pi in Python?",
-      "options": ["calc", "math", "numeric", "statistics"],
-      "answer": "math",
-      "explanation": "The math module provides access to standard mathematical constants and functions."
+      "question": "What happens if you try to access an array index that is larger than its length?",
+      "options": ["Returns null", "Returns 0", "ArrayIndexOutOfBoundsException", "Array expands automatically"],
+      "answer": "ArrayIndexOutOfBoundsException",
+      "explanation": "Accessing an invalid index throws an ArrayIndexOutOfBoundsException at runtime."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "Which method is used to count the occurrences of a specific element in a list?",
-      "options": ["find()", "search()", "count()", "index()"],
-      "answer": "count()",
-      "explanation": "The count() method returns the number of times a specified element appears in a list."
+      "question": "What is the return type of the trim() method in Java?",
+      "options": ["void", "String", "char", "boolean"],
+      "answer": "String",
+      "explanation": "The trim() method returns a new String with leading and trailing whitespace removed."
     },
     {
       "id": 6,
-      "type": "mcq",
-      "question": "What is the correct syntax to output 'Hello' in Python 3?",
-      "options": ["echo 'Hello'", "print('Hello')", "printf('Hello')", "display('Hello')"],
-      "answer": "print('Hello')",
-      "explanation": "The print() function is the standard built-in output mechanism in Python 3."
+      "type": "error_finding",
+      "question": "Identify the error: int a[] = {1, 2, 3}; int size = a.length();",
+      "options": [
+        "Array brackets should be empty",
+        "length should not have parentheses",
+        "int should be Integer",
+        "No error"
+      ],
+      "answer": "length should not have parentheses",
+      "explanation": "For arrays, length is a property, not a method. It must be written as a.length."
     },
     {
       "id": 7,
-      "type": "mcq",
-      "question": "Which keyword is used to return a value from a function?",
-      "options": ["give", "send", "return", "output"],
-      "answer": "return",
-      "explanation": "The 'return' statement exits a function and passes back an expression to the caller."
+      "type": "error_finding",
+      "question": "Identify the error: boolean b = \"Apple\".compareTo(\"apple\");",
+      "options": [
+        "compareTo returns an int, not a boolean",
+        "Strings cannot be compared",
+        "Method should be compare",
+        "No error"
+      ],
+      "answer": "compareTo returns an int, not a boolean",
+      "explanation": "The compareTo() method returns an integer representing the ASCII difference."
     },
     {
       "id": 8,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(bool([]))",
-      "options": ["True", "False", "[]", "Error"],
-      "answer": "False",
-      "explanation": "Empty collections like empty lists, strings, and dictionaries evaluate to False in a boolean context."
+      "type": "error_finding",
+      "question": "Identify the error: char c = \"A\";",
+      "options": [
+        "c must be a String",
+        "Character literals must use single quotes",
+        "char should be Character",
+        "No error"
+      ],
+      "answer": "Character literals must use single quotes",
+      "explanation": "Single characters in Java must be enclosed in single quotes ('A')."
     },
     {
       "id": 9,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "x = [5, 2, 9, 1]\nx.sort()\nprint(x)",
-      "options": ["[5, 2, 9, 1]", "[1, 2, 5, 9]", "[9, 5, 2, 1]", "Error"],
-      "answer": "[1, 2, 5, 9]",
-      "explanation": "The sort() method sorts the items of a list in place in ascending order by default."
+      "type": "error_finding",
+      "question": "Identify the error: String s = \"BlueJ\"; s.concat('V');",
+      "options": [
+        "concat() requires a String argument",
+        "Strings cannot be concatenated",
+        "concat is not a valid method",
+        "No error"
+      ],
+      "answer": "concat() requires a String argument",
+      "explanation": "The concat() method requires a String (in double quotes), not a char."
     },
     {
       "id": 10,
-      "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(3 * 10 ** 2)",
-      "options": ["900", "300", "90", "Error"],
-      "answer": "300",
-      "explanation": "Exponentiation (**) has higher precedence than multiplication (*). 10 ** 2 = 100, multiplied by 3 gives 300."
+      "type": "error_finding",
+      "question": "Identify the error: int m[5] = {2, 4, 6, 8, 10};",
+      "options": [
+        "Array type is incorrect",
+        "Java does not allow size inside brackets during array initialization",
+        "Array requires new keyword here",
+        "No error"
+      ],
+      "answer": "Java does not allow size inside brackets during array initialization",
+      "explanation": "When directly initializing an array with values, you leave the brackets empty: int m[] = {2, 4, 6, 8, 10};"
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "a = {1, 2, 3}\nb = {3, 4, 5}\nprint(a.intersection(b))",
-      "options": ["{3}", "{1, 2, 3, 4, 5}", "{1, 2}", "set()"],
-      "answer": "{3}",
-      "explanation": "The intersection method returns a set containing elements common to all given sets."
+      "question": "What will be the output of: System.out.println(Math.round(4.5));",
+      "options": ["4", "5", "4.0", "5.0"],
+      "answer": "5",
+      "explanation": "Math.round() rounds up to the nearest integer. 4.5 rounds up to 5."
     },
     {
       "id": 12,
-      "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "with open('data.txt', 'w') as f:\n    f.write('Hello')",
-      "options": [
-        "Missing file close statement",
-        "No error",
-        "write method does not exist",
-        "with statement is deprecated"
-      ],
-      "answer": "No error",
-      "explanation": "The context manager ('with' statement) handles automatic file closure safely and cleanly."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(\"Hello\".replace('l', 'L'));",
+      "options": ["HeLlo", "HeLLo", "Hello", "Error"],
+      "answer": "HeLLo",
+      "explanation": "The replace() method replaces all occurrences of the specified character."
     },
     {
       "id": 13,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "x = (1, 2, 3)\nx.append(4)",
-      "options": [
-        "AttributeError: 'tuple' object has no attribute 'append'",
-        "Tuples cannot contain integers",
-        "Index out of range",
-        "No error"
-      ],
-      "answer": "AttributeError: 'tuple' object has no attribute 'append'",
-      "explanation": "Tuples are immutable and lack modification methods like append()."
+      "type": "output_prediction",
+      "question": "What will be the output of: int a[] = {5, 10}; System.out.println(a[0] + a[1]);",
+      "options": ["5", "10", "15", "510"],
+      "answer": "15",
+      "explanation": "a[0] is 5 and a[1] is 10. Their sum is 15."
     },
     {
       "id": 14,
-      "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "def square(num)\n    return num ** 2",
-      "options": [
-        "Missing colon (:) after function header",
-        "Exponentiation operator is invalid",
-        "Return keyword must be lowercase capitalized",
-        "No error"
-      ],
-      "answer": "Missing colon (:) after function header",
-      "explanation": "Python syntax requires a colon at the end of the function signature line."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(\"School\".substring(3));",
+      "options": ["Sch", "ool", "hoo", "Error"],
+      "answer": "ool",
+      "explanation": "Using substring with a single argument extracts from that index to the end of the string. Index 3 is 'o'."
     },
     {
       "id": 15,
-      "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "print(int('abc'))",
-      "options": [
-        "ValueError: invalid literal for int() with base 10: 'abc'",
-        "TypeError: int() takes floats only",
-        "NameError: name 'abc' is not defined",
-        "No error"
-      ],
-      "answer": "ValueError: invalid literal for int() with base 10: 'abc'",
-      "explanation": "Non-numeric alphabetical strings cannot be converted into integers using int()."
+      "type": "output_prediction",
+      "question": "What will be the output of: System.out.println(\"Apple\".equals(\"apple\"));",
+      "options": ["true", "false", "Error", "0"],
+      "answer": "false",
+      "explanation": "The equals() method is strictly case-sensitive."
     }
   ]
 }

@@ -1,160 +1,151 @@
 {
   "date": "2026-07-27",
+  "topic": "Library Classes, Arrays, and String Handling",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
-      "question": "Which collection type stores unique elements and eliminates duplicates automatically?",
-      "options": ["List", "Tuple", "Set", "Dictionary"],
-      "answer": "Set",
-      "explanation": "A set is an unordered collection with no duplicate elements."
+      "question": "Which Math method returns the largest of two numbers?",
+      "options": ["Math.largest()", "Math.maximum()", "Math.max()", "Math.high()"],
+      "answer": "Math.max()",
+      "explanation": "Math.max(a, b) compares two arguments and returns the greater value."
     },
     {
       "id": 2,
       "type": "output_prediction",
-      "question": "What will be the output of the following code snippet?",
-      "code_snippet": "nums = [1, 2, 3, 4, 5]\nprint(nums[1:4])",
-      "options": ["[1, 2, 3, 4]", "[2, 3, 4]", "[2, 3, 4, 5]", "[1, 3, 5]"],
-      "answer": "[2, 3, 4]",
-      "explanation": "Slice notation [1:4] extracts elements from index 1 up to, but not including, index 4."
+      "question": "What will be the output of: System.out.println(\"Programming\".endsWith(\"ing\"));",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "true",
+      "explanation": "The string \"Programming\" indeed ends with the suffix \"ing\", so it returns true."
     },
     {
       "id": 3,
       "type": "error_finding",
-      "question": "Identify the syntax error in the following statement:",
-      "code_snippet": "print('Hello World'",
+      "question": "Identify the error: char arr[] = {'A', 'B' 'C'};",
       "options": [
-        "Missing closing parenthesis )",
-        "Single quotes cannot be used",
-        "print keyword must be uppercase",
+        "Missing comma between 'B' and 'C'",
+        "Array cannot hold chars",
+        "Characters need double quotes",
         "No error"
       ],
-      "answer": "Missing closing parenthesis )",
-      "explanation": "Every opening parenthesis must have a matching closing parenthesis."
+      "answer": "Missing comma between 'B' and 'C'",
+      "explanation": "Elements in an array initializer list must be separated by commas."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which keyword is used to handle exceptions in Python?",
-      "options": ["try", "catch", "except", "handle"],
-      "answer": "except",
-      "explanation": "Python uses 'try' and 'except' blocks to catch and handle runtime exceptions."
+      "question": "Which of these statements about Java Strings is true?",
+      "options": ["Strings are mutable", "Strings are immutable", "Strings are primitive types", "Strings cannot be concatenated"],
+      "answer": "Strings are immutable",
+      "explanation": "In Java, String objects are immutable, meaning their state cannot be changed after they are created."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "What is the output of expression `type(10 == 10)`?",
-      "options": ["<class 'int'>", "<class 'bool'>", "<class 'str'>", "<class 'equal'>"],
-      "answer": "<class 'bool'>",
-      "explanation": "Comparison operators evaluate to boolean values (True or False)."
+      "question": "What is the return type of Math.random()?",
+      "options": ["int", "double", "float", "boolean"],
+      "answer": "double",
+      "explanation": "Math.random() generates a pseudorandom double value greater than or equal to 0.0 and less than 1.0."
     },
     {
       "id": 6,
       "type": "mcq",
-      "question": "Which built-in function returns the length of a dictionary?",
-      "options": ["size()", "count()", "length()", "len()"],
-      "answer": "len()",
-      "explanation": "The len() function returns the total number of items in lists, strings, dictionaries, and other collections."
+      "question": "Which method inserts a string into an existing StringBuffer?",
+      "options": ["add()", "append()", "insert()", "put()"],
+      "answer": "insert()",
+      "explanation": "The insert(int offset, String str) method pushes a string into the buffer at the specified index."
     },
     {
       "id": 7,
       "type": "mcq",
-      "question": "Which method can be used to read the entire contents of a file as a single string?",
-      "options": ["read()", "readlines()", "readline()", "load()"],
-      "answer": "read()",
-      "explanation": "The read() method reads the entire file content into a string."
+      "question": "How do you find the number of characters in a String variable named 'text'?",
+      "options": ["text.size()", "text.length", "text.length()", "text.count()"],
+      "answer": "text.length()",
+      "explanation": "For String objects, length() is a method and requires parentheses."
     },
     {
       "id": 8,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(9 % 2)",
-      "options": ["4", "1", "4.5", "0"],
-      "answer": "1",
-      "explanation": "The modulus operator (%) returns the remainder of division. 9 divided by 2 leaves a remainder of 1."
+      "question": "What will be the output of: System.out.println(10 + 20 + \"Java\");",
+      "options": ["1020Java", "30Java", "Java30", "Error"],
+      "answer": "30Java",
+      "explanation": "Operations are evaluated left to right. 10 + 20 are integers so they are added to make 30, then concatenated with \"Java\"."
     },
     {
       "id": 9,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "a = [1, 2]\nb = [3, 4]\nprint(a + b)",
-      "options": ["[4, 6]", "[1, 2, 3, 4]", "[[1, 2], [3, 4]]", "Error"],
-      "answer": "[1, 2, 3, 4]",
-      "explanation": "The addition operator (+) concatenates two lists together."
+      "question": "What will be the output of: int m[][] = {{1,2,3}, {4,5,6}, {7,8,9}}; System.out.println(m[2][0]);",
+      "options": ["7", "3", "8", "4"],
+      "answer": "7",
+      "explanation": "m[2] accesses the third row {7,8,9}. m[2][0] accesses the first element of that row, which is 7."
     },
     {
       "id": 10,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "print(float('15'))",
-      "options": ["15", "15.0", "Error", "15.15"],
-      "answer": "15.0",
-      "explanation": "The float() function converts a valid numeric string into a floating-point number."
+      "question": "What will be the output of: System.out.println(Math.round(8.5));",
+      "options": ["8", "9", "8.0", "9.0"],
+      "answer": "9",
+      "explanation": "Math.round() rounds a float to the nearest int, or a double to the nearest long. 8.5 rounds up to 9."
     },
     {
       "id": 11,
       "type": "output_prediction",
-      "question": "What will be the output of the following code?",
-      "code_snippet": "d = {'a': 1, 'b': 2}\nprint(d.get('c', 0))",
-      "options": ["None", "0", "KeyError", "False"],
-      "answer": "0",
-      "explanation": "The dictionary get() method returns a specified default value (0 here) if the key is not found."
+      "question": "What will be the output of: System.out.println(Character.isLowerCase('M'));",
+      "options": ["true", "false", "Error", "M"],
+      "answer": "false",
+      "explanation": "'M' is an uppercase letter, so the method returns false."
     },
     {
       "id": 12,
       "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "for i in range(1, 10, 2):\n    print(i)",
+      "question": "Identify the error: float f = Float.valueOf(\"4.5\");",
       "options": [
-        "range() takes a maximum of 2 arguments",
-        "Step value cannot be positive",
+        "valueOf() requires a char",
+        "String cannot be converted to float",
         "No error",
-        "Missing colon"
+        "float must be Float"
       ],
       "answer": "No error",
-      "explanation": "The range(start, stop, step) function correctly accepts three arguments."
+      "explanation": "Float.valueOf() returns a Float object, which is automatically unboxed to the primitive float data type."
     },
     {
       "id": 13,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "x = [4, 1, 9]\nx.sort_descending()",
+      "question": "Identify the error: StringBuffer sb = new StringBuffer(\"Hello\"); sb.setLength(2.5);",
       "options": [
-        "Lists use .sort(reverse=True) instead of sort_descending()",
-        "Lists cannot be sorted",
-        "sort_descending is a built-in keyword",
+        "setLength() takes an integer argument",
+        "StringBuffer doesn't support setLength()",
+        "2.5 must be in quotes",
         "No error"
       ],
-      "answer": "Lists use .sort(reverse=True) instead of sort_descending()",
-      "explanation": "Python lists do not have a sort_descending() method; reverse ordering is achieved via reverse=True."
+      "answer": "setLength() takes an integer argument",
+      "explanation": "The length of a buffer must be an exact whole number (int), not a decimal."
     },
     {
       "id": 14,
       "type": "error_finding",
-      "question": "Identify the error in the following code snippet.",
-      "code_snippet": "try:\n    x = 10 / 0\nexcept:\n    print('Error')",
+      "question": "Identify the error: String a = \"School\"; int pos = a.indexOf(\"o\", \"c\");",
       "options": [
-        "Division by zero does not raise an exception",
-        "except block must be accompanied by a specific exception type",
-        "No error",
-        "try block requires a finally block"
+        "indexOf doesn't take two Strings",
+        "The second argument must be an integer",
+        "Both arguments must be integers",
+        "No error"
       ],
-      "answer": "No error",
-      "explanation": "A bare 'except:' clause is valid syntax to catch general exceptions, though handling specific exceptions is best practice."
+      "answer": "The second argument must be an integer",
+      "explanation": "When using two arguments for indexOf, the second argument represents the starting index position and must be an int."
     },
     {
       "id": 15,
       "type": "error_finding",
-      "question": "Identify the error in the following code.",
-      "code_snippet": "import math\nprint(math.sqrt(-9))",
+      "question": "Identify the error: int val = integer.parseInt(\"50\");",
       "options": [
-        "ValueError due to negative input for square root",
-        "math module cannot handle negative numbers",
-        "sqrt function name is incorrect",
+        "integer should be Integer",
+        "parseInt is invalid",
+        "val must be a String",
         "No error"
       ],
-      "answer": "ValueError due to negative input for square root",
-      "explanation": "Calculating the square root of a negative number using math.sqrt() raises a ValueError."
+      "answer": "integer should be Integer",
+      "explanation": "Wrapper classes in Java must start with a capital letter (Integer)."
     }
   ]
 }
