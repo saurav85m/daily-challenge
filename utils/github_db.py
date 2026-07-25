@@ -197,3 +197,51 @@ def has_student_submitted(student_name, date_str):
     except Exception:
         # CSV doesn't exist yet
         return False
+
+def get_submission_details(student_name, date_str):
+    """
+    Returns submission details if the student has already
+    completed the challenge, otherwise returns None.
+    """
+
+    repo = get_github_repo()
+
+    file_path = "results/progress_log.csv"
+
+    branch = st.secrets["github"].get("branch", "main")
+
+    try:
+
+        file_content = repo.get_contents(file_path, ref=branch)
+
+        decoded = base64.b64decode(
+            file_content.content
+        ).decode("utf-8")
+
+        df = pd.read_csv(io.StringIO(decoded))
+
+        # Filter for this student and date
+        df_filtered = df[
+            (df["student_name"] == student_name)
+            &
+            (df["date"] == date_str)
+        ]
+
+        if df_filtered.empty:
+            return None
+
+        score = df_filtered["is_correct"].sum()
+        total = len(df_filtered)
+        accuracy = round(score / total * 100, 2)
+
+        submitted_at = df_filtered.iloc[0]["timestamp"]
+
+        return {
+            "score": score,
+            "total": total,
+            "accuracy": accuracy,
+            "submitted_at": submitted_at
+        }
+
+    except Exception:
+        return None

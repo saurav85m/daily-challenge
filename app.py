@@ -6,7 +6,7 @@ from utils.github_db import (
     append_result_to_github,
     append_results_to_github,
     fetch_daily_challenge,
-    has_student_submitted,
+    get_submission_details,
 )
 
 # 1. Page Configuration for Mobile-First experience
@@ -50,7 +50,7 @@ st.divider()
 # 3. Fetch Challenge from Google Drive
 with st.spinner("Fetching today's challenge..."):
     date_str = challenge_date.strftime("%Y-%m-%d")
-    already_submitted = has_student_submitted(
+    submission = get_submission_details(
         student_name,
         date_str
     )
@@ -71,13 +71,19 @@ st.success(f"Loaded challenge for **{challenge_data.get('date')}**!")
 
 # accuracy = score / total * 100
 
-if already_submitted:
+if submission:
 
-    st.success("✅ You have already completed today's challenge.")
+    st.success("✅ You have already completed today's challenge. Please choose another date or come back tomorrow.")
 
-    st.info(
-        "Please choose another date or come back tomorrow."
-    )
+    st.write(f"**Student :** {student_name}")
+    st.write(f"**Date :** {date_str}")
+    st.write(f"**Score :** {submission['score']} / {submission['total']}")
+    st.write(f"**Accuracy :** {submission['accuracy']}%")
+    st.write(f"**Submitted At :** {submission['submitted_at']}")
+
+    # st.info(
+    #     "Please choose another date or come back tomorrow."
+    # )
 
     st.stop()
 
