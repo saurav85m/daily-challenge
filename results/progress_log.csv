@@ -14,3 +14,18 @@ timestamp,student_name,date,question_id,question_type,selected_option,correct_an
 2026-07-25 23:58:10,Gagu,2026-07-22,13,output_prediction,3,4,False
 2026-07-25 23:58:10,Gagu,2026-07-22,14,output_prediction,8,8,True
 2026-07-25 23:58:10,Gagu,2026-07-22,15,output_prediction,0,0,True
+2026-07-26 12:44:57,Gagu,2026-07-26,1,mcq,Math.pow(),Math.cbrt(),False
+2026-07-26 12:44:57,Gagu,2026-07-26,2,output_prediction,-4.0,-5.0,False
+2026-07-26 12:44:57,Gagu,2026-07-26,3,error_finding,String cannot use charAt,"Index must be an integer, not a string",False
+2026-07-26 12:44:57,Gagu,2026-07-26,4,mcq,flip(),reverse(),False
+2026-07-26 12:44:57,Gagu,2026-07-26,5,mcq,false,false,True
+2026-07-26 12:44:57,Gagu,2026-07-26,6,mcq,Long.valueOf(),Both A and C,False
+2026-07-26 12:44:57,Gagu,2026-07-26,7,mcq,The value stored in the array,The number of elements the array can hold,False
+2026-07-26 12:44:57,Gagu,2026-07-26,8,output_prediction,Jova,Jovo,False
+2026-07-26 12:44:57,Gagu,2026-07-26,9,output_prediction,20,20,True
+2026-07-26 12:44:57,Gagu,2026-07-26,10,output_prediction,-1,3,False
+2026-07-26 12:44:57,Gagu,2026-07-26,11,output_prediction,false,true,False
+2026-07-26 12:44:57,Gagu,2026-07-26,12,error_finding,-15 is invalid,No error,False
+2026-07-26 12:44:57,Gagu,2026-07-26,13,error_finding,Size must use square brackets [],Size must use square brackets [],True
+2026-07-26 12:44:57,Gagu,2026-07-26,14,error_finding,trim cannot be used on strings,trim requires parentheses trim(),False
+2026-07-26 12:44:57,Gagu,2026-07-26,15,error_finding,StringBuffer does not have delete(),delete() requires two arguments,False
