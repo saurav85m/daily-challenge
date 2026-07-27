@@ -1,1 +1,16 @@
 timestamp,student_name,date,question_id,question_type,selected_option,correct_answer,is_correct
+2026-07-27 18:30:14,Gagu,2026-07-27,1,mcq,Math.max(),Math.max(),True
+2026-07-27 18:30:14,Gagu,2026-07-27,2,output_prediction,Error,true,False
+2026-07-27 18:30:14,Gagu,2026-07-27,3,error_finding,Missing comma between 'B' and 'C',Missing comma between 'B' and 'C',True
+2026-07-27 18:30:14,Gagu,2026-07-27,4,mcq,Strings cannot be concatenated,Strings are immutable,False
+2026-07-27 18:30:14,Gagu,2026-07-27,5,mcq,int,double,False
+2026-07-27 18:30:14,Gagu,2026-07-27,6,mcq,insert(),insert(),True
+2026-07-27 18:30:14,Gagu,2026-07-27,7,mcq,text.length(),text.length(),True
+2026-07-27 18:30:14,Gagu,2026-07-27,8,output_prediction,30Java,30Java,True
+2026-07-27 18:30:14,Gagu,2026-07-27,9,output_prediction,4,7,False
+2026-07-27 18:30:14,Gagu,2026-07-27,10,output_prediction,9.0,9,False
+2026-07-27 18:30:14,Gagu,2026-07-27,11,output_prediction,false,false,True
+2026-07-27 18:30:14,Gagu,2026-07-27,12,error_finding,No error,No error,True
+2026-07-27 18:30:14,Gagu,2026-07-27,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True
+2026-07-27 18:30:14,Gagu,2026-07-27,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False
+2026-07-27 18:30:14,Gagu,2026-07-27,15,error_finding,No error,integer should be Integer,False
