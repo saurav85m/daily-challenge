@@ -19,3 +19,18 @@ timestamp,student_name,date,question_id,question_type,selected_option,correct_an
 2026-07-28 08:46:25,Guest,2026-07-22,3,mcq,int,int,True
 2026-07-28 08:46:25,Guest,2026-07-22,4,mcq,add(),concat(),False
 2026-07-28 08:46:25,Guest,2026-07-22,5,mcq,97,65,False
+2026-07-28 23:56:02,Gagu,2026-07-28,1,mcq,String,String,True
+2026-07-28 23:56:02,Gagu,2026-07-28,2,output_prediction,av,av,True
+2026-07-28 23:56:02,Gagu,2026-07-28,3,error_finding,65.5 must be in quotes,No error,False
+2026-07-28 23:56:02,Gagu,2026-07-28,4,mcq,As rows and columns (Matrix),As rows and columns (Matrix),True
+2026-07-28 23:56:02,Gagu,2026-07-28,5,mcq,A positive value,A positive value,True
+2026-07-28 23:56:02,Gagu,2026-07-28,6,mcq,append(),append(),True
+2026-07-28 23:56:02,Gagu,2026-07-28,7,mcq,Unboxing,Unboxing,True
+2026-07-28 23:56:02,Gagu,2026-07-28,8,output_prediction,Error,5,False
+2026-07-28 23:56:02,Gagu,2026-07-28,9,output_prediction,Error,0,False
+2026-07-28 23:56:02,Gagu,2026-07-28,10,output_prediction,-1,-1,True
+2026-07-28 23:56:02,Gagu,2026-07-28,11,output_prediction,3,3,True
+2026-07-28 23:56:02,Gagu,2026-07-28,12,error_finding,Cannot assign a double to an int array,Cannot assign a double to an int array,True
+2026-07-28 23:56:02,Gagu,2026-07-28,13,error_finding,Cannot assign to String variable,No error,False
+2026-07-28 23:56:02,Gagu,2026-07-28,14,error_finding,Method must be camelCase: equalsIgnoreCase,Method must be camelCase: equalsIgnoreCase,True
+2026-07-28 23:56:02,Gagu,2026-07-28,15,error_finding,StringBuffer doesn't support setCharAt(),The first argument must be an integer index,False
