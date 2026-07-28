@@ -1,5 +1,8 @@
 from datetime import datetime
 import streamlit as st
+from datetime import datetime
+from zoneinfo import ZoneInfo
+from utils.common import get_india_timestamp
 #from utils.github_db import fetch_daily_challenge, append_result_to_drive
 # To this:
 from utils.github_db import (
@@ -130,8 +133,9 @@ if submitted:
     else:
         score = 0
         rows_to_save = []
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        
+        #timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = get_india_timestamp().strftime("%Y-%m-%d %H:%M:%S")
+
         with st.spinner("Saving your progress to Google Drive..."):
             for qid, val in user_answers.items():
                 is_correct = (val["selected"] == val["correct"])

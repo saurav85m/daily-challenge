@@ -14,8 +14,3 @@ timestamp,student_name,date,question_id,question_type,selected_option,correct_an
 2026-07-27 18:30:14,Gagu,2026-07-27,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True
 2026-07-27 18:30:14,Gagu,2026-07-27,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False
 2026-07-27 18:30:14,Gagu,2026-07-27,15,error_finding,No error,integer should be Integer,False
-2026-07-28 02:11:54,Gagu,2026-07-22,1,mcq,Unboxing,Autoboxing,False
-2026-07-28 02:11:54,Gagu,2026-07-22,2,mcq,Number of columns,Number of rows,False
-2026-07-28 02:11:54,Gagu,2026-07-22,3,mcq,int,int,True
-2026-07-28 02:11:54,Gagu,2026-07-22,4,mcq,add(),concat(),False
-2026-07-28 02:11:54,Gagu,2026-07-22,5,mcq,97,65,False
