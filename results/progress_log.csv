@@ -34,3 +34,18 @@ timestamp,student_name,date,question_id,question_type,selected_option,correct_an
 2026-07-29 07:44:29,Guest,2026-07-22,3,mcq,int,int,True,22.0,0 min 22 sec
 2026-07-29 07:44:29,Guest,2026-07-22,4,mcq,add(),concat(),False,22.0,0 min 22 sec
 2026-07-29 07:44:29,Guest,2026-07-22,5,mcq,97,65,False,22.0,0 min 22 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,1,mcq,Math.abs(),Math.abs(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,2,mcq,int,int,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,3,mcq,substring(),substring(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,4,mcq,false,false,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,5,mcq,int a[] = new int[5];,int a[] = new int[5];,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,6,error_finding,No error,No error,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,7,error_finding,charAt is not a String method,"charAt expects an integer, not a string",False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,8,error_finding,123 must not have quotes,parseint should be parseInt,False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,9,error_finding,length should be length(),length should be length(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,10,error_finding,String arrays are not allowed,Array size must be in square brackets [ ],False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,11,output_prediction,-3.0,-3.0,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,12,output_prediction,S,S,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,13,output_prediction,3,3,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,14,output_prediction,1,1,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,15,output_prediction,false,false,True,435.0,7 min 15 sec
