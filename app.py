@@ -92,6 +92,9 @@ if submission:
 
 # 4. Render Questions & Collect Answers
 questions = challenge_data.get("questions", [])
+# Start timer when quiz is first loaded
+if "challenge_start_time" not in st.session_state:
+    st.session_state.challenge_start_time = get_india_timestamp()
 
 with st.form("challenge_form"):
     user_answers = {}
@@ -134,7 +137,19 @@ if submitted:
         score = 0
         rows_to_save = []
         #timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        timestamp = get_india_timestamp().strftime("%Y-%m-%d %H:%M:%S")
+        #timestamp = get_india_timestamp().strftime("%Y-%m-%d %H:%M:%S")
+        end_time = get_india_timestamp()
+        start_time = st.session_state.challenge_start_time
+
+        duration = end_time - start_time
+        duration_seconds = int(duration.total_seconds())
+
+        minutes = duration_seconds // 60
+        seconds = duration_seconds % 60
+
+        duration_display = f"{minutes} min {seconds} sec"
+
+        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
 
         with st.spinner("Saving your progress to Google Drive..."):
             for qid, val in user_answers.items():
@@ -147,6 +162,8 @@ if submitted:
                     "timestamp": timestamp,
                     "student_name": student_name,
                     "date": date_str,
+                    "duration_seconds": duration_seconds,
+                    "duration_display": duration_display,
                     "question_id": qid,
                     "question_type": val["question_type"],
                     "selected_option": val["selected"],
@@ -163,6 +180,8 @@ if submitted:
 
         # Save all rows in ONE GitHub commit
         success = append_results_to_github(rows_to_save)
+        if success and "challenge_start_time" in st.session_state:
+            del st.session_state.challenge_start_time
 
         if success:
             st.success("✅ Results saved successfully.")
@@ -172,6 +191,7 @@ if submitted:
         # Display Results Dashboard
         st.balloons()
         st.success(f"🎉 Great job! You scored **{score} / {len(questions)}**!")
+        st.info(f"⏱ Time Taken: {duration_display}")
         
         st.markdown("### 📝 Review Explanations:")
         for qid, val in user_answers.items():
