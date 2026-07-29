@@ -1,31 +1,36 @@
-timestamp,student_name,date,question_id,question_type,selected_option,correct_answer,is_correct
-2026-07-27 18:30:14,Gagu,2026-07-27,1,mcq,Math.max(),Math.max(),True
-2026-07-27 18:30:14,Gagu,2026-07-27,2,output_prediction,Error,true,False
-2026-07-27 18:30:14,Gagu,2026-07-27,3,error_finding,Missing comma between 'B' and 'C',Missing comma between 'B' and 'C',True
-2026-07-27 18:30:14,Gagu,2026-07-27,4,mcq,Strings cannot be concatenated,Strings are immutable,False
-2026-07-27 18:30:14,Gagu,2026-07-27,5,mcq,int,double,False
-2026-07-27 18:30:14,Gagu,2026-07-27,6,mcq,insert(),insert(),True
-2026-07-27 18:30:14,Gagu,2026-07-27,7,mcq,text.length(),text.length(),True
-2026-07-27 18:30:14,Gagu,2026-07-27,8,output_prediction,30Java,30Java,True
-2026-07-27 18:30:14,Gagu,2026-07-27,9,output_prediction,4,7,False
-2026-07-27 18:30:14,Gagu,2026-07-27,10,output_prediction,9.0,9,False
-2026-07-27 18:30:14,Gagu,2026-07-27,11,output_prediction,false,false,True
-2026-07-27 18:30:14,Gagu,2026-07-27,12,error_finding,No error,No error,True
-2026-07-27 18:30:14,Gagu,2026-07-27,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True
-2026-07-27 18:30:14,Gagu,2026-07-27,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False
-2026-07-27 18:30:14,Gagu,2026-07-27,15,error_finding,No error,integer should be Integer,False
-2026-07-28 23:56:02,Gagu,2026-07-28,1,mcq,String,String,True
-2026-07-28 23:56:02,Gagu,2026-07-28,2,output_prediction,av,av,True
-2026-07-28 23:56:02,Gagu,2026-07-28,3,error_finding,65.5 must be in quotes,No error,False
-2026-07-28 23:56:02,Gagu,2026-07-28,4,mcq,As rows and columns (Matrix),As rows and columns (Matrix),True
-2026-07-28 23:56:02,Gagu,2026-07-28,5,mcq,A positive value,A positive value,True
-2026-07-28 23:56:02,Gagu,2026-07-28,6,mcq,append(),append(),True
-2026-07-28 23:56:02,Gagu,2026-07-28,7,mcq,Unboxing,Unboxing,True
-2026-07-28 23:56:02,Gagu,2026-07-28,8,output_prediction,Error,5,False
-2026-07-28 23:56:02,Gagu,2026-07-28,9,output_prediction,Error,0,False
-2026-07-28 23:56:02,Gagu,2026-07-28,10,output_prediction,-1,-1,True
-2026-07-28 23:56:02,Gagu,2026-07-28,11,output_prediction,3,3,True
-2026-07-28 23:56:02,Gagu,2026-07-28,12,error_finding,Cannot assign a double to an int array,Cannot assign a double to an int array,True
-2026-07-28 23:56:02,Gagu,2026-07-28,13,error_finding,Cannot assign to String variable,No error,False
-2026-07-28 23:56:02,Gagu,2026-07-28,14,error_finding,Method must be camelCase: equalsIgnoreCase,Method must be camelCase: equalsIgnoreCase,True
-2026-07-28 23:56:02,Gagu,2026-07-28,15,error_finding,StringBuffer doesn't support setCharAt(),The first argument must be an integer index,False
+timestamp,student_name,date,question_id,question_type,selected_option,correct_answer,is_correct,duration_seconds,duration_display
+2026-07-27 18:30:14,Gagu,2026-07-27,1,mcq,Math.max(),Math.max(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,2,output_prediction,Error,true,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,3,error_finding,Missing comma between 'B' and 'C',Missing comma between 'B' and 'C',True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,4,mcq,Strings cannot be concatenated,Strings are immutable,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,5,mcq,int,double,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,6,mcq,insert(),insert(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,7,mcq,text.length(),text.length(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,8,output_prediction,30Java,30Java,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,9,output_prediction,4,7,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,10,output_prediction,9.0,9,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,11,output_prediction,false,false,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,12,error_finding,No error,No error,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,15,error_finding,No error,integer should be Integer,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,1,mcq,String,String,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,2,output_prediction,av,av,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,3,error_finding,65.5 must be in quotes,No error,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,4,mcq,As rows and columns (Matrix),As rows and columns (Matrix),True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,5,mcq,A positive value,A positive value,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,6,mcq,append(),append(),True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,7,mcq,Unboxing,Unboxing,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,8,output_prediction,Error,5,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,9,output_prediction,Error,0,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,10,output_prediction,-1,-1,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,11,output_prediction,3,3,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,12,error_finding,Cannot assign a double to an int array,Cannot assign a double to an int array,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,13,error_finding,Cannot assign to String variable,No error,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,14,error_finding,Method must be camelCase: equalsIgnoreCase,Method must be camelCase: equalsIgnoreCase,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,15,error_finding,StringBuffer doesn't support setCharAt(),The first argument must be an integer index,False,,
+2026-07-29 07:44:29,Guest,2026-07-22,1,mcq,Unboxing,Autoboxing,False,22.0,0 min 22 sec
+2026-07-29 07:44:29,Guest,2026-07-22,2,mcq,Number of columns,Number of rows,False,22.0,0 min 22 sec
+2026-07-29 07:44:29,Guest,2026-07-22,3,mcq,int,int,True,22.0,0 min 22 sec
+2026-07-29 07:44:29,Guest,2026-07-22,4,mcq,add(),concat(),False,22.0,0 min 22 sec
+2026-07-29 07:44:29,Guest,2026-07-22,5,mcq,97,65,False,22.0,0 min 22 sec
