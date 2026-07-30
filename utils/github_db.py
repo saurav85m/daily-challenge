@@ -245,3 +245,36 @@ def get_submission_details(student_name, date_str):
 
     except Exception:
         return None
+
+def get_progress_log():
+    """
+    Reads progress_log.csv from GitHub
+    and returns it as a pandas DataFrame.
+    """
+
+    repo = get_github_repo()
+
+    file_path = "results/progress_log.csv"
+
+    branch = st.secrets["github"].get("branch", "main")
+
+    try:
+
+        file_content = repo.get_contents(
+            file_path,
+            ref=branch
+        )
+
+        decoded = base64.b64decode(
+            file_content.content
+        ).decode("utf-8")
+
+        df = pd.read_csv(
+            io.StringIO(decoded)
+        )
+
+        return df
+
+    except Exception:
+
+        return pd.DataFrame()
