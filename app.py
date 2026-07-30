@@ -35,6 +35,13 @@ st.markdown(
 )
 
 st.title("🎯 Gagu's Daily Challenge")
+
+st.page_link(
+    "pages/1_Dashboard.py",
+    label="📊 View Progress Dashboard",
+    icon="📈"
+)
+
 st.write("Sharpen your coding skills 15 minutes a day!")
 
 # 2. Student Identification & Date selection
@@ -59,6 +66,7 @@ with st.spinner("Fetching today's challenge..."):
     )
     #st.write(date_str) #Saurav
     challenge_data = fetch_daily_challenge(date_str)
+    topic = challenge_data.get("topic", "")
 
 if not challenge_data:
     st.warning(
@@ -162,6 +170,7 @@ if submitted:
                     "timestamp": timestamp,
                     "student_name": student_name,
                     "date": date_str,
+                    "topic": topic,
                     "duration_seconds": duration_seconds,
                     "duration_display": duration_display,
                     "question_id": qid,
