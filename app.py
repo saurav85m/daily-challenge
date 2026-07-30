@@ -36,7 +36,7 @@ st.markdown(
 
 st.title("🎯 Gagu's Daily Challenge")
 
-
+#temporary Commented Out
 # st.page_link(
 #     "pages/1_Dashboard.py",
 #     label="View Progress Dashboard",
