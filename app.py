@@ -37,11 +37,11 @@ st.markdown(
 st.title("🎯 Gagu's Daily Challenge")
 
 
-st.page_link(
-    "pages/1_Dashboard.py",
-    label="View Progress Dashboard",
-    icon="📊"
-)
+# st.page_link(
+#     "pages/1_Dashboard.py",
+#     label="View Progress Dashboard",
+#     icon="📊"
+# )
 
 st.write("Sharpen your coding skills 15 minutes a day!")
 
