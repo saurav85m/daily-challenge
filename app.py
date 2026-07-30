@@ -36,6 +36,7 @@ st.markdown(
 
 st.title("🎯 Gagu's Daily Challenge")
 
+
 st.page_link(
     "pages/1_Dashboard.py",
     label="View Progress Dashboard",
