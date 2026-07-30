@@ -1,46 +1,46 @@
-timestamp,student_name,date,question_id,question_type,selected_option,correct_answer,is_correct,duration_seconds,duration_display
-2026-07-27 18:30:14,Gagu,2026-07-27,1,mcq,Math.max(),Math.max(),True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,2,output_prediction,Error,true,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,3,error_finding,Missing comma between 'B' and 'C',Missing comma between 'B' and 'C',True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,4,mcq,Strings cannot be concatenated,Strings are immutable,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,5,mcq,int,double,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,6,mcq,insert(),insert(),True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,7,mcq,text.length(),text.length(),True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,8,output_prediction,30Java,30Java,True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,9,output_prediction,4,7,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,10,output_prediction,9.0,9,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,11,output_prediction,false,false,True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,12,error_finding,No error,No error,True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True,,
-2026-07-27 18:30:14,Gagu,2026-07-27,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False,,
-2026-07-27 18:30:14,Gagu,2026-07-27,15,error_finding,No error,integer should be Integer,False,,
-2026-07-28 23:56:02,Gagu,2026-07-28,1,mcq,String,String,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,2,output_prediction,av,av,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,3,error_finding,65.5 must be in quotes,No error,False,,
-2026-07-28 23:56:02,Gagu,2026-07-28,4,mcq,As rows and columns (Matrix),As rows and columns (Matrix),True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,5,mcq,A positive value,A positive value,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,6,mcq,append(),append(),True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,7,mcq,Unboxing,Unboxing,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,8,output_prediction,Error,5,False,,
-2026-07-28 23:56:02,Gagu,2026-07-28,9,output_prediction,Error,0,False,,
-2026-07-28 23:56:02,Gagu,2026-07-28,10,output_prediction,-1,-1,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,11,output_prediction,3,3,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,12,error_finding,Cannot assign a double to an int array,Cannot assign a double to an int array,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,13,error_finding,Cannot assign to String variable,No error,False,,
-2026-07-28 23:56:02,Gagu,2026-07-28,14,error_finding,Method must be camelCase: equalsIgnoreCase,Method must be camelCase: equalsIgnoreCase,True,,
-2026-07-28 23:56:02,Gagu,2026-07-28,15,error_finding,StringBuffer doesn't support setCharAt(),The first argument must be an integer index,False,,
-2026-07-29 23:54:09,Gagu,2026-07-29,1,mcq,Math.abs(),Math.abs(),True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,2,mcq,int,int,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,3,mcq,substring(),substring(),True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,4,mcq,false,false,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,5,mcq,int a[] = new int[5];,int a[] = new int[5];,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,6,error_finding,No error,No error,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,7,error_finding,charAt is not a String method,"charAt expects an integer, not a string",False,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,8,error_finding,123 must not have quotes,parseint should be parseInt,False,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,9,error_finding,length should be length(),length should be length(),True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,10,error_finding,String arrays are not allowed,Array size must be in square brackets [ ],False,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,11,output_prediction,-3.0,-3.0,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,12,output_prediction,S,S,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,13,output_prediction,3,3,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,14,output_prediction,1,1,True,435.0,7 min 15 sec
-2026-07-29 23:54:09,Gagu,2026-07-29,15,output_prediction,false,false,True,435.0,7 min 15 sec
+timestamp,student_name,date,topic,question_id,question_type,selected_option,correct_answer,is_correct,duration_seconds,duration_display
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,1,mcq,Math.max(),Math.max(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,2,output_prediction,Error,true,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,3,error_finding,Missing comma between 'B' and 'C',Missing comma between 'B' and 'C',True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,4,mcq,Strings cannot be concatenated,Strings are immutable,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,5,mcq,int,double,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,6,mcq,insert(),insert(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,7,mcq,text.length(),text.length(),True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,8,output_prediction,30Java,30Java,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,9,output_prediction,4,7,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,10,output_prediction,9.0,9,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,11,output_prediction,false,false,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,12,error_finding,No error,No error,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,13,error_finding,setLength() takes an integer argument,setLength() takes an integer argument,True,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,14,error_finding,indexOf doesn't take two Strings,The second argument must be an integer,False,,
+2026-07-27 18:30:14,Gagu,2026-07-27,Library Classes, Arrays, and String Handling,15,error_finding,No error,integer should be Integer,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,1,mcq,String,String,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,2,output_prediction,av,av,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,3,error_finding,65.5 must be in quotes,No error,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,4,mcq,As rows and columns (Matrix),As rows and columns (Matrix),True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,5,mcq,A positive value,A positive value,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,6,mcq,append(),append(),True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,7,mcq,Unboxing,Unboxing,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,8,output_prediction,Error,5,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,9,output_prediction,Error,0,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,10,output_prediction,-1,-1,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,11,output_prediction,3,3,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,12,error_finding,Cannot assign a double to an int array,Cannot assign a double to an int array,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,13,error_finding,Cannot assign to String variable,No error,False,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,14,error_finding,Method must be camelCase: equalsIgnoreCase,Method must be camelCase: equalsIgnoreCase,True,,
+2026-07-28 23:56:02,Gagu,2026-07-28,Library Classes, Arrays, and String Handling,15,error_finding,StringBuffer doesn't support setCharAt(),The first argument must be an integer index,False,,
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,1,mcq,Math.abs(),Math.abs(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,2,mcq,int,int,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,3,mcq,substring(),substring(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,4,mcq,false,false,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,5,mcq,int a[] = new int[5];,int a[] = new int[5];,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,6,error_finding,No error,No error,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,7,error_finding,charAt is not a String method,"charAt expects an integer, not a string",False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,8,error_finding,123 must not have quotes,parseint should be parseInt,False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,9,error_finding,length should be length(),length should be length(),True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,10,error_finding,String arrays are not allowed,Array size must be in square brackets [ ],False,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,11,output_prediction,-3.0,-3.0,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,12,output_prediction,S,S,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,13,output_prediction,3,3,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,14,output_prediction,1,1,True,435.0,7 min 15 sec
+2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes, Arrays, and String Handling,15,output_prediction,false,false,True,435.0,7 min 15 sec
