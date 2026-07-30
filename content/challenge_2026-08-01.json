@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-01",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the term used for the variables declared in the method header that receive values from the caller?",
+      "options": ["Actual Parameters", "Instance Variables", "Formal Parameters", "Static Variables"],
+      "answer": "Formal Parameters",
+      "explanation": "The parameters described in the method header which receive the values from its caller method are called 'Formal parameters'[cite: 15]."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which method is used to remove all the white/blank spaces from the beginning as well as the end of a String?",
+      "options": ["remove()", "trim()", "deleteSpace()", "substring()"],
+      "answer": "trim()",
+      "explanation": "The trim() function removes all the white/blank spaces from the beginning as well as the end of a string."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What property is used to find the total number of cells (elements) allocated in a single-dimensional array?",
+      "options": [".length()", ".size", ".length", ".count"],
+      "answer": ".length",
+      "explanation": "The built-in length property is used to calculate the length of an array[cite: 17]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What happens when you convert a primitive type directly into an object of its equivalent wrapper class?",
+      "options": ["Unboxing", "Aliasing", "Autoboxing", "Overloading"],
+      "answer": "Autoboxing",
+      "explanation": "The automatic conversion of a primitive data type into an object of its equivalent wrapper class is known as Autoboxing[cite: 16]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "A method that returns a value to its caller but does NOT change the state of an object is called a:",
+      "options": ["Impure Method", "Pure Method", "Static Method", "Constructor"],
+      "answer": "Pure Method",
+      "explanation": "A pure function when invoked does not cause any change in the state of an object. It is also called an accessor method[cite: 15]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the String compareTo() function?",
+      "options": ["String", "boolean", "int", "char"],
+      "answer": "int",
+      "explanation": "The compareTo() method returns an integer: a negative value, a positive value, or zero based on the ASCII difference."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "When an array or object is passed as an argument to a method, which mechanism does Java use?",
+      "options": ["Pass by Value", "Pass by Reference", "Pass by Return", "Pass by Name"],
+      "answer": "Pass by Reference",
+      "explanation": "When the actual parameters are objects or arrays, their references (addresses) are copied to the formal parameters in a process called Pass by Reference or Aliasing[cite: 15]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "In method overloading, the system finds the best match of arguments and parameters during program compilation. What is this phenomenon called?",
+      "options": ["Dynamic Binding", "Encapsulation", "Static Binding", "Recursion"],
+      "answer": "Static Binding",
+      "explanation": "The system finding the best match of function arguments and parameter list during compilation is termed as Early Binding or Static Binding[cite: 15]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the following array declaration:",
+      "code_snippet": "int[] a = new int(5);",
+      "options": [
+        "Array brackets should be on the right side of 'a'",
+        "The size should be inside square brackets [5]",
+        "Arrays do not use the 'new' keyword",
+        "No error"
+      ],
+      "answer": "The size should be inside square brackets [5]",
+      "explanation": "To create an array, the size must be defined within square brackets, e.g., new int[5][cite: 17]."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this method header:",
+      "code_snippet": "public void calculate(int a, b) { }",
+      "options": [
+        "Method cannot be public",
+        "void methods cannot take parameters",
+        "Data type is missing for parameter 'b'",
+        "No error"
+      ],
+      "answer": "Data type is missing for parameter 'b'",
+      "explanation": "In a parameter list, every variable must have its respective data type explicitly declared: (int a, int b)[cite: 15]."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the following code:",
+      "code_snippet": "String s = \"Java\";\nchar c = s.charAt[0];",
+      "options": [
+        "charAt expects a String",
+        "charAt is a method and requires round parentheses ()",
+        "String indexing starts at 1",
+        "No error"
+      ],
+      "answer": "charAt is a method and requires round parentheses ()",
+      "explanation": "Methods are invoked using parentheses. It must be written as s.charAt(0)."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this array code:",
+      "code_snippet": "int a[] = new int[3];\na[3] = 10;",
+      "options": [
+        "Array size is too small for 10",
+        "Cannot assign 10 to an int array",
+        "Index 3 is out of bounds",
+        "No error"
+      ],
+      "answer": "Index 3 is out of bounds",
+      "explanation": "An array of size 3 has valid subscripts 0, 1, and 2. Accessing a[3] will cause an error[cite: 17]."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this user-defined method:",
+      "code_snippet": "public void getResult() {\n    int sum = 50 + 50;\n    return sum;\n}",
+      "options": [
+        "void methods cannot return a value",
+        "sum must be a double",
+        "Addition is not allowed in methods",
+        "No error"
+      ],
+      "answer": "void methods cannot return a value",
+      "explanation": "The 'void' return type signifies a non-returnable function. It cannot return the variable 'sum'[cite: 15]."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this String code:",
+      "code_snippet": "String s = \"ICSE\";\nString result = s.concat('X');",
+      "options": [
+        "concat() is not a valid method",
+        "concat() requires a String argument, not a char",
+        "Result must be a boolean",
+        "No error"
+      ],
+      "answer": "concat() requires a String argument, not a char",
+      "explanation": "The concat() method is designed to add a String to the end of another String, so it requires double quotes like \"X\"."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library class error in this snippet:",
+      "code_snippet": "double n = double.parseDouble(\"12.5\");",
+      "options": [
+        "parseDouble returns an int",
+        "Wrapper class 'Double' must start with an uppercase 'D'",
+        "12.5 should not have quotes",
+        "No error"
+      ],
+      "answer": "Wrapper class 'Double' must start with an uppercase 'D'",
+      "explanation": "A wrapper class name always starts with an uppercase letter, so it must be Double.parseDouble[cite: 16]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the object creation error in this code:",
+      "code_snippet": "StringBuffer sb = \"Java\";",
+      "options": [
+        "StringBuffer is not a valid class",
+        "StringBuffer requires the 'new' keyword to create an object",
+        "Java must be in single quotes",
+        "No error"
+      ],
+      "answer": "StringBuffer requires the 'new' keyword to create an object",
+      "explanation": "Unlike String, StringBuffer does not support direct initialization without the 'new' keyword."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"COMPUTER\".substring(3, 7));",
+      "options": ["PUTE", "MPUT", "PUTER", "Error"],
+      "answer": "PUTE",
+      "explanation": "substring(m, n) returns characters from index m up to n-1. Index 3 is 'P', up to index 6 'E'. Result: PUTE."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the following StringBuffer operation:",
+      "code_snippet": "StringBuffer m = new StringBuffer(\"COMPUTER\");\nm.delete(3, 5);\nSystem.out.println(m);",
+      "options": ["COMTER", "COMPTER", "COMUTER", "Error"],
+      "answer": "COMTER",
+      "explanation": "m.delete(3, 5) deletes characters from index 3 up to index 4. It deletes 'P' and 'U', leaving COMTER."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this 2D Array code:",
+      "code_snippet": "int m[][] = {{1, 2, 3}, {5, 6, 7}};\nSystem.out.println(m[1][2]);",
+      "options": ["2", "6", "7", "3"],
+      "answer": "7",
+      "explanation": "m[1] targets the second row {5, 6, 7}. m[1][2] targets the third element of that row, which is 7[cite: 17]."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this array manipulation:",
+      "code_snippet": "int a[] = {2, 4, 6, 8};\na[1] = a[2] + a[3];\nSystem.out.println(a[1]);",
+      "options": ["10", "4", "14", "Error"],
+      "answer": "14",
+      "explanation": "a[2] is 6 and a[3] is 8. The sum 14 replaces the original value 4 at index 1[cite: 17]."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following pass-by-value method call:",
+      "code_snippet": "public void change(int x) {\n    x = x + 5;\n}\n// Inside main:\nint x = 10;\nob.change(x);\nSystem.out.println(x);",
+      "options": ["15", "10", "5", "Error"],
+      "answer": "10",
+      "explanation": "Primitive types are passed by value. The formal parameter changes to 15, but the actual parameter 'x' in main remains unchanged at 10[cite: 15]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following pass-by-reference method call:",
+      "code_snippet": "public void update(int arr[]) {\n    arr[0] = 99;\n}\n// Inside main:\nint x[] = {10, 20};\nob.update(x);\nSystem.out.println(x[0]);",
+      "options": ["10", "20", "99", "Error"],
+      "answer": "99",
+      "explanation": "Arrays are passed by reference (aliasing). Changing the array element inside the method permanently changes the actual array in main[cite: 15]."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed concept code:",
+      "code_snippet": "int arr[] = new int[5];\nString s = \"Java\";\nSystem.out.println(arr.length + s.length());",
+      "options": ["5", "4", "9", "Error"],
+      "answer": "9",
+      "explanation": "arr.length is 5. s.length() is 4. Mathematically adding them gives 9[cite: 17]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this array of Strings:",
+      "code_snippet": "String words[] = {\"Sun\", \"Moon\"};\nSystem.out.println(words[0].charAt(1));",
+      "options": ["u", "S", "M", "Error"],
+      "answer": "u",
+      "explanation": "words[0] accesses the string \"Sun\". Applying charAt(1) to \"Sun\" extracts the character 'u'[cite: 17]."
+    }
+  ]
+}
