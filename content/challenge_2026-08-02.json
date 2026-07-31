@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-02",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which access specifier makes a method accessible from anywhere, even outside its own class?",
+      "options": ["private", "protected", "public", "default"],
+      "answer": "public",
+      "explanation": "A public function can be accessed by any source, even from other class functions[cite: 15]."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the return type of the Math.cbrt() function?",
+      "options": ["int", "double", "float", "long"],
+      "answer": "double",
+      "explanation": "Most Math class methods, including cbrt() and sqrt(), return a double value by default."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which StringBuffer method is used to add a string at a specific index position?",
+      "options": ["append()", "add()", "insert()", "setCharAt()"],
+      "answer": "insert()",
+      "explanation": "The insert(int offset, String str) method places a string at the specified index[cite: 16]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does a return type of 'void' indicate in a method header?",
+      "options": ["The method returns 0", "The method returns null", "The method does not return any value", "The method is purely mathematical"],
+      "answer": "The method does not return any value",
+      "explanation": "A procedural function performs actions but does not return any output value, thus it is defined with the return type void[cite: 15]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the primary difference between equals() and equalsIgnoreCase()?",
+      "options": ["equals() compares lengths", "equalsIgnoreCase() ignores letter casing", "equals() returns an int", "There is no difference"],
+      "answer": "equalsIgnoreCase() ignores letter casing",
+      "explanation": "equalsIgnoreCase() compares strings while treating lowercase and uppercase letters as equal[cite: 16]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does Character.isWhitespace(' ') return?",
+      "options": ["true", "false", "0", "null"],
+      "answer": "true",
+      "explanation": "The isWhitespace() method returns true if the character is a space, tab, or newline[cite: 16]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What happens when an array is passed as an argument to a method?",
+      "options": ["It is passed by value", "A fresh copy is made", "It is passed by reference (aliasing)", "It causes an error"],
+      "answer": "It is passed by reference (aliasing)",
+      "explanation": "When actual parameters are arrays, their references are copied to formal parameters, meaning modifications affect the original array[cite: 15]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Which of the following does NOT constitute valid method overloading?",
+      "options": ["Changing the number of parameters", "Changing the data types of parameters", "Altering the order of parameters", "Changing only the return type"],
+      "answer": "Changing only the return type",
+      "explanation": "Function overloading has nothing to do with the return type; the parameter list must be fundamentally different[cite: 15]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the following code:",
+      "code_snippet": "String s = 'Hello';",
+      "options": [
+        "String must be lowercase",
+        "Hello must be enclosed in double quotes",
+        "Missing new keyword",
+        "No error"
+      ],
+      "answer": "Hello must be enclosed in double quotes",
+      "explanation": "In Java, String literals must be enclosed in double quotes, while chars use single quotes."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array initialization:",
+      "code_snippet": "int m[][] = new int[2, 2];",
+      "options": [
+        "int[][] is invalid",
+        "Array brackets should be empty",
+        "Separate square brackets [2][2] must be used",
+        "No error"
+      ],
+      "answer": "Separate square brackets [2][2] must be used",
+      "explanation": "Double dimensional arrays in Java require individual brackets for rows and columns[cite: 17]."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the method block:",
+      "code_snippet": "public void calculate(int a) {\n    return a;\n}",
+      "options": [
+        "Missing static keyword",
+        "void methods cannot return a value",
+        "Parameter must be double",
+        "No error"
+      ],
+      "answer": "void methods cannot return a value",
+      "explanation": "If a method is declared as void, it cannot use a return statement to pass back data[cite: 15]."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this math operation:",
+      "code_snippet": "int x = 10 / 0;",
+      "options": [
+        "Result must be stored in a double",
+        "Division by zero causes an ArithmeticException",
+        "x must be float",
+        "No error"
+      ],
+      "answer": "Division by zero causes an ArithmeticException",
+      "explanation": "Dividing an integer by 0 is mathematically undefined and throws a runtime exception in Java."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this array access:",
+      "code_snippet": "int a[] = {5, 10};\nSystem.out.println(a[2]);",
+      "options": [
+        "Array size is 3",
+        "a[2] will print 10",
+        "Index 2 is out of bounds",
+        "No error"
+      ],
+      "answer": "Index 2 is out of bounds",
+      "explanation": "The array has 2 elements, so valid indices are 0 and 1. Accessing index 2 throws an exception[cite: 17]."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this Library Class method:",
+      "code_snippet": "int ans = Math.max(5, 10, 15);",
+      "options": [
+        "Math.max returns a double",
+        "Math.max only accepts two arguments",
+        "Math should be lowercase",
+        "No error"
+      ],
+      "answer": "Math.max only accepts two arguments",
+      "explanation": "The Math.max() function takes exactly two numeric arguments to compare."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "double d = Double.valueof(\"1.5\");",
+      "options": [
+        "Double should be lowercase",
+        "Method should be camelCase: valueOf()",
+        "1.5 cannot have quotes",
+        "No error"
+      ],
+      "answer": "Method should be camelCase: valueOf()",
+      "explanation": "Java methods follow camelCase conventions, meaning it must be valueOf() with a capital 'O'[cite: 16]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "boolean b = Character.isletter('A');",
+      "options": [
+        "Method should be isLetter()",
+        "'A' must be in double quotes",
+        "boolean must be Boolean",
+        "No error"
+      ],
+      "answer": "Method should be isLetter()",
+      "explanation": "The Character wrapper class method is explicitly named isLetter() with an uppercase 'L'[cite: 16]."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"Computer\".replace('m', 'M').substring(1, 4));",
+      "options": ["oMp", "omp", "oMpU", "Error"],
+      "answer": "oMp",
+      "explanation": "The string becomes 'CoMputer'. substring(1, 4) extracts from index 1 ('o') up to index 3 ('p'), yielding 'oMp'."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the following StringBuffer operation:",
+      "code_snippet": "StringBuffer sb = new StringBuffer(\"Java\");\nsb.reverse();\nSystem.out.println(sb);",
+      "options": ["avaJ", "Jav", "ava", "Error"],
+      "answer": "avaJ",
+      "explanation": "The reverse() method in StringBuffer completely flips the sequence of characters in place[cite: 16]."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this array operation:",
+      "code_snippet": "int a[] = {1, 2, 3};\na[a[0]] = 5;\nSystem.out.println(a[1]);",
+      "options": ["1", "2", "5", "Error"],
+      "answer": "5",
+      "explanation": "a[0] is 1. The expression evaluates to a[1] = 5. So, printing a[1] outputs 5."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this 2D Array code:",
+      "code_snippet": "int m[][] = {{1, 2}, {3, 4}};\nSystem.out.println(m[0][1] + m[1][0]);",
+      "options": ["3", "4", "5", "Error"],
+      "answer": "5",
+      "explanation": "m[0][1] is 2. m[1][0] is 3. Their sum is 5[cite: 17]."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following pass-by-value method call:",
+      "code_snippet": "public void modify(int x) {\n    x = x * 2;\n}\n// Inside main:\nint x = 10;\nob.modify(x);\nSystem.out.println(x);",
+      "options": ["20", "10", "0", "Error"],
+      "answer": "10",
+      "explanation": "In Pass by Value, the actual parameter in main remains completely unchanged despite operations inside the method[cite: 15]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following method returning a value:",
+      "code_snippet": "public int square(int x) {\n    return x * x;\n}\n// Inside main:\nSystem.out.println(ob.square(3) + 1);",
+      "options": ["10", "9", "4", "Error"],
+      "answer": "10",
+      "explanation": "The square() method returns 9. The main method then mathematically adds 1 to print 10[cite: 15]."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed concept code:",
+      "code_snippet": "String s = \"10\";\nint x = Integer.parseInt(s);\nSystem.out.println(x + 5);",
+      "options": ["105", "15", "Error", "10 5"],
+      "answer": "15",
+      "explanation": "parseInt() successfully converts the String \"10\" into an integer, so the '+' acts as mathematical addition, yielding 15[cite: 16]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this typecasting snippet:",
+      "code_snippet": "char c = 'A';\nint x = c + 1;\nSystem.out.println((char)x);",
+      "options": ["A1", "B", "66", "Error"],
+      "answer": "B",
+      "explanation": "The ASCII value of 'A' is 65. 65 + 1 equals 66. Explicitly casting 66 back to a char yields 'B'[cite: 16]."
+    }
+  ]
+}

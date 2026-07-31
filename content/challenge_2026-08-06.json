@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-06",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which String method returns the position of the first occurrence of a specific character?",
+      "options": ["charAt()", "indexOf()", "position()", "find()"],
+      "answer": "indexOf()",
+      "explanation": "The indexOf() function returns the position of the first occurrence of the specified character in the string[cite: 14]."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "In a dimensional array, what is the integer enclosed within square brackets called?",
+      "options": ["Subscript", "Reference", "Variable", "Wrapper"],
+      "answer": "Subscript",
+      "explanation": "The cell number of the array used within the square bracket along with the array variable is said to be the subscript of the array[cite: 15]."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What does Character.isDigit('A') evaluate to?",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "false",
+      "explanation": "The character 'A' is a letter, not a digit. Thus, the Character.isDigit() function evaluates it to false[cite: 14]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the Math.random() function?",
+      "options": ["int", "boolean", "double", "float"],
+      "answer": "double",
+      "explanation": "Math.random() natively generates and returns pseudorandom numbers strictly as double values[cite: 14]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the primary difference between length and length() in Java?",
+      "options": ["They are identical", "length() is for arrays, length is for strings", "length is an array property, length() is a String method", "length is for primitives, length() is for objects"],
+      "answer": "length is an array property, length() is a String method",
+      "explanation": "The length property is used to find the number of elements of an array, whereas length() is a method used to find the number of characters in a string[cite: 15]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the definition of an Impure Method (Mutator)?",
+      "options": ["It changes the state of an object", "It cannot take parameters", "It never changes the state of an object", "It does not return any value"],
+      "answer": "It changes the state of an object",
+      "explanation": "An impure method, or mutator, changes the internal state of its arguments or the value of some external variables, taking place in call by reference[cite: 13]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "When passing an array to a method, what happens during 'Aliasing'?",
+      "options": ["The array is copied entirely", "A primitive value is created", "Actual and formal parameters represent the exact same memory locations", "The array is securely locked"],
+      "answer": "Actual and formal parameters represent the exact same memory locations",
+      "explanation": "In pass by reference, the references of the actual parameters are shared by formal parameters. This reference copying is termed as Aliasing[cite: 13]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Can function overloading be achieved exclusively by changing the return type of the methods?",
+      "options": ["Yes, unconditionally", "No, it cannot be done by changing the return type", "Only for String methods", "Only for void methods"],
+      "answer": "No, it cannot be done by changing the return type",
+      "explanation": "Function overloading has nothing to do with the return type defined in the method; the parameters must fundamentally differ[cite: 13]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array initialization:",
+      "code_snippet": "int m[5] = {1, 2, 3, 4, 5};",
+      "options": [
+        "Array brackets should be empty on the left",
+        "Variables must be doubles",
+        "Values cannot be assigned directly",
+        "No error"
+      ],
+      "answer": "Array brackets should be empty on the left",
+      "explanation": "When directly initializing an array with values, Java does not allow size inside the brackets. It should be int m[] = {1, 2, 3, 4, 5}[cite: 15]."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the variable declaration:",
+      "code_snippet": "string s = \"Neha\";",
+      "options": [
+        "Variables cannot be named s",
+        "string must be capitalized as String",
+        "Neha requires single quotes",
+        "No error"
+      ],
+      "answer": "string must be capitalized as String",
+      "explanation": "Because String is a built-in Java class, it strictly requires an uppercase 'S'[cite: 14]."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this character assignment:",
+      "code_snippet": "char c = \"A\";",
+      "options": [
+        "char should be Character",
+        "Character literals must use single quotes",
+        "A must be lowercase",
+        "No error"
+      ],
+      "answer": "Character literals must use single quotes",
+      "explanation": "The character data type holds a single character enclosed strictly within single quotes[cite: 14]."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this basic arithmetic statement:",
+      "code_snippet": "int x = 50 / 0;",
+      "options": [
+        "x must be double",
+        "Division by zero throws an ArithmeticException",
+        "50 is too large",
+        "No error"
+      ],
+      "answer": "Division by zero throws an ArithmeticException",
+      "explanation": "Attempting to mathematically divide an integer by zero is an illegal operation that crashes the program."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this method structure:",
+      "code_snippet": "void display() {\n    return 10;\n}",
+      "options": [
+        "Methods named display cannot return values",
+        "A method with a void return type cannot return a value",
+        "10 must be a float",
+        "No error"
+      ],
+      "answer": "A method with a void return type cannot return a value",
+      "explanation": "If a function does not return any value to the main function, the return type of the function header must be void[cite: 13]."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this array snippet:",
+      "code_snippet": "int a[] = new int[2];\na[2] = 10;",
+      "options": [
+        "Array size is missing",
+        "Index 2 is out of bounds for an array of size 2",
+        "Cannot pass 10",
+        "No error"
+      ],
+      "answer": "Index 2 is out of bounds for an array of size 2",
+      "explanation": "An array initialized with 2 cells only has subscripts 0 and 1. Accessing index 2 throws an exception[cite: 15]."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "int x = Integer.parseint(\"5\");",
+      "options": [
+        "Integer should be lowercase",
+        "Method should be camelCase: parseInt()",
+        "5 cannot have quotes",
+        "No error"
+      ],
+      "answer": "Method should be camelCase: parseInt()",
+      "explanation": "Java methods heavily enforce camelCase. It must be written as parseInt() with a capital 'I'[cite: 14]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the object creation error:",
+      "code_snippet": "StringBuffer sb = \"hello\";",
+      "options": [
+        "StringBuffer requires the 'new' keyword for instantiation",
+        "sb must be a String",
+        "hello needs single quotes",
+        "No error"
+      ],
+      "answer": "StringBuffer requires the 'new' keyword for instantiation",
+      "explanation": "Unlike standard Strings, StringBuffer objects mandate explicitly utilizing the 'new' operator to secure memory allocation[cite: 14]."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"Malayalam\".indexOf('a', 2));",
+      "options": ["1", "3", "5", "Error"],
+      "answer": "3",
+      "explanation": "The overloaded indexOf(char, fromIndex) searches for 'a' starting from index 2. The next 'a' is situated at index 3[cite: 14]."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of this chained string operation:",
+      "code_snippet": "System.out.println(\"Application\".replace('p', 'P').substring(1, 3));",
+      "options": ["Pp", "PP", "pl", "Error"],
+      "answer": "Pp",
+      "explanation": "The string transforms to \"APplication\". The substring command then strictly extracts from index 1 ('P') up to index 2 ('p'), rendering \"Pp\"[cite: 14]."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this array code:",
+      "code_snippet": "int a[] = {2, 4, 6};\nSystem.out.println(a[0] + a[a.length - 1]);",
+      "options": ["6", "8", "10", "Error"],
+      "answer": "8",
+      "explanation": "a.length is 3. The last element index is a[2], which holds 6. Adding a[0] (2) + a[2] (6) perfectly equates to 8[cite: 15]."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this Double Dimensional Array code:",
+      "code_snippet": "int a[][] = {{1, 2}, {3, 4}};\nSystem.out.println(a[1][0] * a[0][1]);",
+      "options": ["2", "3", "6", "Error"],
+      "answer": "6",
+      "explanation": "The element at a[1][0] is 3. The element at a[0][1] is 2. Multiplying them executes sequentially: 3 * 2 = 6[cite: 15]."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this pass-by-value simulation:",
+      "code_snippet": "public void add(int x) {\n    x += 5;\n}\n// Inside main:\nint x = 5;\nob.add(x);\nSystem.out.println(x);",
+      "options": ["10", "5", "0", "Error"],
+      "answer": "5",
+      "explanation": "In Pass by Value, the actual parameters are copied. The original variable in the caller method fundamentally remains completely unaffected[cite: 13]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this recursive function:",
+      "code_snippet": "int sum(int n) {\n    if (n == 0) return 0;\n    return n + sum(n - 1);\n}\n// Inside main:\nSystem.out.println(ob.sum(3));",
+      "options": ["6", "3", "0", "Error"],
+      "answer": "6",
+      "explanation": "A recursive function calls itself. It calculates: 3 + sum(2) -> 3 + 2 + sum(1) -> 3 + 2 + 1 + sum(0). Total = 6[cite: 13]."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed snippet:",
+      "code_snippet": "String s = \"15\";\nSystem.out.println(Integer.parseInt(s) % 4);",
+      "options": ["3", "1", "0", "Error"],
+      "answer": "3",
+      "explanation": "The parser explicitly shifts the string \"15\" into an arithmetic integer. The modulus operator (%) fetches the division remainder of 15 / 4, which is 3[cite: 14]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this type conversion and arithmetic code:",
+      "code_snippet": "char c = 'a';\nSystem.out.println(Character.toUpperCase(c) + 1);",
+      "options": ["A1", "B", "66", "Error"],
+      "answer": "66",
+      "explanation": "toUpperCase converts 'a' to 'A'. Since 'A' is used in mathematical addition, it natively degrades to its ASCII value (65). 65 + 1 results in 66[cite: 14]."
+    }
+  ]
+}

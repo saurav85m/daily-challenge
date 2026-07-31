@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-08",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which String method deletes whitespace from both endpoints of the text?",
+      "options": ["delete()", "clear()", "trim()", "clean()"],
+      "answer": "trim()",
+      "explanation": "The trim() function aggressively removes all white/blank spaces situated at the beginning as well as the end of a string[cite: 14]."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What operates as the system-enforced default value for all standalone boolean variables?",
+      "options": ["true", "null", "false", "0"],
+      "answer": "false",
+      "explanation": "In standard Java protocol, uninitialized boolean fields natively default to false."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which specific method generates a new string by extracting characters from an existing string?",
+      "options": ["slice()", "substring()", "extract()", "chop()"],
+      "answer": "substring()",
+      "explanation": "The substring() method returns the extracted sequence securely starting from the designated initial index[cite: 14]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which specific keyword commands dynamic memory allocation for newly instantiated arrays?",
+      "options": ["create", "alloc", "new", "array"],
+      "answer": "new",
+      "explanation": "The keyword 'new' natively commands the compiler to allocate dynamic block space specifically tailored for data storage operations[cite: 15]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Are Java Strings capable of being internally modified after creation?",
+      "options": ["Yes, unconditionally", "No, they are strictly immutable", "Yes, utilizing append()", "No, they are primitive"],
+      "answer": "No, they are strictly immutable",
+      "explanation": "In Java architecture, standard String objects firmly remain immutable, signaling that their internal state decisively cannot be modified posthumously."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the technical terminology for the data values actually transmitted to a method during invocation?",
+      "options": ["Formal parameters", "Static parameters", "Actual parameters", "Instance variables"],
+      "answer": "Actual parameters",
+      "explanation": "The raw values that are functionally dispatched to the method directly during its call operation are globally recognized as 'Actual parameters'[cite: 13]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Which of these accurately outlines a key feature of a Pure Function (Accessor)?",
+      "options": ["It modifies memory completely", "It completely alters its parameters", "It forcefully changes the state of an object", "It does not cause any internal change in the state of an object"],
+      "answer": "It does not cause any internal change in the state of an object",
+      "explanation": "A pure function, upon invocation, safely maintains data integrity by ensuring zero internal change registers in the foundational state of an object[cite: 13]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "During a Binary Search algorithm, what exact mathematical formula reliably determines the middle index marker?",
+      "options": ["(First - Last) / 2", "(First + Last) * 2", "(First + Last) / 2", "Last - First"],
+      "answer": "(First + Last) / 2",
+      "explanation": "The algorithmic process routinely demands calculating the central pivot precisely via (First + Last) / 2[cite: 15]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this method structure:",
+      "code_snippet": "Public void run() {}",
+      "options": [
+        "run must be capitalized",
+        "Public is invalid and must start completely lowercase",
+        "Void cannot be used with Public",
+        "No error"
+      ],
+      "answer": "Public is invalid and must start completely lowercase",
+      "explanation": "Java access specifier conventions strictly mandate entirely lowercase syntax structuring."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array instantiation:",
+      "code_snippet": "String arr[] = new String(5);",
+      "options": [
+        "String objects actively forbid array creation",
+        "Size designation necessitates strict square brackets [5]",
+        "5 must possess encapsulating quotes",
+        "No error"
+      ],
+      "answer": "Size designation necessitates strict square brackets [5]",
+      "explanation": "Dimensional sizing inside standard array declarations relies entirely on square bracket enclosures[cite: 15]."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this Boolean implementation:",
+      "code_snippet": "Boolean b = True;",
+      "options": [
+        "True explicitly necessitates lowercase formatting (true)",
+        "Boolean must be comprehensively lowercase",
+        "b must be an int",
+        "No error"
+      ],
+      "answer": "True explicitly necessitates lowercase formatting (true)",
+      "explanation": "Java strictly mandates universally lowercase formats for all primitive logical literals."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this sequence:",
+      "code_snippet": "int a[] = new int[3];\na[0]=1; a[1]=2; a[2]=3; a[3]=4;",
+      "options": [
+        "Indices must begin at 1",
+        "Index 3 significantly breaches the maximum threshold",
+        "Arrays cannot sequentially assign values",
+        "No error"
+      ],
+      "answer": "Index 3 significantly breaches the maximum threshold",
+      "explanation": "An array size parameter of 3 limits valid indices exclusively to 0, 1, and 2. Appending data to index 3 causes catastrophic bounds violations[cite: 15]."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this character declaration:",
+      "code_snippet": "char c = 'AB';",
+      "options": [
+        "char data type natively restricts payload size to a singular enclosed character",
+        "c must aggressively be String",
+        "AB demands double quotes",
+        "No error"
+      ],
+      "answer": "char data type natively restricts payload size to a singular enclosed character",
+      "explanation": "The foundational char type purely handles independent, isolated singular characters, not multi-character sequences[cite: 14]."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this method design:",
+      "code_snippet": "int sum() {\n    int s = 5;\n}",
+      "options": [
+        "s must comprehensively be double",
+        "Any method showcasing a solid return type fundamentally necessitates an active return statement",
+        "sum parameter list is entirely void",
+        "No error"
+      ],
+      "answer": "Any method showcasing a solid return type fundamentally necessitates an active return statement",
+      "explanation": "When an explicit return classification is listed, the compiler absolutely mandates a compatible return instruction[cite: 13]."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "String s = \"Hello\";\ns.reverse();",
+      "options": [
+        "Basic Strings inherently lack a native reverse() feature; it operates completely within StringBuffer confines",
+        "s must essentially be an array block",
+        "reverse demands argument parameters",
+        "No error"
+      ],
+      "answer": "Basic Strings inherently lack a native reverse() feature; it operates completely within StringBuffer confines",
+      "explanation": "Because traditional core Java strings are fully immutable, they do not inherently contain raw flipping tools analogous to reverse()[cite: 14]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "int x = math.max(4, 5);",
+      "options": [
+        "max rigidly requires an array parameter",
+        "Fundamental library classes akin to Math must aggressively commence with a capitalized 'M'",
+        "x requires Double configuration",
+        "No error"
+      ],
+      "answer": "Fundamental library classes akin to Math must aggressively commence with a capitalized 'M'",
+      "explanation": "Operating in complete accordance with generic Java OOP hierarchies, integrated library components universally demand capitalized initiating characters."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the exact output of this String boundary traversal:",
+      "code_snippet": "System.out.println(\"School\".substring(2, 5));",
+      "options": ["hoo", "cho", "ool", "Error"],
+      "answer": "hoo",
+      "explanation": "Extracts characters securely initiating from index 2 ('h') and stopping directly before reaching index 5 ('l')[cite: 14]."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of this dual string mechanism:",
+      "code_snippet": "System.out.println(\"Apple\".lastIndexOf('p'));",
+      "options": ["1", "2", "3", "Error"],
+      "answer": "2",
+      "explanation": "The distinct lastIndexOf() scan traces aggressively backward. The final existing 'p' internally sits cleanly at index 2."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the default output within this pristine array allocation:",
+      "code_snippet": "int a[] = new int[5];\nSystem.out.println(a[0]);",
+      "options": ["null", "0", "Garbage Value", "Error"],
+      "answer": "0",
+      "explanation": "Upon direct instantiation using new, standard integer arrays universally pre-fill all vacant internal memory spots with definitive zeroes."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the exact multiplicative output extracted from this matrix:",
+      "code_snippet": "int m[][] = {{1}, {2}, {3}};\nSystem.out.println(m[2][0] * 5);",
+      "options": ["5", "10", "15", "Error"],
+      "answer": "15",
+      "explanation": "m[2] confidently accesses the complete third nested row {3}. m[2][0] captures the single 3. Multiplying aggressively: 3 * 5 = 15[cite: 15]."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output showcasing standard pass-by-reference architecture:",
+      "code_snippet": "void f(int[] a) {\n    a[0] = 10;\n}\n// Inside main:\nint a[] = {1, 2};\nob.f(a);\nSystem.out.println(a[0]);",
+      "options": ["1", "10", "2", "Error"],
+      "answer": "10",
+      "explanation": "Because intrinsic array matrices are functionally handled purely via memory references (aliases), sub-method modifications instantly alter originating structures in main[cite: 13]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the exact sequence returned from this fractured traversal block:",
+      "code_snippet": "for(int i = 0; i < 5; i++) {\n    if (i == 3) break;\n    System.out.print(i);\n}",
+      "options": ["012", "0123", "123", "Error"],
+      "answer": "012",
+      "explanation": "Loop triggers prints actively for 0, 1, and 2. Once the iterator mathematically attains 3, the explicit break halts execution abruptly."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the Boolean output regarding this specific wrapper analysis:",
+      "code_snippet": "char c = 'A';\nSystem.out.println(Character.isLowerCase(c));",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "false",
+      "explanation": "The independent letter 'A' distinctly ranks as an uppercase element, reliably causing the lowercase-checking function to output false[cite: 14]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the final mathematical aggregation within this snippet:",
+      "code_snippet": "String s = \"100\";\nSystem.out.println(Integer.valueOf(s) + Math.sqrt(25));",
+      "options": ["1005", "105.0", "105", "Error"],
+      "answer": "105.0",
+      "explanation": "valueOf decodes securely into 100. Sqrt actively outputs the double 5.0. Mathematical combining effectively promotes the absolute result to the broader double (105.0)[cite: 14]."
+    }
+  ]
+}

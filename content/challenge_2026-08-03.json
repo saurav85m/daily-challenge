@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-03",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What will the function Math.ceil(2.1) return?",
+      "options": ["2.0", "3.0", "2", "3"],
+      "answer": "3.0",
+      "explanation": "Math.ceil() consistently rounds fractions upward to the nearest whole integer, returning it as a double."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which StringBuffer method is used to modify the character at a specified index?",
+      "options": ["modify()", "change()", "setCharAt()", "update()"],
+      "answer": "setCharAt()",
+      "explanation": "The setCharAt(int index, char ch) method explicitly changes a character at a specified index[cite: 16]."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is an instance variable in an Object-Oriented context?",
+      "options": ["A variable inside a loop", "A variable declared inside the class but outside any method", "A variable with 'static'", "A method parameter"],
+      "answer": "A variable declared inside the class but outside any method",
+      "explanation": "Variables declared inside the class structure but outside any specific function scope are called instance variables."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is another common name for an Impure Method?",
+      "options": ["Accessor", "Mutator", "Constructor", "Overloader"],
+      "answer": "Mutator",
+      "explanation": "Methods that modify or mutate the internal state of an object are commonly known as Mutators[cite: 15]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the specific return data type of Double.parseDouble()?",
+      "options": ["Double object", "float primitive", "double primitive", "String"],
+      "answer": "double primitive",
+      "explanation": "The parseDouble() method extracts and returns the raw primitive double value from a string[cite: 16]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "For a single-dimensional array of size N, what are the valid index bounds?",
+      "options": ["1 to N", "0 to N", "0 to N-1", "1 to N-1"],
+      "answer": "0 to N-1",
+      "explanation": "Array subscripts begin at 0 and stretch precisely up to the total length minus one[cite: 17]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Which specific range of numbers does Math.random() naturally generate?",
+      "options": ["Ints from 0 to 10", "Doubles from 0.0 to 1.0 (exclusive)", "Doubles from 1.0 to 10.0", "Ints from 1 to 100"],
+      "answer": "Doubles from 0.0 to 1.0 (exclusive)",
+      "explanation": "Math.random() generates pseudorandom double values strictly greater than or equal to 0.0 and less than 1.0."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "In Java, what exactly constitutes a method's 'signature'?",
+      "options": ["Return type and method name", "Method name and parameter list", "Access specifier and body", "Class name and return type"],
+      "answer": "Method name and parameter list",
+      "explanation": "A method signature is the unique identification consisting of the method's name alongside its sequence of parameters[cite: 15]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this method header:",
+      "code_snippet": "public Void display() {}",
+      "options": [
+        "Void must be entirely lowercase: void",
+        "Method must have parameters",
+        "public is invalid",
+        "No error"
+      ],
+      "answer": "Void must be entirely lowercase: void",
+      "explanation": "The return type 'void' is a reserved Java keyword and strictly requires all lowercase letters[cite: 15]."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the following code:",
+      "code_snippet": "char c = \"A\";",
+      "options": [
+        "char should be Character",
+        "Characters must be enclosed in single quotes ('A')",
+        "A is not a valid char",
+        "No error"
+      ],
+      "answer": "Characters must be enclosed in single quotes ('A')",
+      "explanation": "In Java, double quotes signify Strings, whereas single characters strictly utilize single quotes[cite: 16]."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array code:",
+      "code_snippet": "int a[] = new int[5];\nint len = a.length();",
+      "options": [
+        "length() is a method and should not be used for arrays",
+        "Array is missing size",
+        "len should be double",
+        "No error"
+      ],
+      "answer": "length() is a method and should not be used for arrays",
+      "explanation": "Arrays access their length natively via a property (a.length), unlike Strings which require the method length()[cite: 17]."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this string operation:",
+      "code_snippet": "String s = \"Hello\";\ns.replace('H', \"h\");",
+      "options": [
+        "replace is not a method",
+        "The second argument \"h\" is a String, but it should be a char 'h'",
+        "Hello must be single quotes",
+        "No error"
+      ],
+      "answer": "The second argument \"h\" is a String, but it should be a char 'h'",
+      "explanation": "The String replace() method requires both target arguments to be of the exact same type (e.g., char and char)."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this variable assignment:",
+      "code_snippet": "int maxVal = Math.max(5.5, 4.2);",
+      "options": [
+        "Math.max only takes ints",
+        "Math.max returns a double here, which cannot be assigned to an int",
+        "maxVal must be a String",
+        "No error"
+      ],
+      "answer": "Math.max returns a double here, which cannot be assigned to an int",
+      "explanation": "When comparing two doubles, Math.max natively outputs a double, necessitating a double variable or explicit casting."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this loop:",
+      "code_snippet": "for(int i=5; i<1; i++) {\n    System.out.println(i);\n}",
+      "options": [
+        "i must be declared outside",
+        "The loop condition i<1 is initially false, so the loop never executes",
+        "i++ is invalid",
+        "No error"
+      ],
+      "answer": "The loop condition i<1 is initially false, so the loop never executes",
+      "explanation": "Since 5 is not less than 1, the entry condition immediately fails, entirely bypassing the loop body."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "boolean b = character.isLetter('a');",
+      "options": [
+        "isLetter takes a String",
+        "character must begin with an uppercase 'C'",
+        "b must be an int",
+        "No error"
+      ],
+      "answer": "character must begin with an uppercase 'C'",
+      "explanation": "Wrapper class calls must explicitly begin with an uppercase letter to indicate static method invocation on the class[cite: 16]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the object creation error:",
+      "code_snippet": "StringBuffer sb = \"Test\";",
+      "options": [
+        "StringBuffer requires the 'new' keyword for instantiation",
+        "sb must be string",
+        "Test must use single quotes",
+        "No error"
+      ],
+      "answer": "StringBuffer requires the 'new' keyword for instantiation",
+      "explanation": "Unlike raw String literals, StringBuffer objects mandate explicitly utilizing the 'new' operator to secure memory allocation."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"Java\".startsWith(\"J\"));",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "true",
+      "explanation": "The startsWith() method checks if the string begins with the specified prefix, returning a simple boolean."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the following replacement:",
+      "code_snippet": "System.out.println(\"Hello\".replace('l', 'p'));",
+      "options": ["Heplo", "Heppo", "Hello", "Error"],
+      "answer": "Heppo",
+      "explanation": "The replace() function aggressively scans the whole string, swapping out every single occurrence of the target character[cite: 16]."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this array operation:",
+      "code_snippet": "int a[] = {1, 2, 3};\na[1] = a[0] * a[2];\nSystem.out.println(a[1]);",
+      "options": ["2", "3", "4", "Error"],
+      "answer": "3",
+      "explanation": "a[0] is 1, a[2] is 3. Their multiplication is 3, which actively overwrites the original element inside a[1][cite: 17]."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this 2D Array code:",
+      "code_snippet": "int a[][] = {{1, 2}, {3, 4}};\nSystem.out.println(a[0][1] * a[1][0]);",
+      "options": ["2", "3", "6", "Error"],
+      "answer": "6",
+      "explanation": "a[0][1] fetches the 2. a[1][0] fetches the 3. Multiplying them outputs precisely 6[cite: 17]."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following pass-by-value simulation:",
+      "code_snippet": "public void update(int x) {\n    x = 20;\n}\n// Inside main:\nint x = 10;\nob.update(x);\nSystem.out.println(x);",
+      "options": ["20", "10", "Error", "30"],
+      "answer": "10",
+      "explanation": "Because Java rigorously enforces Pass by Value for primitives, the actual parameter in main strictly maintains its original 10[cite: 15]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this iterative block:",
+      "code_snippet": "int x = 2;\nwhile (x <= 4) {\n    x++;\n}\nSystem.out.println(x);",
+      "options": ["4", "5", "3", "Error"],
+      "answer": "5",
+      "explanation": "The loop runs for x=2, 3, and 4. When x becomes 4, it increments to 5 inside the loop, the condition then visibly fails, leaving x as 5."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed concept code:",
+      "code_snippet": "String s = \"100\";\nSystem.out.println(Integer.parseInt(s) / 10);",
+      "options": ["100/10", "10", "Error", "10.0"],
+      "answer": "10",
+      "explanation": "The wrapper securely converts the text \"100\" into an arithmetic integer 100, which is then flawlessly divided by 10[cite: 16]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this array and string blend:",
+      "code_snippet": "int a[] = {5, 10};\nString s = \"A\";\nSystem.out.println(s + a[0]);",
+      "options": ["A5", "Error", "5A", "6"],
+      "answer": "A5",
+      "explanation": "Whenever a primitive interacts with a String using '+', it natively forces textual string concatenation."
+    }
+  ]
+}

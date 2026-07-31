@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-05",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which specific function definitively calculates the raw character count of a String?",
+      "options": ["count()", "size()", "length()", "capacity()"],
+      "answer": "length()",
+      "explanation": "Length stands as a native String method explicitly dedicated to extracting internal character volumes."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What serves as the absolute default nullification value for any unassigned object reference variable?",
+      "options": ["0", "false", "null", "Void"],
+      "answer": "null",
+      "explanation": "References inherently point toward an empty 'null' threshold prior to being manually tethered to actual objects."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What happens dynamically when Math.abs(-5) executes?",
+      "options": ["Returns -5", "Returns 5", "Returns 5.0", "Throws Exception"],
+      "answer": "Returns 5",
+      "explanation": "Absolute conversion decisively strips away the negative symbol while maintaining original int data framing."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What precise data type does string.endsWith() universally bounce back?",
+      "options": ["int", "boolean", "String", "char"],
+      "answer": "boolean",
+      "explanation": "The endsWith check solely formulates a true or false validation based on prefix/suffix matches[cite: 16]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Can a standard Java array securely hold a random mixture of int, double, and String variables inside?",
+      "options": ["Yes, unconditionally", "No, arrays rigidly permit only identical types", "Yes, utilizing Object wrapping", "No, they exclusively hold ints"],
+      "answer": "No, arrays rigidly permit only identical types",
+      "explanation": "Dimensional arrays are strictly rigid structures demanding uniform data consistencies across all occupied cells[cite: 17]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Does a pure method permanently modify actual parameters supplied by main?",
+      "options": ["Yes", "No", "Sometimes", "Only static ones"],
+      "answer": "No",
+      "explanation": "Pure methods deliberately lock parameters from modifications, acting purely as safe data-reading accessors[cite: 15]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Does method overloading success formally depend on switching up the return type?",
+      "options": ["Yes", "No", "Only for arrays", "Only for ints"],
+      "answer": "No",
+      "explanation": "Return types wield absolutely zero influence over successful overloading; parameter architecture dictates everything[cite: 15]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the technical description of Aliasing within Java method environments?",
+      "options": ["Overloading function names", "Sharing the exact same memory reference address", "Copying primitive integers", "Unboxing objects"],
+      "answer": "Sharing the exact same memory reference address",
+      "explanation": "Aliasing explicitly defines the scenario where dual parameter labels point cleanly at a singular data block[cite: 15]."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this Boolean implementation:",
+      "code_snippet": "Boolean b = True;",
+      "options": [
+        "True strictly necessitates lowercase formatting (true)",
+        "Boolean must be lowercase",
+        "b must be an int",
+        "No error"
+      ],
+      "answer": "True strictly necessitates lowercase formatting (true)",
+      "explanation": "Java strictly mandates lowercase letters for all primary primitive boolean literals."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this logic branch:",
+      "code_snippet": "int x = 5;\nif (x = 5) { }",
+      "options": [
+        "Condition demands ==, not standard assignment =",
+        "5 must be a String",
+        "if must be uppercase",
+        "No error"
+      ],
+      "answer": "Condition demands ==, not standard assignment =",
+      "explanation": "The single '=' aggressively triggers value assignments; logical checks uniformly require dual '=='."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this object blueprint:",
+      "code_snippet": "String s = new String('Hello');",
+      "options": [
+        "String objects actively reject single quotes, needing double quotes",
+        "new is unnecessary",
+        "String must be lowercase",
+        "No error"
+      ],
+      "answer": "String objects actively reject single quotes, needing double quotes",
+      "explanation": "Character sequences extending beyond singular characters universally depend upon double quote structures."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this basic arithmetic operation:",
+      "code_snippet": "int a = 10;\na = a / 0;",
+      "options": [
+        "a must be float",
+        "Dividing by zero forcefully generates a fatal exception",
+        "Cannot reassign a",
+        "No error"
+      ],
+      "answer": "Dividing by zero forcefully generates a fatal exception",
+      "explanation": "Division equations leveraging zeroes aggressively break basic runtime arithmetic limits."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this string extraction command:",
+      "code_snippet": "String s = \"ab\";\ns.substring(1, 5);",
+      "options": [
+        "substring demands an int array",
+        "Index 5 extensively breaches the brief 2-character limit",
+        "ab requires single quotes",
+        "No error"
+      ],
+      "answer": "Index 5 extensively breaches the brief 2-character limit",
+      "explanation": "Pushing substring requests far past the literal length threshold forces catastrophic bounds violations."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this method structure:",
+      "code_snippet": "int f() {\n    int a = 5;\n}",
+      "options": [
+        "Methods labeled with int explicitly mandate a return statement",
+        "a must be static",
+        "Missing public keyword",
+        "No error"
+      ],
+      "answer": "Methods labeled with int explicitly mandate a return statement",
+      "explanation": "When an exact return type is stated, failing to inject an active return statement instantly fractures compilation[cite: 15]."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "int l = String.valueOf(5).length;",
+      "options": [
+        "length fundamentally necessitates explicit parentheses as length()",
+        "String cannot take valueOf",
+        "5 must be double",
+        "No error"
+      ],
+      "answer": "length fundamentally necessitates explicit parentheses as length()",
+      "explanation": "Whenever interacting directly with String components, length fundamentally acts as a callable method."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "int x = Integer.parseInteger(\"1\");",
+      "options": [
+        "The targeted conversion technique is specifically labeled parseInt()",
+        "Integer must be lowercase",
+        "1 must lack quotes",
+        "No error"
+      ],
+      "answer": "The targeted conversion technique is specifically labeled parseInt()",
+      "explanation": "The library explicitly locks the string-to-int conversion command underneath the phrase parseInt."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"Hello\".concat(\"World\").substring(5));",
+      "options": ["HelloWorld", "World", "Hello", "Error"],
+      "answer": "World",
+      "explanation": "Concatenation fuses them into HelloWorld. Extracting precisely starting at index 5 cleanly shears off Hello, leaving World."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the following replacement:",
+      "code_snippet": "System.out.println(\"Java\".replace('a', '*'));",
+      "options": ["J*va", "Jav*", "J*v*", "Error"],
+      "answer": "J*v*",
+      "explanation": "The replace sweep strictly zeroes in on every 'a', methodically substituting them out for independent asterisks[cite: 16]."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this array operation:",
+      "code_snippet": "int a[] = {10, 20};\na[0] = a[1];\nSystem.out.println(a[0]);",
+      "options": ["10", "20", "30", "Error"],
+      "answer": "20",
+      "explanation": "The data sitting at index 1 is actively duplicated directly over the existing resident sitting at index 0."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this 2D Array code:",
+      "code_snippet": "int m[][] = {{1, 2}, {3, 4}};\nSystem.out.println(m[0][1] + m[1][1]);",
+      "options": ["3", "4", "6", "Error"],
+      "answer": "6",
+      "explanation": "m[0][1] unearths the 2. m[1][1] unearths the 4. The raw sum definitively tallies to 6."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following overloaded method call:",
+      "code_snippet": "void m(int x) { System.out.println(\"A\"); }\nvoid m(double x) { System.out.println(\"B\"); }\n// Inside main:\nob.m(2.5);",
+      "options": ["A", "B", "AB", "Error"],
+      "answer": "B",
+      "explanation": "Static binding intuitively pinpoints the double variant based strictly upon the decimal framing of the 2.5 argument[cite: 15]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this iterative block:",
+      "code_snippet": "for (int i = 1; i < 5; i *= 2) {\n    System.out.print(i);\n}",
+      "options": ["124", "12", "1", "Error"],
+      "answer": "124",
+      "explanation": "Starts printing 1. Multiplies by 2, printing 2. Multiplies by 2, printing 4. Next leap is 8, collapsing the < 5 boundary. (Output string is strictly 124, not 12. Corrected in explanation flow)."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed concept code:",
+      "code_snippet": "System.out.println(Math.max(5, Math.abs(-10)));",
+      "options": ["5", "-10", "10", "Error"],
+      "answer": "10",
+      "explanation": "Absolute forces -10 into a positive 10. The max function subsequently favors 10 heavily over 5."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this numeric textual blend:",
+      "code_snippet": "String s = \"12\";\nSystem.out.println(Integer.parseInt(s) * 2);",
+      "options": ["1212", "122", "24", "Error"],
+      "answer": "24",
+      "explanation": "Parsing forcibly strips away text casing, granting a raw 12 which easily submits to raw mathematical doubling[cite: 16]."
+    }
+  ]
+}
