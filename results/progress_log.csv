@@ -44,3 +44,18 @@ timestamp,student_name,date,topic,question_id,question_type,selected_option,corr
 2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes Arrays and String Handling,13,output_prediction,3,3,True,435.0,7 min 15 sec
 2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes Arrays and String Handling,14,output_prediction,1,1,True,435.0,7 min 15 sec
 2026-07-29 23:54:09,Gagu,2026-07-29,Library Classes Arrays and String Handling,15,output_prediction,false,false,True,435.0,7 min 15 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,1,mcq,Math.round(),Math.round(),True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,2,mcq,compareToIgnoreCase(),compareToIgnoreCase(),True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,3,mcq,Number of columns,Number of columns,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,4,mcq,ArrayIndexOutOfBoundsException,ArrayIndexOutOfBoundsException,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,5,mcq,String,String,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,6,error_finding,length should not have parentheses,length should not have parentheses,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,7,error_finding,"compareTo returns an int, not a boolean","compareTo returns an int, not a boolean",True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,8,error_finding,Character literals must use single quotes,Character literals must use single quotes,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,9,error_finding,concat() requires a String argument,concat() requires a String argument,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,10,error_finding,Java does not allow size inside brackets during array initialization,Java does not allow size inside brackets during array initialization,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,11,output_prediction,5,5,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,12,output_prediction,HeLLo,HeLLo,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,13,output_prediction,15,15,True,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,14,output_prediction,Sch,ool,False,212.0,3 min 32 sec
+2026-07-31 23:27:30,Gagu,2026-07-30,Library Classes Arrays and String Handling,15,output_prediction,true,false,False,212.0,3 min 32 sec
