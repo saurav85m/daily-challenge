@@ -3,6 +3,7 @@ import pandas as pd
 
 from utils.github_db import get_progress_log
 
+
 st.set_page_config(
     page_title="Student Progress Dashboard",
     page_icon="📊",
