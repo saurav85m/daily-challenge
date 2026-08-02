@@ -98,3 +98,27 @@ timestamp,student_name,date,topic,question_id,question_type,selected_option,corr
 2026-08-02 12:47:53,Gagu,2026-08-01,"Library Classes, Arrays, String Handling, and User-Defined Methods",22,output_prediction,99,99,True,588.0,9 min 48 sec
 2026-08-02 12:47:53,Gagu,2026-08-01,"Library Classes, Arrays, String Handling, and User-Defined Methods",23,output_prediction,9,9,True,588.0,9 min 48 sec
 2026-08-02 12:47:53,Gagu,2026-08-01,"Library Classes, Arrays, String Handling, and User-Defined Methods",24,output_prediction,Error,u,False,588.0,9 min 48 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",1,mcq,public,public,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",2,mcq,double,double,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",3,mcq,insert(),insert(),True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",4,mcq,The method does not return any value,The method does not return any value,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",5,mcq,equalsIgnoreCase() ignores letter casing,equalsIgnoreCase() ignores letter casing,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",6,mcq,true,true,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",7,mcq,It is passed by reference (aliasing),It is passed by reference (aliasing),True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",8,mcq,Changing only the return type,Changing only the return type,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",9,error_finding,Hello must be enclosed in double quotes,Hello must be enclosed in double quotes,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",10,error_finding,No error,Separate square brackets [2][2] must be used,False,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",11,error_finding,void methods cannot return a value,void methods cannot return a value,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",12,error_finding,Division by zero causes an ArithmeticException,Division by zero causes an ArithmeticException,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",13,error_finding,Index 2 is out of bounds,Index 2 is out of bounds,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",14,error_finding,Math.max only accepts two arguments,Math.max only accepts two arguments,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",15,error_finding,1.5 cannot have quotes,Method should be camelCase: valueOf(),False,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",16,error_finding,Method should be isLetter(),Method should be isLetter(),True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",17,output_prediction,oMp,oMp,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",18,output_prediction,avaJ,avaJ,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",19,output_prediction,5,5,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",20,output_prediction,5,5,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",21,output_prediction,10,10,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",22,output_prediction,9,10,False,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",23,output_prediction,15,15,True,421.0,7 min 1 sec
+2026-08-02 12:55:41,Gagu,2026-08-02,"Library Classes, Arrays, String Handling, and User-Defined Methods",24,output_prediction,B,B,True,421.0,7 min 1 sec
