@@ -146,3 +146,27 @@ timestamp,student_name,date,topic,question_id,question_type,selected_option,corr
 2026-08-23 23:48:03,Gagu,2026-08-23,"Library Classes, Arrays, String Handling, and User-Defined Methods",22,output_prediction,5,5,True,411.0,6 min 51 sec
 2026-08-23 23:48:03,Gagu,2026-08-23,"Library Classes, Arrays, String Handling, and User-Defined Methods",23,output_prediction,10,10,True,411.0,6 min 51 sec
 2026-08-23 23:48:03,Gagu,2026-08-23,"Library Classes, Arrays, String Handling, and User-Defined Methods",24,output_prediction,A5,A5,True,411.0,6 min 51 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",1,mcq,3.0,2.0,False,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",2,mcq,do-while,while,False,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",3,mcq,compareTo(),compareTo(),True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",4,mcq,5,5,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",5,mcq,'a','a',True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",6,mcq,setLength(0),setLength(0),True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",7,mcq,Method Overloading,Method Overloading,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",8,mcq,Float object,Float object,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",9,error_finding,"Float literals inherently require an 'f' suffix, e.g., 3.14f","Float literals inherently require an 'f' suffix, e.g., 3.14f",True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",10,error_finding,Public must begin strictly with a lowercase 'p',Public must begin strictly with a lowercase 'p',True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",11,error_finding,charAt demands round parentheses (),charAt demands round parentheses (),True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",12,error_finding,void implies non-returnable; it cannot throw back a 5,void implies non-returnable; it cannot throw back a 5,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",13,error_finding,"An array sized 2 holds indices 0 and 1, making index 2 Out Of Bounds","An array sized 2 holds indices 0 and 1, making index 2 Out Of Bounds",True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",14,error_finding,"Math.pow strictly returns a double, which refuses implicit assignment to an int","Math.pow strictly returns a double, which refuses implicit assignment to an int",True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",15,error_finding,Standard Strings lack a reverse() method; it belongs strictly to StringBuffer,Standard Strings lack a reverse() method; it belongs strictly to StringBuffer,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",16,error_finding,Library classes like Math must aggressively begin with a capital 'M',Library classes like Math must aggressively begin with a capital 'M',True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",17,output_prediction,Error,8,False,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",18,output_prediction,Sch,Sch,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",19,output_prediction,1,1,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",20,output_prediction,Error,2,False,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",21,output_prediction,10,10,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",22,output_prediction,02,02,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",23,output_prediction,Hiya,Hiya,True,226.0,3 min 46 sec
+2026-08-25 10:05:58,Gagu,2026-08-24,"Library Classes, Arrays, String Handling, and User-Defined Methods",24,output_prediction,true,true,True,226.0,3 min 46 sec
