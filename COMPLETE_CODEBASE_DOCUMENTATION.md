@@ -5,6 +5,37 @@
 
 ---
 
+## Standard ICSE Section A Category List
+1. Data Types & Variables
+2. Operators & Expressions
+3. Library Classes (Math / Character)
+4. String Handling
+5. Single & Double Dimensional Arrays
+6. Control Structures (Loops & Conditionals)
+7. User-Defined Methods & Constructors
+8. OOP Concepts & Access Modifiers
+
+## Sub_category Mapping for Section A
+#### For mcq (Questions 1 to 20):
+Theory & Concepts
+Operators & Precedence
+Library Methods (Math/Character)
+Data Types & Variables
+OOP Principles & Modifiers
+
+#### For error_finding:
+Syntax Error
+Logical Error
+OOP/Library Error
+
+#### For output_prediction:
+String Handling
+Array Tracing
+Loop & Iteration Tracing
+Mixed Expression Tracing
+
+---
+
 ## 📋 Table of Contents
 
 1. [Project Overview](#project-overview)

@@ -1,13 +1,19 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-27",
   "topic": "ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20)",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Control Structures (Loops & Conditionals)",
       "question": "Which of the following is an example of an entry-controlled loop?",
-      "options": ["do-while", "while", "goto", "switch"],
+      "options": [
+        "do-while",
+        "while",
+        "goto",
+        "switch"
+      ],
       "answer": "while",
       "explanation": "A 'while' loop tests its condition before executing the loop body, making it an entry-controlled loop."
     },
@@ -15,8 +21,14 @@
       "id": 2,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Library Methods (Math/Character)",
       "question": "What is the return type of the method Character.toUpperCase(char ch)?",
-      "options": ["int", "char", "String", "boolean"],
+      "options": [
+        "int",
+        "char",
+        "String",
+        "boolean"
+      ],
       "answer": "char",
       "explanation": "Character.toUpperCase() converts the input character and returns its uppercase char value."
     },
@@ -24,8 +36,14 @@
       "id": 3,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Data Types & Variables",
       "question": "Which keyword is used to allocate memory dynamically for objects and arrays?",
-      "options": ["malloc", "create", "new", "allocate"],
+      "options": [
+        "malloc",
+        "create",
+        "new",
+        "allocate"
+      ],
       "answer": "new",
       "explanation": "The 'new' operator dynamically allocates memory at runtime for objects and arrays in Java[cite: 2]."
     },
@@ -33,8 +51,14 @@
       "id": 4,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "Library Methods (Math/Character)",
       "question": "What does Math.cbrt(27.0) evaluate to?",
-      "options": ["3.0", "3", "9.0", "9"],
+      "options": [
+        "3.0",
+        "3",
+        "9.0",
+        "9"
+      ],
       "answer": "3.0",
       "explanation": "Math.cbrt() calculates the cube root of a number and returns a double value, so the cube root of 27.0 is 3.0."
     },
@@ -42,8 +66,14 @@
       "id": 5,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "OOP Principles & Modifiers",
       "question": "Which access specifier makes a member visible only within its own class?",
-      "options": ["public", "protected", "private", "default"],
+      "options": [
+        "public",
+        "protected",
+        "private",
+        "default"
+      ],
       "answer": "private",
       "explanation": "Members declared as 'private' are accessible strictly within the declaring class and hidden from all other classes."
     },
@@ -51,8 +81,14 @@
       "id": 6,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Data Types & Variables",
       "question": "What is the size of the 'char' primitive data type in Java?",
-      "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+      "options": [
+        "1 byte",
+        "2 bytes",
+        "4 bytes",
+        "8 bytes"
+      ],
       "answer": "2 bytes",
       "explanation": "Java uses the 16-bit Unicode character encoding system, making each primitive char occupy 2 bytes."
     },
@@ -60,8 +96,14 @@
       "id": 7,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "String Handling",
       "question": "What value is returned by the method call \"Java\".charAt(2)?",
-      "options": ["'J'", "'a'", "'v'", "Error"],
+      "options": [
+        "'J'",
+        "'a'",
+        "'v'",
+        "Error"
+      ],
       "answer": "'v'",
       "explanation": "With 0-based indexing: index 0 is 'J', index 1 is 'a', and index 2 is 'v'."
     },
@@ -69,8 +111,14 @@
       "id": 8,
       "type": "mcq",
       "difficulty": "Challenging",
+      "sub_category": "OOP Principles & Modifiers",
       "question": "Which package houses the Scanner class used for console input?",
-      "options": ["java.lang", "java.io", "java.util", "java.awt"],
+      "options": [
+        "java.lang",
+        "java.io",
+        "java.util",
+        "java.awt"
+      ],
       "answer": "java.util",
       "explanation": "The Scanner class belongs to the utility package 'java.util' and must be explicitly imported."
     },
@@ -78,8 +126,14 @@
       "id": 9,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Operators & Precedence",
       "question": "Which operator is used to test inequality between two primitive numerical values?",
-      "options": ["<>", "!==", "!=", "="],
+      "options": [
+        "<>",
+        "!==",
+        "!=",
+        "="
+      ],
       "answer": "!=",
       "explanation": "In Java, the relational operator '!=' tests whether two operand values are not equal."
     },
@@ -87,8 +141,14 @@
       "id": 10,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "User-Defined Methods & Constructors",
       "question": "What is a function called when it calls itself directly or indirectly?",
-      "options": ["Pure function", "Recursive function", "Overloaded function", "Static function"],
+      "options": [
+        "Pure function",
+        "Recursive function",
+        "Overloaded function",
+        "Static function"
+      ],
       "answer": "Recursive function",
       "explanation": "Recursion refers to the programming technique where a method invokes itself to solve subproblems."
     },
@@ -96,8 +156,14 @@
       "id": 11,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "User-Defined Methods & Constructors",
       "question": "What does a method declare in its signature if it does not return any data to the caller?",
-      "options": ["null", "empty", "void", "static"],
+      "options": [
+        "null",
+        "empty",
+        "void",
+        "static"
+      ],
       "answer": "void",
       "explanation": "The 'void' keyword indicates that the method executes actions without returning any resultant value[cite: 1]."
     },
@@ -105,8 +171,14 @@
       "id": 12,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "String Handling",
       "question": "Which method from the String class determines if a string starts with a specific prefix?",
-      "options": ["prefix()", "startsWith()", "beginsWith()", "contains()"],
+      "options": [
+        "prefix()",
+        "startsWith()",
+        "beginsWith()",
+        "contains()"
+      ],
       "answer": "startsWith()",
       "explanation": "The startsWith(String prefix) method tests whether the string begins with the specified character sequence."
     },
@@ -114,8 +186,14 @@
       "id": 13,
       "type": "mcq",
       "difficulty": "Challenging",
+      "sub_category": "Library Methods (Math/Character)",
       "question": "What will Math.round(-4.5) return?",
-      "options": ["-5", "-4", "-4.0", "-5.0"],
+      "options": [
+        "-5",
+        "-4",
+        "-4.0",
+        "-5.0"
+      ],
       "answer": "-4",
       "explanation": "Math.round(x) computes (long)Math.floor(x + 0.5f). For -4.5 + 0.5 = -4.0, the floor is -4."
     },
@@ -123,6 +201,7 @@
       "id": 14,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "OOP Principles & Modifiers",
       "question": "Which of these variables represents an instance variable?",
       "options": [
         "A variable defined inside a loop",
@@ -137,8 +216,14 @@
       "id": 15,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "String Handling",
       "question": "What is the return type of the method s.startsWith(\"ICSE\") on a String s?",
-      "options": ["char", "int", "boolean", "String"],
+      "options": [
+        "char",
+        "int",
+        "boolean",
+        "String"
+      ],
       "answer": "boolean",
       "explanation": "Prefix checks return true if the character sequence matches, and false otherwise."
     },
@@ -146,8 +231,14 @@
       "id": 16,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Control Structures (Loops & Conditionals)",
       "question": "Which keyword causes execution to immediately jump to the next iteration of a loop?",
-      "options": ["break", "continue", "skip", "return"],
+      "options": [
+        "break",
+        "continue",
+        "skip",
+        "return"
+      ],
       "answer": "continue",
       "explanation": "The 'continue' statement bypasses the remaining code inside the current loop body and proceeds with the next iteration."
     },
@@ -155,8 +246,14 @@
       "id": 17,
       "type": "mcq",
       "difficulty": "Challenging",
+      "sub_category": "Data Types & Variables",
       "question": "What is the value of (int)'a' - (int)'A' in Java?",
-      "options": ["0", "32", "-32", "26"],
+      "options": [
+        "0",
+        "32",
+        "-32",
+        "26"
+      ],
       "answer": "32",
       "explanation": "The ASCII code for 'a' is 97 and for 'A' is 65. The difference 97 - 65 evaluates to 32."
     },
@@ -164,8 +261,14 @@
       "id": 18,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "Single & Double Dimensional Arrays",
       "question": "Which technique searches an element in an unsorted array sequentially from start to finish?",
-      "options": ["Binary Search", "Linear Search", "Bubble Sort", "Selection Sort"],
+      "options": [
+        "Binary Search",
+        "Linear Search",
+        "Bubble Sort",
+        "Selection Sort"
+      ],
       "answer": "Linear Search",
       "explanation": "Linear search inspects every element in order and does not require elements to be pre-sorted."
     },
@@ -173,8 +276,14 @@
       "id": 19,
       "type": "mcq",
       "difficulty": "Easy",
+      "sub_category": "Theory & Concepts",
       "question": "Which component of the Java environment translates bytecode into native machine instructions?",
-      "options": ["JVM", "JDK", "Java Compiler (javac)", "Javadoc"],
+      "options": [
+        "JVM",
+        "JDK",
+        "Java Compiler (javac)",
+        "Javadoc"
+      ],
       "answer": "JVM",
       "explanation": "The Java Virtual Machine (JVM) interprets and executes compiled bytecode into machine instructions."
     },
@@ -182,8 +291,14 @@
       "id": 20,
       "type": "mcq",
       "difficulty": "Medium",
+      "sub_category": "Single & Double Dimensional Arrays",
       "question": "What is the index of the middle element of an array with 7 elements (indices 0 to 6)?",
-      "options": ["2", "3", "4", "3.5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "3.5"
+      ],
       "answer": "3",
       "explanation": "Using standard integer division (0 + 6) / 2 evaluates to index 3[cite: 2]."
     },
@@ -191,7 +306,7 @@
       "id": 21,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "Syntax",
+      "sub_category": "Syntax Error",
       "question": "Identify the syntax error in this character assignment:",
       "code_snippet": "char ch = '';",
       "options": [
@@ -207,7 +322,7 @@
       "id": 22,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "Syntax",
+      "sub_category": "Syntax Error",
       "question": "Identify the syntax error in this array size declaration:",
       "code_snippet": "int[] scores = new int[-5];",
       "options": [
@@ -223,7 +338,7 @@
       "id": 23,
       "type": "error_finding",
       "difficulty": "Medium",
-      "error_type": "Logical",
+      "sub_category": "Logical Error",
       "question": "Identify the logical flaw in this attempt to swap two variables:",
       "code_snippet": "int a = 5, b = 10;\na = b;\nb = a;",
       "options": [
@@ -239,7 +354,7 @@
       "id": 24,
       "type": "error_finding",
       "difficulty": "Medium",
-      "error_type": "OOP/Library",
+      "sub_category": "OOP/Library Error",
       "question": "Identify the error in this Character library method call:",
       "code_snippet": "char c = 'M';\nboolean flag = Character.isUpper(c);",
       "options": [
@@ -255,7 +370,7 @@
       "id": 25,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "Syntax",
+      "sub_category": "Syntax Error",
       "question": "Identify the syntax error in this for-loop header:",
       "code_snippet": "for (int i = 0, i < 10, i++) { }",
       "options": [
@@ -271,7 +386,7 @@
       "id": 26,
       "type": "error_finding",
       "difficulty": "Medium",
-      "error_type": "Logical",
+      "sub_category": "Logical Error",
       "question": "Identify the logical error in this string prefix extraction:",
       "code_snippet": "String s = \"COMPUTER\";\nString sub = s.substring(0, 0);",
       "options": [
@@ -287,7 +402,7 @@
       "id": 27,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "OOP/Library",
+      "sub_category": "OOP/Library Error",
       "question": "Identify the error in this Math method call:",
       "code_snippet": "double root = Math.sqroot(49.0);",
       "options": [
@@ -303,7 +418,7 @@
       "id": 28,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "Syntax",
+      "sub_category": "Syntax Error",
       "question": "Identify the syntax error in this class definition header:",
       "code_snippet": "public Class Student { }",
       "options": [
@@ -319,10 +434,15 @@
       "id": 29,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "String",
+      "sub_category": "String Handling",
       "question": "Predict the exact output of this character lookup snippet:",
       "code_snippet": "String text = \"MALAYALAM\";\nSystem.out.println(text.indexOf('A') + text.lastIndexOf('A'));",
-      "options": ["8", "7", "9", "Error"],
+      "options": [
+        "8",
+        "7",
+        "9",
+        "Error"
+      ],
       "answer": "8",
       "explanation": "First 'A' is at index 1. Last 'A' is at index 7. 1 + 7 evaluates to 8."
     },
@@ -330,10 +450,15 @@
       "id": 30,
       "type": "output_prediction",
       "difficulty": "Challenging",
-      "concept": "String",
+      "sub_category": "String Handling",
       "question": "Predict the output of the replace operation combined with length():",
       "code_snippet": "String str = \"BANANA\";\nSystem.out.println(str.replace(\"A\", \"\").length());",
-      "options": ["3", "6", "0", "Error"],
+      "options": [
+        "3",
+        "6",
+        "0",
+        "Error"
+      ],
       "answer": "3",
       "explanation": "Replacing all occurrences of \"A\" with empty strings leaves \"BNN\", which has a length of 3."
     },
@@ -341,10 +466,15 @@
       "id": 31,
       "type": "output_prediction",
       "difficulty": "Easy",
-      "concept": "Array",
+      "sub_category": "Array Tracing",
       "question": "Predict the output of this array index subtraction:",
       "code_snippet": "int[] val = {8, 12, 16, 20};\nSystem.out.println(val[val.length - 1] - val[0]);",
-      "options": ["12", "8", "4", "20"],
+      "options": [
+        "12",
+        "8",
+        "4",
+        "20"
+      ],
       "answer": "12",
       "explanation": "val.length is 4, so val[3] is 20. val[0] is 8. 20 - 8 evaluates to 12."
     },
@@ -352,10 +482,15 @@
       "id": 32,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "Array",
+      "sub_category": "Array Tracing",
       "question": "Predict the output after updating array elements in a loop:",
       "code_snippet": "int[] arr = {1, 2, 3, 4};\nfor (int i = 0; i < arr.length; i++) {\n    arr[i] = arr[i] * 2;\n}\nSystem.out.println(arr[2]);",
-      "options": ["6", "4", "8", "3"],
+      "options": [
+        "6",
+        "4",
+        "8",
+        "3"
+      ],
       "answer": "6",
       "explanation": "arr[2] originally contains 3. Multiplying by 2 updates arr[2] to 6."
     },
@@ -363,10 +498,15 @@
       "id": 33,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "Loop/Function",
+      "sub_category": "Loop & Iteration Tracing",
       "question": "Predict the printed output of this accumulator loop:",
       "code_snippet": "int sum = 0;\nfor (int k = 1; k <= 5; k += 2) {\n    sum += k;\n}\nSystem.out.println(sum);",
-      "options": ["9", "15", "6", "8"],
+      "options": [
+        "9",
+        "15",
+        "6",
+        "8"
+      ],
       "answer": "9",
       "explanation": "k iterates through values 1, 3, and 5. The total accumulated sum is 1 + 3 + 5 = 9."
     },
@@ -374,10 +514,15 @@
       "id": 34,
       "type": "output_prediction",
       "difficulty": "Challenging",
-      "concept": "Loop/Function",
+      "sub_category": "Loop & Iteration Tracing",
       "question": "Predict the final printed value of variable 'y':",
       "code_snippet": "int y = 8;\ny = y-- - --y;\nSystem.out.println(y);",
-      "options": ["2", "1", "0", "-1"],
+      "options": [
+        "2",
+        "1",
+        "0",
+        "-1"
+      ],
       "answer": "2",
       "explanation": "y-- uses 8 (and decrements y to 7). Then --y immediately decrements y from 7 to 6 and returns 6. Evaluating 8 - 6 assigns 2 to y."
     },
@@ -385,10 +530,15 @@
       "id": 35,
       "type": "output_prediction",
       "difficulty": "Easy",
-      "concept": "Mixed",
+      "sub_category": "Mixed Expression Tracing",
       "question": "Predict the output of character casting after addition:",
       "code_snippet": "char ch = 'X';\nSystem.out.println((char)(ch + 1));",
-      "options": ["Y", "89", "X1", "Error"],
+      "options": [
+        "Y",
+        "89",
+        "X1",
+        "Error"
+      ],
       "answer": "Y",
       "explanation": "The character succeeding 'X' in the Unicode/ASCII table is 'Y'."
     },
@@ -396,10 +546,15 @@
       "id": 36,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "Mixed",
+      "sub_category": "Mixed Expression Tracing",
       "question": "Predict the output of this combined Math functions expression:",
       "code_snippet": "System.out.println(Math.sqrt(Math.max(16, 25)));",
-      "options": ["5.0", "4.0", "5", "Error"],
+      "options": [
+        "5.0",
+        "4.0",
+        "5",
+        "Error"
+      ],
       "answer": "5.0",
       "explanation": "Math.max(16, 25) evaluates to 25. Math.sqrt(25) returns the double value 5.0."
     },
@@ -407,10 +562,15 @@
       "id": 37,
       "type": "output_prediction",
       "difficulty": "Challenging",
-      "concept": "Loop/Function",
+      "sub_category": "Loop & Iteration Tracing",
       "question": "Predict the exact printed sequence from this loop structure:",
       "code_snippet": "int n = 15;\nwhile (n > 5) {\n    n -= 4;\n    System.out.print(n + \" \");\n}",
-      "options": ["11 7 3 ", "15 11 7 ", "11 7 ", "11 7 3 -1 "],
+      "options": [
+        "11 7 3 ",
+        "15 11 7 ",
+        "11 7 ",
+        "11 7 3 -1 "
+      ],
       "answer": "11 7 3 ",
       "explanation": "1st pass: n becomes 11, prints \"11 \". 2nd pass: n becomes 7, prints \"7 \". 3rd pass: n becomes 3, prints \"3 \". Then 3 > 5 is false, terminating the loop."
     },
@@ -418,10 +578,15 @@
       "id": 38,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "String",
+      "sub_category": "String Handling",
       "question": "Predict the output of this String compareTo() call:",
       "code_snippet": "String a = \"bat\";\nString b = \"ball\";\nSystem.out.println(a.compareTo(b));",
-      "options": ["8", "-8", "1", "0"],
+      "options": [
+        "8",
+        "-8",
+        "1",
+        "0"
+      ],
       "answer": "8",
       "explanation": "Characters match at indices 0 ('b') and 1 ('a'). At index 2, 't' (ASCII 116) minus 'l' (ASCII 108) equals 8[cite: 1]."
     },
@@ -429,10 +594,15 @@
       "id": 39,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "Array",
+      "sub_category": "Array Tracing",
       "question": "Predict the output from this 2D Array diagonal sum:",
       "code_snippet": "int[][] mat = {{2, 4}, {6, 8}};\nSystem.out.println(mat[0][0] + mat[1][1]);",
-      "options": ["10", "12", "14", "8"],
+      "options": [
+        "10",
+        "12",
+        "14",
+        "8"
+      ],
       "answer": "10",
       "explanation": "mat[0][0] is 2 and mat[1][1] is 8. 2 + 8 evaluates to 10."
     },
@@ -440,10 +610,15 @@
       "id": 40,
       "type": "output_prediction",
       "difficulty": "Challenging",
-      "concept": "Mixed",
+      "sub_category": "Mixed Expression Tracing",
       "question": "Predict the output of parsing a number and performing mixed concatenation:",
       "code_snippet": "int val = Integer.parseInt(\"20\");\nSystem.out.println(val + 5 + \"26\");",
-      "options": ["2526", "20526", "51", "Error"],
+      "options": [
+        "2526",
+        "20526",
+        "51",
+        "Error"
+      ],
       "answer": "2526",
       "explanation": "val + 5 is evaluated as integer addition (20 + 5 = 25). Then adding \"26\" triggers string concatenation, producing \"2526\"[cite: 1]."
     }
