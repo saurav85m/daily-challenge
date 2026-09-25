@@ -1,0 +1,451 @@
+{
+  "date": "2026-09-30",
+  "topic": "ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20)",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of the following integer data types has the widest range in Java?",
+      "options": ["int", "short", "long", "byte"],
+      "answer": "long",
+      "explanation": "'long' occupies 8 bytes (64 bits), providing the largest range among Java's integer primitive types."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which Character class method checks if a passed character is neither a letter nor a digit?",
+      "options": ["Character.isSpecial()", "!Character.isLetterOrDigit()", "Character.isSymbol()", "Character.isWhitespace()"],
+      "answer": "!Character.isLetterOrDigit()",
+      "explanation": "Java does not provide an isSpecial() method; inverting Character.isLetterOrDigit() identifies special symbols and punctuation."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the return type of the method Math.cbrt()?",
+      "options": ["int", "float", "double", "long"],
+      "answer": "double",
+      "explanation": "Math.cbrt() computes the cube root of a number and returns the result as a double precision value."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the value of the expression Math.round(7.5f)?",
+      "options": ["7", "8", "8.0", "7.0"],
+      "answer": "8",
+      "explanation": "Math.round() with a float argument returns an int rounded to the nearest integer, rounding 7.5 up to 8."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which keyword is used to call a superclass constructor explicitly from a subclass constructor?",
+      "options": ["this()", "super()", "extends()", "parent()"],
+      "answer": "super()",
+      "explanation": "The 'super()' statement invokes the direct parent class constructor and must be the first statement in the subclass constructor."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the result of the expression 13 & 9 in Java bitwise operations?",
+      "options": ["9", "13", "4", "1"],
+      "answer": "9",
+      "explanation": "13 in binary is 1101 and 9 is 1001. Performing bitwise AND (1101 & 1001) produces 1001, which is 9."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does the method \"Computer\".indexOf('e', 3) return?",
+      "options": ["5", "6", "4", "-1"],
+      "answer": "5",
+      "explanation": "The method searches starting from index 3: 'p'(3), 'u'(4), 'e'(5). It finds 'e' at index 5."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What kind of copy is made when an array reference variable is assigned to another array variable (e.g., b = a)?",
+      "options": ["Deep copy", "Shallow copy (alias creation)", "Cloned copy", "Value duplicate"],
+      "answer": "Shallow copy (alias creation)",
+      "explanation": "Assigning array references duplicates only the memory pointer to the existing heap array, creating an alias without duplicating array elements[cite: 2]."
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of the following is an invalid identifier in Java?",
+      "options": ["$total", "_count", "2exam", "exam_2"],
+      "answer": "2exam",
+      "explanation": "Java identifiers cannot begin with a numeric digit."
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does the method \"Malayalam\".lastIndexOf('a') return?",
+      "options": ["1", "3", "5", "7"],
+      "answer": "7",
+      "explanation": "Indexing 'M'(0), 'a'(1), 'l'(2), 'a'(3), 'y'(4), 'a'(5), 'l'(6), 'a'(7), 'm'(8). The last occurrence of 'a' is at index 7."
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which memory area holds objects and arrays instantiated via the 'new' keyword?",
+      "options": ["Stack memory", "Heap memory", "Register", "Program Counter"],
+      "answer": "Heap memory",
+      "explanation": "In Java, all objects and arrays allocated dynamically at runtime reside in Heap memory."
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What will Math.floor(-2.1) return?",
+      "options": ["-2.0", "-3.0", "-2", "-3"],
+      "answer": "-3.0",
+      "explanation": "Math.floor() returns the largest double value less than or equal to the argument; -3.0 is less than -2.1."
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the ASCII value of character literal '0'?",
+      "options": ["0", "32", "48", "65"],
+      "answer": "48",
+      "explanation": "In the standard ASCII table, digit '0' is mapped to decimal code 48."
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which statement can be used inside a switch construct to handle cases not matched by any explicit case constant?",
+      "options": ["else", "default", "otherwise", "catch"],
+      "answer": "default",
+      "explanation": "The 'default' label inside a switch block executes when no explicit case constant matches the selector expression."
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the method Character.toLowerCase(char ch)?",
+      "options": ["char", "int", "String", "boolean"],
+      "answer": "char",
+      "explanation": "Character.toLowerCase() returns the lowercase character representation as a primitive char."
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the default value of an uninitialized element in a char array in Java?",
+      "options": ["' '", "'0'", "'\\u0000'", "null"],
+      "answer": "'\\u0000'",
+      "explanation": "Primitive char fields and array elements default to the null character literal '\\u0000' (ASCII 0)."
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What does the expression Math.ceil(-0.8) produce?",
+      "options": ["-1.0", "-0.0", "0.0", "-1"],
+      "answer": "-0.0",
+      "explanation": "Math.ceil(-0.8) yields mathematical zero preserved as negative floating point -0.0."
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which of the following describes the function of the 'trim()' method in the String class?",
+      "options": [
+        "Removes all spaces everywhere inside a string",
+        "Removes leading and trailing whitespace only",
+        "Deletes vowels from the string",
+        "Truncates a string to half its length"
+      ],
+      "answer": "Removes leading and trailing whitespace only",
+      "explanation": "The trim() method strips leading and trailing whitespace while leaving internal whitespace intact[cite: 2]."
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which operator has lower precedence than standard relational operators (<, >, <=, >=)?",
+      "options": ["+", "*", "==", "++"],
+      "answer": "==",
+      "explanation": "Equality operators (==, !=) have lower precedence than relational inequality operators (<, >, <=, >=)."
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What exception is generated when an attempt is made to invoke a method on an object reference holding null?",
+      "options": ["NullPointerException", "IllegalArgumentException", "ArithmeticException", "ArrayIndexOutOfBoundsException"],
+      "answer": "NullPointerException",
+      "explanation": "Attempting to dereference a null pointer by accessing instance members throws a java.lang.NullPointerException."
+    },
+    {
+      "id": 21,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this single-character assignment:",
+      "code_snippet": "char code = '99';",
+      "options": [
+        "char can store only a single character literal within single quotes",
+        "code is a reserved keyword",
+        "99 must be unquoted",
+        "No error"
+      ],
+      "answer": "char can store only a single character literal within single quotes",
+      "explanation": "A char literal must represent exactly one character; two digits ('99') make it invalid character syntax[cite: 2]."
+    },
+    {
+      "id": 22,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array size initialization:",
+      "code_snippet": "int[] marks = new int[];",
+      "options": [
+        "Array creation expression requires an explicit dimension size inside brackets",
+        "int[] marks is invalid syntax",
+        "new keyword is illegal here",
+        "No error"
+      ],
+      "answer": "Array creation expression requires an explicit dimension size inside brackets",
+      "explanation": "When allocating an array without an initializer list, the size must be declared in square brackets (e.g., new int[5])."
+    },
+    {
+      "id": 23,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical flaw in this loop intended to run 10 times:",
+      "code_snippet": "for (int i = 1; i <= 10; i = i * 2) {\n    System.out.println(i);\n}",
+      "options": [
+        "Geometric doubling (i = i * 2) runs only 4 times (1, 2, 4, 8) instead of 10 linear steps",
+        "i must commence at 0",
+        "i = i * 2 is invalid inside for headers",
+        "No error"
+      ],
+      "answer": "Geometric doubling (i = i * 2) runs only 4 times (1, 2, 4, 8) instead of 10 linear steps",
+      "explanation": "To iterate 10 consecutive times, the loop counter should increment linearly (i++) rather than doubling."
+    },
+    {
+      "id": 24,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "String name = \"Java\";\nint len = name.getSize();",
+      "options": [
+        "String uses length(), not getSize()",
+        "name must be instantiated with new",
+        "len must be of type long",
+        "No error"
+      ],
+      "answer": "String uses length(), not getSize()",
+      "explanation": "The standard method in java.lang.String to inspect total character count is length()[cite: 1]."
+    },
+    {
+      "id": 25,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this switch variable type:",
+      "code_snippet": "double val = 2.5;\nswitch(val) {\n    case 2.5: System.out.println(\"Match\"); break;\n}",
+      "options": [
+        "switch expressions cannot evaluate floating-point types (float or double)",
+        "case label cannot contain decimals",
+        "break is illegal here",
+        "No error"
+      ],
+      "answer": "switch expressions cannot evaluate floating-point types (float or double)",
+      "explanation": "In Java, switch statements do not support floating-point expressions (float or double)."
+    },
+    {
+      "id": 26,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this parity check:",
+      "code_snippet": "int num = 8;\nif (num % 2 != 0)\n    System.out.println(\"Even\");",
+      "options": [
+        "num % 2 != 0 detects odd numbers but prints 'Even'",
+        "num % 2 cannot be evaluated",
+        "!= is invalid syntax in if expressions",
+        "No error"
+      ],
+      "answer": "num % 2 != 0 detects odd numbers but prints 'Even'",
+      "explanation": "An integer is even if num % 2 == 0; checking != 0 tests for odd parity, inverting the message logic."
+    },
+    {
+      "id": 27,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the error in this Wrapper method call:",
+      "code_snippet": "boolean b = Boolean.parseboolean(\"true\");",
+      "options": [
+        "Method name must follow camelCase: parseBoolean()",
+        "true cannot be passed as a string",
+        "Boolean cannot parse strings",
+        "No error"
+      ],
+      "answer": "Method name must follow camelCase: parseBoolean()",
+      "explanation": "Java methods follow case-sensitive camelCase; the correct method is parseBoolean() with a capital 'B'."
+    },
+    {
+      "id": 28,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this interface declaration:",
+      "code_snippet": "public class interface Actionable { }",
+      "options": [
+        "Cannot use both 'class' and 'interface' keywords together in the declaration header",
+        "Actionable must begin with lowercase",
+        "public is illegal on interfaces",
+        "No error"
+      ],
+      "answer": "Cannot use both 'class' and 'interface' keywords together in the declaration header",
+      "explanation": "An interface header uses 'public interface Actionable', not 'public class interface'."
+    },
+    {
+      "id": 29,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this String uppercase and substring chaining:",
+      "code_snippet": "String s = \"Board-Exam\";\nSystem.out.println(s.toUpperCase().substring(6));",
+      "options": ["EXAM", "-EXAM", "Exam", "Error"],
+      "answer": "EXAM",
+      "explanation": "s.toUpperCase() produces \"BOARD-EXAM\". Substring from index 6 through the end extracts \"EXAM\"."
+    },
+    {
+      "id": 30,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of this compareTo() evaluation:",
+      "code_snippet": "String a = \"desk\";\nString b = \"dark\";\nSystem.out.println(a.compareTo(b));",
+      "options": ["4", "-4", "1", "0"],
+      "answer": "4",
+      "explanation": "Index 0 matches ('d'). At index 1, 'e' (ASCII 101) minus 'a' (ASCII 97) evaluates to 4[cite: 1]."
+    },
+    {
+      "id": 31,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Array",
+      "question": "Predict the output of reading this array element with arithmetic indexing:",
+      "code_snippet": "int[] val = {10, 20, 30, 40, 50};\nSystem.out.println(val[val.length - 2]);",
+      "options": ["40", "30", "50", "20"],
+      "answer": "40",
+      "explanation": "val.length is 5. 5 - 2 = 3. val[3] holds the value 40."
+    },
+    {
+      "id": 32,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output after sequential element modification:",
+      "code_snippet": "int[] a = {2, 5, 8};\na[a[0]] = a[1] * 2;\nSystem.out.println(a[2]);",
+      "options": ["10", "8", "16", "4"],
+      "answer": "10",
+      "explanation": "a[0] is 2, so the statement targets a[2]. a[1] is 5, so 5 * 2 = 10 is assigned to a[2]."
+    },
+    {
+      "id": 33,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the printed output of this accumulator loop with an update of i *= 2:",
+      "code_snippet": "int sum = 0;\nfor (int i = 1; i <= 8; i *= 2) {\n    sum += i;\n}\nSystem.out.println(sum);",
+      "options": ["15", "8", "7", "16"],
+      "answer": "15",
+      "explanation": "i takes values 1, 2, 4, and 8. The accumulated sum evaluates to 1 + 2 + 4 + 8 = 15."
+    },
+    {
+      "id": 34,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this compound unary evaluation:",
+      "code_snippet": "int x = 6;\nx = ++x + x++ + --x;\nSystem.out.println(x);",
+      "options": ["21", "20", "22", "19"],
+      "answer": "21",
+      "explanation": "++x increments x to 7 and returns 7. Then x++ evaluates to 7 (and increments x to 8). Next, --x decrements x back to 7 and returns 7. 7 + 7 + 7 = 21."
+    },
+    {
+      "id": 35,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Mixed",
+      "question": "Predict the output of character decrementing:",
+      "code_snippet": "char c = 'E';\nSystem.out.println((char)(c - 2));",
+      "options": ["C", "67", "E-2", "Error"],
+      "answer": "C",
+      "explanation": "The ASCII code for 'E' is 69. 69 - 2 = 67, which casts to character 'C'."
+    },
+    {
+      "id": 36,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of combining Math.pow and Math.min:",
+      "code_snippet": "System.out.println(Math.pow(Math.min(2, 5), 3));",
+      "options": ["8.0", "8", "125.0", "Error"],
+      "answer": "8.0",
+      "explanation": "Math.min(2, 5) evaluates to 2. Math.pow(2, 3) evaluates to double 8.0."
+    },
+    {
+      "id": 37,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this while loop with an embedded break:",
+      "code_snippet": "int k = 10;\nwhile (k > 0) {\n    if (k == 6) break;\n    k -= 2;\n}\nSystem.out.println(k);",
+      "options": ["6", "4", "0", "8"],
+      "answer": "6",
+      "explanation": "Pass 1: k becomes 8 (8 > 0). Pass 2: k becomes 6 (6 > 0). Pass 3: k == 6 triggers the break, leaving k = 6."
+    },
+    {
+      "id": 38,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this mixed String concatenation:",
+      "code_snippet": "System.out.println(\"Result: \" + 1 + 2 + 3);",
+      "options": ["Result: 123", "Result: 6", "Result: 15", "Error"],
+      "answer": "Result: 123",
+      "explanation": "Because the expression starts with \"Result: \", every subsequent '+' operates as string concatenation from left to right[cite: 1]."
+    },
+    {
+      "id": 39,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output from this 2D Array row-column lookup:",
+      "code_snippet": "int[][] grid = {{10, 20}, {30, 40}};\nSystem.out.println(grid[1][1] - grid[0][0]);",
+      "options": ["30", "20", "10", "40"],
+      "answer": "30",
+      "explanation": "grid[1][1] is 40. grid[0][0] is 10. 40 - 10 evaluates to 30."
+    },
+    {
+      "id": 40,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of Character casing and digit verification:",
+      "code_snippet": "char ch = 'Z';\nSystem.out.println(Character.isLetter(ch) && Character.isUpperCase(ch));",
+      "options": ["true", "false", "Z", "Error"],
+      "answer": "true",
+      "explanation": "'Z' is an alphabetic character and uppercase, satisfying both conditions to yield boolean true."
+    }
+  ]
+}

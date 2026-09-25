@@ -1,0 +1,451 @@
+{
+  "date": "2026-09-30",
+  "topic": "ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20)",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of the following is not a primitive data type in Java?",
+      "options": ["byte", "short", "String", "long"],
+      "answer": "String",
+      "explanation": "String is a standard class in java.lang, whereas byte, short, and long are primitive numerical types."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the result of 19 / 4 in Java arithmetic?",
+      "options": ["4.75", "4", "5", "4.0"],
+      "answer": "4",
+      "explanation": "Dividing two primitive integers results in integer truncation, discarding the decimal portion."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which method from the Character class tests if a character is in lowercase?",
+      "options": ["isLowerCase()", "toLowerCase()", "isLower()", "checkLower()"],
+      "answer": "isLowerCase()",
+      "explanation": "Character.isLowerCase(char ch) inspects whether the argument is a lowercase character and returns a boolean[cite: 2]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the method Math.sqrt()?",
+      "options": ["float", "int", "double", "long"],
+      "answer": "double",
+      "explanation": "The Math.sqrt() library method natively computes and returns its outcome as a double precision value[cite: 1]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which keyword is used by a class to implement an interface?",
+      "options": ["extends", "implements", "inherits", "import"],
+      "answer": "implements",
+      "explanation": "The 'implements' keyword binds an interface definition to a implementing Java class."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the default initial numerical value of uninitialized instance variables of type 'int'?",
+      "options": ["0", "null", "1", "Garbage value"],
+      "answer": "0",
+      "explanation": "Java automatically zeroes out uninitialized primitive numeric instance fields upon object instantiation."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is returned by \"Science\".substring(3)?",
+      "options": ["\"ence\"", "\"ience\"", "\"cie\"", "\"enc\""],
+      "answer": "\"ence\"",
+      "explanation": "substring(3) extracts from index 3 ('e') through the end of the string (\"ence\")[cite: 2]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Which of the following functions acts as an Impure Function (Mutator)?",
+      "options": [
+        "A function that only reads object state",
+        "A function that modifies the state of the invoking object or arguments",
+        "A function that returns a constant literal",
+        "A function with no return value and no side-effects"
+      ],
+      "answer": "A function that modifies the state of the invoking object or arguments",
+      "explanation": "An impure or mutator function alters the existing internal data attributes of an object or external state[cite: 2]."
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which operator performs bitwise exclusive OR (XOR) in Java?",
+      "options": ["&", "|", "^", "~"],
+      "answer": "^",
+      "explanation": "The caret symbol '^' acts as the bitwise XOR operator in Java."
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the method s.equals(other) for a String s?",
+      "options": ["int", "char", "boolean", "void"],
+      "answer": "boolean",
+      "explanation": "String equality comparisons return true when character sequences match identically, and false otherwise."
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which keyword explicitly terminates the execution of a method and passes a value back to the caller?",
+      "options": ["break", "return", "exit", "stop"],
+      "answer": "return",
+      "explanation": "The 'return' statement exits the enclosing method immediately, optionally delivering a calculated payload back[cite: 2]."
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What will Math.min(-15.5, -20.5) return?",
+      "options": ["-15.5", "-20.5", "-15", "-20"],
+      "answer": "-20.5",
+      "explanation": "Math.min() identifies the smaller operand value; -20.5 is numerically less than -15.5."
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the ASCII value of the space character (' ')?",
+      "options": ["0", "32", "48", "65"],
+      "answer": "32",
+      "explanation": "In standard ASCII and Unicode character mapping, the blank space (' ') evaluates to decimal integer 32."
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which error type occurs when an algorithm divides an integer by zero during program execution?",
+      "options": ["Syntax error", "Runtime error", "Compilation error", "Link error"],
+      "answer": "Runtime error",
+      "explanation": "Division by zero compiles cleanly but throws an unhandled ArithmeticException during program run[cite: 1]."
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which loop is optimal when the exact number of iterations is known before loop execution begins?",
+      "options": ["for loop", "while loop", "do-while loop", "infinite loop"],
+      "answer": "for loop",
+      "explanation": "The standard 'for' loop bundles initialization, condition, and step counting into a single compact header."
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the size of the primitive data type 'boolean' in Java according to specification concepts?",
+      "options": ["1 bit", "1 byte", "4 bytes", "Implementation dependent (representing 1 bit of information)"],
+      "answer": "Implementation dependent (representing 1 bit of information)",
+      "explanation": "A boolean represents one bit of information (true/false), though JVM internal memory allocation size varies by platform."
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the output of the expression Math.ceil(5.1)?",
+      "options": ["5.0", "6.0", "5", "6"],
+      "answer": "6.0",
+      "explanation": "Math.ceil() returns the smallest double greater than or equal to the argument (rounds up to 6.0)."
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What keyword declares that a method belongs to the class itself rather than individual instances?",
+      "options": ["static", "void", "final", "public"],
+      "answer": "static",
+      "explanation": "The 'static' keyword links methods and variables directly to class definitions instead of object instances."
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which method extracts the total number of characters in a String object?",
+      "options": ["length", "length()", "size()", "capacity()"],
+      "answer": "length()",
+      "explanation": "Strings are objects utilizing the member method length(), whereas arrays expose the length field property[cite: 1]."
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which searching technique requires dividing the search interval in half repeatedly until a match is found?",
+      "options": ["Linear Search", "Binary Search", "Selection Search", "Sequential Search"],
+      "answer": "Binary Search",
+      "explanation": "Binary search repeatedly inspects the middle index of a sorted array to divide the search range in half[cite: 1, 2]."
+    },
+    {
+      "id": 21,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array initialization statement:",
+      "code_snippet": "int[] list = new int[3]{10, 20, 30};",
+      "options": [
+        "Cannot specify explicit dimension size [3] when providing an array initializer block",
+        "Curly braces are illegal in array creation",
+        "int[] list is invalid syntax",
+        "No error"
+      ],
+      "answer": "Cannot specify explicit dimension size [3] when providing an array initializer block",
+      "explanation": "When an array initialization list is provided ({10, 20, 30}), dimension size brackets must remain empty: new int[]{...}."
+    },
+    {
+      "id": 22,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this Character class check:",
+      "code_snippet": "char c = 'A';\nif (Character.isletter(c)) { }",
+      "options": [
+        "Method name must follow strict camelCase: isLetter()",
+        "c must be converted to String first",
+        "Character cannot inspect 'A'",
+        "No error"
+      ],
+      "answer": "Method name must follow strict camelCase: isLetter()",
+      "explanation": "Java library methods are case-sensitive; the method is isLetter() with an uppercase 'L'[cite: 1]."
+    },
+    {
+      "id": 23,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this linear search boundary condition:",
+      "code_snippet": "int[] a = {4, 7, 2};\nfor (int i = 0; i <= a.length; i++) {\n    if (a[i] == 7) break;\n}",
+      "options": [
+        "i <= a.length leads to ArrayIndexOutOfBoundsException when the element is not found early",
+        "i should start at 1",
+        "break cannot be used in if blocks inside loops",
+        "No error"
+      ],
+      "answer": "i <= a.length leads to ArrayIndexOutOfBoundsException when the element is not found early",
+      "explanation": "Valid array indices cap at a.length - 1; iterating through <= a.length accesses an out-of-bounds index[cite: 1]."
+    },
+    {
+      "id": 24,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "OOP/Library",
+      "question": "Identify the error in this String extraction invocation:",
+      "code_snippet": "String word = \"EXAM\";\nchar ch = word.charAt(4);",
+      "options": [
+        "Index 4 triggers StringIndexOutOfBoundsException because indices are 0 to 3",
+        "charAt accepts a String argument",
+        "word must be instantiated with new",
+        "No error"
+      ],
+      "answer": "Index 4 triggers StringIndexOutOfBoundsException because indices are 0 to 3",
+      "explanation": "\"EXAM\" has length 4 with indices 0, 1, 2, and 3. Accessing index 4 causes an exception."
+    },
+    {
+      "id": 25,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this narrowing cast assignment:",
+      "code_snippet": "double val = 45.67;\nint n = val;",
+      "options": [
+        "Cannot implicitly assign a double to an int; explicit cast (int)val is required",
+        "val cannot hold floating point decimals",
+        "n must be double",
+        "No error"
+      ],
+      "answer": "Cannot implicitly assign a double to an int; explicit cast (int)val is required",
+      "explanation": "Demoting double to integer causes data loss; Java requires explicit casting: int n = (int)val[cite: 1]."
+    },
+    {
+      "id": 26,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical flaw in this loop designed to compute 5! (factorial):",
+      "code_snippet": "int fact = 0;\nfor (int i = 1; i <= 5; i++) {\n    fact = fact * i;\n}",
+      "options": [
+        "fact initialized to 0 forces all multiplications to evaluate to 0",
+        "Loop must decrement from 5",
+        "i <= 5 excludes 5",
+        "No error"
+      ],
+      "answer": "fact initialized to 0 forces all multiplications to evaluate to 0",
+      "explanation": "Multiplicative accumulators must be initialized to 1; multiplying with 0 keeps the result perpetually at 0."
+    },
+    {
+      "id": 27,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the error in this Double Wrapper conversion:",
+      "code_snippet": "double d = Double.parsedouble(\"78.5\");",
+      "options": [
+        "Method name must follow camelCase: parseDouble()",
+        "78.5 cannot be passed inside quotes",
+        "Double must be lowercase",
+        "No error"
+      ],
+      "answer": "Method name must follow camelCase: parseDouble()",
+      "explanation": "The static parsing method in the Double class is parseDouble() with a capitalized 'D'[cite: 1]."
+    },
+    {
+      "id": 28,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this do-while statement:",
+      "code_snippet": "int c = 1;\ndo {\n    c++;\n} while (c <= 5)",
+      "options": [
+        "Missing terminating semicolon (;) after the while condition",
+        "do-while requires initialization inside do",
+        "c++ cannot occur inside do",
+        "No error"
+      ],
+      "answer": "Missing terminating semicolon (;) after the while condition",
+      "explanation": "The exit-controlled do-while statement must conclude with a semicolon after the parenthesized condition."
+    },
+    {
+      "id": 29,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this String case conversion combined with trimming:",
+      "code_snippet": "String s = \"  Board Exam  \";\nSystem.out.println(s.trim().toLowerCase());",
+      "options": ["\"board exam\"", "\"  board exam  \"", "\"boardexam\"", "Error"],
+      "answer": "\"board exam\"",
+      "explanation": "trim() strips the surrounding whitespace, and toLowerCase() maps all letters to lowercase."
+    },
+    {
+      "id": 30,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the consecutive index extractions:",
+      "code_snippet": "String s = \"SUCCESS\";\nSystem.out.println(s.indexOf('C') + s.lastIndexOf('S'));",
+      "options": ["8", "7", "6", "Error"],
+      "answer": "8",
+      "explanation": "First 'C' occurs at index 2. The last 'S' occurs at index 6. 2 + 6 evaluates to 8."
+    },
+    {
+      "id": 31,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Array",
+      "question": "Predict the output of array access using an expression:",
+      "code_snippet": "int[] num = {10, 20, 30, 40};\nint k = 1;\nSystem.out.println(num[k + 2]);",
+      "options": ["40", "30", "20", "Error"],
+      "answer": "40",
+      "explanation": "k + 2 evaluates to 1 + 2 = 3. num[3] stores the value 40."
+    },
+    {
+      "id": 32,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of modifying array values sequentially:",
+      "code_snippet": "int[] a = {3, 6, 9};\na[0] = a[1] + a[2];\nSystem.out.println(a[0]);",
+      "options": ["15", "9", "6", "3"],
+      "answer": "15",
+      "explanation": "a[1] is 6 and a[2] is 9. 6 + 9 = 15, which is assigned into a[0]."
+    },
+    {
+      "id": 33,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this loop with a step increment of 3:",
+      "code_snippet": "int count = 0;\nfor (int i = 1; i <= 10; i += 3) {\n    count++;\n}\nSystem.out.println(count);",
+      "options": ["4", "3", "5", "10"],
+      "answer": "4",
+      "explanation": "i takes values 1, 4, 7, and 10 (4 iterations in total before i increments to 13 and terminates)."
+    },
+    {
+      "id": 34,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this compound post-increment expression:",
+      "code_snippet": "int m = 10;\nint res = m++ + ++m;\nSystem.out.println(res);",
+      "options": ["22", "21", "20", "23"],
+      "answer": "22",
+      "explanation": "m++ evaluates to 10 (and increments m to 11). Then ++m increments m to 12 and evaluates as 12. 10 + 12 = 22."
+    },
+    {
+      "id": 35,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Mixed",
+      "question": "Predict the output of this modulo and division combined expression:",
+      "code_snippet": "int a = 23;\nSystem.out.println((a % 5) * (a / 5));",
+      "options": ["12", "15", "18.4", "10"],
+      "answer": "12",
+      "explanation": "a % 5 is 3 (remainder of 23 / 5). a / 5 is 4 (integer division). 3 * 4 evaluates to 12."
+    },
+    {
+      "id": 36,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of Character casing test:",
+      "code_snippet": "char ch = 'k';\nSystem.out.println(Character.isUpperCase(ch));",
+      "options": ["false", "true", "k", "Error"],
+      "answer": "false",
+      "explanation": "'k' is a lowercase letter, so Character.isUpperCase('k') returns boolean false[cite: 2]."
+    },
+    {
+      "id": 37,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the printed output from this do-while loop block:",
+      "code_snippet": "int x = 1;\ndo {\n    x += 3;\n} while (x < 10);\nSystem.out.println(x);",
+      "options": ["10", "13", "7", "9"],
+      "answer": "10",
+      "explanation": "Pass 1: x becomes 4 (4 < 10 true). Pass 2: x becomes 7 (7 < 10 true). Pass 3: x becomes 10 (10 < 10 false, loop exits). Prints 10[cite: 1]."
+    },
+    {
+      "id": 38,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this string concatenation containing integer arithmetic:",
+      "code_snippet": "System.out.println(\"Score: \" + (50 + 50));",
+      "options": ["Score: 100", "Score: 5050", "Score: 50", "Error"],
+      "answer": "Score: 100",
+      "explanation": "Parentheses enforce evaluation of (50 + 50) first to 100 before concatenation with \"Score: \"[cite: 1]."
+    },
+    {
+      "id": 39,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of accessing elements from this rectangular array:",
+      "code_snippet": "int[][] table = {{1, 2, 3}, {4, 5, 6}};\nSystem.out.println(table[0][2] + table[1][0]);",
+      "options": ["7", "8", "6", "9"],
+      "answer": "7",
+      "explanation": "table[0][2] is 3. table[1][0] is 4. 3 + 4 evaluates to 7[cite: 1]."
+    },
+    {
+      "id": 40,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of combining Math.floor and Math.pow:",
+      "code_snippet": "System.out.println(Math.floor(7.9) + Math.pow(3, 2));",
+      "options": ["16.0", "16", "17.0", "15.0"],
+      "answer": "16.0",
+      "explanation": "Math.floor(7.9) returns 7.0. Math.pow(3, 2) returns 9.0. 7.0 + 9.0 evaluates to double 16.0[cite: 1]."
+    }
+  ]
+}

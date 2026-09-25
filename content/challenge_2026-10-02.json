@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-02",
+  "topic": "ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20)",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of the following represents an integral data type in Java?",
+      "options": ["short", "float", "double", "boolean"],
+      "answer": "short",
+      "explanation": "'short' is a 16-bit signed two's complement integer data type."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the return type of the method Character.isSpaceChar(' ')?",
+      "options": ["boolean", "char", "int", "void"],
+      "answer": "boolean",
+      "explanation": "Character identification methods starting with 'is' evaluate a condition and return a boolean."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which keyword is used to explicitly prevent inheritance of a class?",
+      "options": ["final", "abstract", "static", "private"],
+      "answer": "final",
+      "explanation": "A class declared with the 'final' keyword cannot be extended or subclassed."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is returned by Math.pow(4, 0.5)?",
+      "options": ["2.0", "2", "16.0", "16"],
+      "answer": "2.0",
+      "explanation": "Math.pow() computes exponents and always returns its result as a double; 4 raised to power 0.5 is 2.0."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which access specifier allows access only within the same package when no modifier is declared?",
+      "options": ["default (package-private)", "private", "protected", "public"],
+      "answer": "default (package-private)",
+      "explanation": "When no access modifier is specified, members possess default package-private visibility."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What does the expression 31 % 6 evaluate to?",
+      "options": ["1", "5", "5.16", "0"],
+      "answer": "1",
+      "explanation": "31 divided by 6 leaves a quotient of 5 and a remainder of 1."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is returned by \"TECHNOLOGY\".lastIndexOf('O')?",
+      "options": ["4", "7", "6", "5"],
+      "answer": "7",
+      "explanation": "Indexing 'T'(0), 'E'(1), 'C'(2), 'H'(3), 'N'(4), 'O'(5), 'L'(6), 'O'(7), 'G'(8), 'Y'(9). The final 'O' is at index 7."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What type of variable is created when declared inside a method block and destroyed upon method termination?",
+      "options": ["Local variable", "Instance variable", "Class variable", "Static variable"],
+      "answer": "Local variable",
+      "explanation": "Local variables exist within their enclosing method scope on the call stack and cease to exist once execution finishes."
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of the following is a valid character literal in Java?",
+      "options": ["'\\n'", "'AB'", "\"A\"", "''"],
+      "answer": "'\\n'",
+      "explanation": "'\\n' is a valid single escape sequence character literal enclosed in single quotes."
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does the method \"DISCOVERY\".substring(3, 7) produce?",
+      "options": ["\"COVE\"", "\"COVER\"", "\"SCOV\"", "\"OVER\""],
+      "answer": "\"COVE\"",
+      "explanation": "substring(3, 7) extracts characters from index 3 up to index 6 ('C', 'O', 'V', 'E')."
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which loop guarantees that its body will execute at least once?",
+      "options": ["do-while", "while", "for", "nested-for"],
+      "answer": "do-while",
+      "explanation": "A do-while loop evaluates its testing condition after executing the body, guaranteeing at least one run."
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What will Math.min(10.2, 10.02) evaluate to?",
+      "options": ["10.02", "10.2", "10.0", "10"],
+      "answer": "10.02",
+      "explanation": "Math.min() identifies the smaller number; 10.02 is algebraically smaller than 10.2."
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the ASCII value of uppercase letter 'B'?",
+      "options": ["66", "65", "98", "97"],
+      "answer": "66",
+      "explanation": "Since 'A' is 65, consecutive uppercase character 'B' has the ASCII value 66."
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which statement is used inside a loop to bypass remaining statements in the current cycle and proceed to the next iteration?",
+      "options": ["continue", "break", "skip", "pass"],
+      "answer": "continue",
+      "explanation": "The 'continue' statement skips the remaining body code and triggers the next loop step immediately."
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the method Character.isUpperCase(char ch)?",
+      "options": ["boolean", "char", "int", "String"],
+      "answer": "boolean",
+      "explanation": "Character.isUpperCase() checks if the given character is uppercase and returns boolean true or false."
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What is the default value of an uninitialized element in a long array?",
+      "options": ["0L", "0", "null", "Garbage value"],
+      "answer": "0L",
+      "explanation": "In Java, uninitialized elements in a primitive long array default to 0L."
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the output of the expression Math.ceil(-4.2)?",
+      "options": ["-4.0", "-5.0", "-4", "-5"],
+      "answer": "-4.0",
+      "explanation": "Math.ceil() returns the smallest double greater than or equal to the argument; -4.0 is greater than -4.2."
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which of the following creates a 1D integer array capable of holding 5 numbers?",
+      "options": ["int[] arr = new int[5];", "int arr = new int[5];", "int arr[] = int[5];", "int[5] arr = new int[];"],
+      "answer": "int[] arr = new int[5];",
+      "explanation": "Array allocation requires declaring type brackets with the 'new' keyword and dimension size."
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which operator is used for logical OR in boolean conditional statements?",
+      "options": ["||", "|", "OR", "++"],
+      "answer": "||",
+      "explanation": "'||' is the short-circuit logical OR operator used in conditional expressions."
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the return type of the method \"JAVA\".concat(\"2026\")?",
+      "options": ["String", "char[]", "void", "StringBuffer"],
+      "answer": "String",
+      "explanation": "The concat() method appends the parameter string to the invoking string and returns a new String."
+    },
+    {
+      "id": 21,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this constant variable definition:",
+      "code_snippet": "final int MAX;\nMAX = 100;\nMAX = 200;",
+      "options": [
+        "Cannot reassign a new value to an already initialized final variable",
+        "final variables cannot be ints",
+        "MAX must be in lowercase",
+        "No error"
+      ],
+      "answer": "Cannot reassign a new value to an already initialized final variable",
+      "explanation": "A 'final' variable can only be assigned once; subsequent assignments cause a compilation error."
+    },
+    {
+      "id": 22,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this single-character assignment:",
+      "code_snippet": "char sym = '\\';",
+      "options": [
+        "Unclosed character literal because a single backslash acts as an escape prefix; it must be written as '\\\\'",
+        "sym is a reserved keyword",
+        "char cannot store symbols",
+        "No error"
+      ],
+      "answer": "Unclosed character literal because a single backslash acts as an escape prefix; it must be written as '\\\\'",
+      "explanation": "A backslash initiates an escape sequence; to represent a literal backslash, write '\\\\'."
+    },
+    {
+      "id": 23,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical flaw in this loop designed to sum numbers from 1 to 5:",
+      "code_snippet": "int total = 0;\nfor (int i = 1; i <= 5; i++) {\n    total = i;\n}",
+      "options": [
+        "total = i overwrites the sum on each iteration instead of accumulating (total += i)",
+        "i must commence at 0",
+        "i <= 5 must be i < 5",
+        "No error"
+      ],
+      "answer": "total = i overwrites the sum on each iteration instead of accumulating (total += i)",
+      "explanation": "Using '=' repeatedly replaces total with the current i, leaving total equal to 5 instead of the sum 15."
+    },
+    {
+      "id": 24,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "String word = \"ICSE\";\nchar c = word.getChar(1);",
+      "options": [
+        "String uses charAt(index), not getChar(index)",
+        "word cannot be capitalized",
+        "c must be int",
+        "No error"
+      ],
+      "answer": "String uses charAt(index), not getChar(index)",
+      "explanation": "The standard method in java.lang.String to retrieve a character at an index is charAt()."
+    },
+    {
+      "id": 25,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this array initialization statement:",
+      "code_snippet": "int[] vals = new int[2];\nvals[2] = 50;",
+      "options": [
+        "vals[2] triggers ArrayIndexOutOfBoundsException because valid indices are 0 and 1",
+        "new int[2] is invalid",
+        "vals must be double",
+        "No error"
+      ],
+      "answer": "vals[2] triggers ArrayIndexOutOfBoundsException because valid indices are 0 and 1",
+      "explanation": "An array of size 2 allows indices 0 and 1; accessing index 2 causes an ArrayIndexOutOfBoundsException."
+    },
+    {
+      "id": 26,
+      "type": "error_finding",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this parity check:",
+      "code_snippet": "int n = 14;\nif (n % 2 == 1)\n    System.out.println(\"Even\");\nelse\n    System.out.println(\"Odd\");",
+      "options": [
+        "The condition n % 2 == 1 checks for odd numbers but prints 'Even'",
+        "n % 2 cannot evaluate 14",
+        "else cannot be used without braces",
+        "No error"
+      ],
+      "answer": "The condition n % 2 == 1 checks for odd numbers but prints 'Even'",
+      "explanation": "A remainder of 1 indicates an odd integer, so the output messages are logically inverted."
+    },
+    {
+      "id": 27,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "long val = Long.parselong(\"500\");",
+      "options": [
+        "Method name must follow camelCase: parseLong()",
+        "500 cannot be in quotes",
+        "Long must be long",
+        "No error"
+      ],
+      "answer": "Method name must follow camelCase: parseLong()",
+      "explanation": "Java is case-sensitive; the static method in class Long is parseLong() with an uppercase 'L'."
+    },
+    {
+      "id": 28,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this while loop:",
+      "code_snippet": "int k = 1;\nwhile k <= 5 {\n    k++;\n}",
+      "options": [
+        "The while condition must be enclosed in parentheses: while (k <= 5)",
+        "k cannot start at 1",
+        "k++ must be ++k",
+        "No error"
+      ],
+      "answer": "The while condition must be enclosed in parentheses: while (k <= 5)",
+      "explanation": "In Java, loop conditions for 'while' must be enclosed in parentheses."
+    },
+    {
+      "id": 29,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this String case conversion and replacement:",
+      "code_snippet": "String s = \"Java-2026\";\nSystem.out.println(s.toLowerCase().replace('-', '_'));",
+      "options": ["java_2026", "JAVA_2026", "java-2026", "Error"],
+      "answer": "java_2026",
+      "explanation": "s.toLowerCase() produces \"java-2026\". Replacing '-' with '_' produces \"java_2026\"."
+    },
+    {
+      "id": 30,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of this compareTo() evaluation:",
+      "code_snippet": "String s1 = \"coat\";\nString s2 = \"boat\";\nSystem.out.println(s1.compareTo(s2));",
+      "options": ["1", "-1", "0", "Error"],
+      "answer": "1",
+      "explanation": "At index 0, 'c' (ASCII 99) minus 'b' (ASCII 98) evaluates to 1."
+    },
+    {
+      "id": 31,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Array",
+      "question": "Predict the output of this array index division:",
+      "code_snippet": "int[] nums = {100, 200, 300, 400};\nSystem.out.println(nums[3] / nums[1]);",
+      "options": ["2", "4", "1", "0"],
+      "answer": "2",
+      "explanation": "nums[3] is 400 and nums[1] is 200. 400 / 200 evaluates to integer 2."
+    },
+    {
+      "id": 32,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output after sequential element modification:",
+      "code_snippet": "int[] a = {1, 3, 5};\na[a[0]] = a[2] - 1;\nSystem.out.println(a[1]);",
+      "options": ["4", "3", "5", "2"],
+      "answer": "4",
+      "explanation": "a[0] is 1, so the assignment targets a[1]. a[2] is 5, so 5 - 1 = 4 is stored in a[1]."
+    },
+    {
+      "id": 33,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this loop with a decrement step of 3:",
+      "code_snippet": "int count = 0;\nfor (int i = 10; i > 0; i -= 3) {\n    count++;\n}\nSystem.out.println(count);",
+      "options": ["4", "3", "5", "10"],
+      "answer": "4",
+      "explanation": "i assumes values 10, 7, 4, and 1 (4 total iterations before dropping to -2 and terminating)."
+    },
+    {
+      "id": 34,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the final printed value of variable 'z':",
+      "code_snippet": "int z = 4;\nz = z++ + ++z * 2;\nSystem.out.println(z);",
+      "options": ["16", "14", "18", "15"],
+      "answer": "16",
+      "explanation": "z++ evaluates to 4 (and increments z to 5). Then ++z increments z to 6 and returns 6. Multiplication has higher precedence: 6 * 2 = 12. Finally, 4 + 12 = 16."
+    },
+    {
+      "id": 35,
+      "type": "output_prediction",
+      "difficulty": "Easy",
+      "concept": "Mixed",
+      "question": "Predict the output of character arithmetic in Java:",
+      "code_snippet": "char c = 'P';\nSystem.out.println((char)(c + 4));",
+      "options": ["T", "84", "P4", "Error"],
+      "answer": "T",
+      "explanation": "'P' has ASCII value 80. 80 + 4 = 84, which casts to uppercase character 'T'."
+    },
+    {
+      "id": 36,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of the combined Math evaluation:",
+      "code_snippet": "System.out.println(Math.floor(Math.sqrt(30)));",
+      "options": ["5.0", "5", "6.0", "6"],
+      "answer": "5.0",
+      "explanation": "Math.sqrt(30) is approximately 5.477. Math.floor(5.477) rounds down to 5.0."
+    },
+    {
+      "id": 37,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this do-while loop with an increment step of 5:",
+      "code_snippet": "int v = 2;\ndo {\n    v += 5;\n} while (v < 12);\nSystem.out.println(v);",
+      "options": ["12", "17", "7", "2"],
+      "answer": "12",
+      "explanation": "Pass 1: v becomes 7 (7 < 12 is true). Pass 2: v becomes 12 (12 < 12 is false, loop terminates). Prints 12."
+    },
+    {
+      "id": 38,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this string concatenation containing integer subtraction:",
+      "code_snippet": "System.out.println(\"Output: \" + (20 - 5));",
+      "options": ["Output: 15", "Output: 20-5", "Output: 25", "Error"],
+      "answer": "Output: 15",
+      "explanation": "Parentheses enforce evaluation of (20 - 5) first, yielding 15 before concatenating with \"Output: \"."
+    },
+    {
+      "id": 39,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of accessing elements from this 2D Array:",
+      "code_snippet": "int[][] grid = {{3, 6, 9}, {12, 15, 18}};\nSystem.out.println(grid[1][2] - grid[0][1]);",
+      "options": ["12", "9", "6", "15"],
+      "answer": "12",
+      "explanation": "grid[1][2] is 18 and grid[0][1] is 6. 18 - 6 evaluates to 12."
+    },
+    {
+      "id": 40,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of combining Math.round and Math.abs:",
+      "code_snippet": "System.out.println(Math.round(Math.abs(-6.6)));",
+      "options": ["7", "7.0", "6", "6.0"],
+      "answer": "7",
+      "explanation": "Math.abs(-6.6) evaluates to 6.6. Math.round(6.6) rounds to nearest integer 7."
+    }
+  ]
+}

@@ -1,466 +1,446 @@
 {
-  "date": "2026-09-25",
-  "topic": "ICSE 10th Board Section A - General Pattern & MCQs (20 Marks)",
+  "date": "2026-09-28",
+  "topic": "ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20)",
   "questions": [
     {
       "id": 1,
       "type": "mcq",
       "difficulty": "Easy",
-      "question": "What type of data structures are Arrays and Classes considered?",
-      "options": ["Primitive data types", "Composite data types", "Boolean data types", "Void data types"],
-      "answer": "Composite data types",
-      "explanation": "A data type that represents a number of similar or different data under a single declaration is called a composite data type (or non-primitive type)[cite: 1]."
+      "question": "Which of the following is not a reserved keyword in Java?",
+      "options": ["class", "extends", "main", "static"],
+      "answer": "main",
+      "explanation": "'main' is an identifier representing the standard entry method name, not a reserved Java keyword."
     },
     {
       "id": 2,
       "type": "mcq",
       "difficulty": "Easy",
-      "question": "Which Wrapper Class corresponds to the primitive type 'char'?",
-      "options": ["Char", "String", "Character", "Characters"],
-      "answer": "Character",
-      "explanation": "The Java wrapper class explicitly designated for the primitive data type 'char' is 'Character'[cite: 1]."
+      "question": "What is the memory size allocated for the primitive data type 'double' in Java?",
+      "options": ["2 bytes", "4 bytes", "8 bytes", "16 bytes"],
+      "answer": "8 bytes",
+      "explanation": "In Java, a primitive 'double' is a 64-bit IEEE 754 floating-point type, taking 8 bytes."
     },
     {
       "id": 3,
       "type": "mcq",
       "difficulty": "Easy",
-      "question": "Which math function is utilized to compute exponents (base raised to a power)?",
-      "options": ["Math.cbrt()", "Math.sqrt()", "Math.pow()", "Math.exp()"],
-      "answer": "Math.pow()",
-      "explanation": "The Math.pow() function handles exponentiation, accurately taking two parameters: base and power[cite: 1]."
+      "question": "Which method from the Math class generates a pseudo-random double between 0.0 (inclusive) and 1.0 (exclusive)?",
+      "options": ["Math.random()", "Math.rand()", "Math.generate()", "Math.rnd()"],
+      "answer": "Math.random()",
+      "explanation": "Math.random() returns a positive double value greater than or equal to 0.0 and strictly less than 1.0."
     },
     {
       "id": 4,
       "type": "mcq",
       "difficulty": "Medium",
-      "question": "What is the technical description of 'Unboxing' in Java?",
-      "options": ["Converting an object to an array", "Converting wrapper class objects into primitive data types", "Deleting objects securely", "Typecasting a double to an int"],
-      "answer": "Converting wrapper class objects into primitive data types",
-      "explanation": "Unboxing is the system of converting an object of a wrapper class completely into primitive data type[cite: 1]."
+      "question": "What will be the return value of Math.abs(-12.4)?",
+      "options": ["-12.4", "12", "12.4", "-12"],
+      "answer": "12.4",
+      "explanation": "Math.abs() returns the absolute non-negative magnitude of the argument, preserving floating-point precision."
     },
     {
       "id": 5,
       "type": "mcq",
-      "difficulty": "Medium",
-      "question": "What is an absolute necessity before utilizing Binary Search on an array?",
-      "options": ["Array must be empty", "Array must contain strings", "Array must be sorted in an order", "Array must have even elements"],
-      "answer": "Array must be sorted in an order",
-      "explanation": "Binary search technique can be used exclusively when the array elements are completely sorted in an order[cite: 1]."
+      "difficulty": "Easy",
+      "question": "Which operator is known as the ternary operator?",
+      "options": ["&&", "? :", "instanceof", "=="],
+      "answer": "? :",
+      "explanation": "The conditional operator '? :' takes three operands (condition ? expr1 : expr2) and is known as the ternary operator."
     },
     {
       "id": 6,
       "type": "mcq",
       "difficulty": "Medium",
-      "question": "What happens if a method is strictly defined with a return type of 'void'?",
-      "options": ["It returns zero", "It returns null", "It performs actions but does not return any output value", "It returns an error"],
-      "answer": "It performs actions but does not return any output value",
-      "explanation": "A procedural function defined with the return type void fundamentally performs some actions but definitively does not return any output value[cite: 1]."
+      "question": "What will String s = \"KOLKATA\"; return for s.indexOf('A')?",
+      "options": ["4", "5", "6", "-1"],
+      "answer": "4",
+      "explanation": "indexOf('A') scans from left to right and returns the first occurrence index: 'K'(0), 'O'(1), 'L'(2), 'K'(3), 'A'(4)."
     },
     {
       "id": 7,
       "type": "mcq",
-      "difficulty": "Challenging",
-      "question": "What precisely does the compareTo() string method calculate to determine output?",
-      "options": ["Memory gap", "Difference in string lengths", "ASCII difference between characters", "Number of vowels"],
-      "answer": "ASCII difference between characters",
-      "explanation": "The compareTo() method calculates and returns an integer representing the exact ASCII difference between the two strings[cite: 1]."
+      "difficulty": "Medium",
+      "question": "What is the process of converting a primitive data type into its corresponding wrapper object called?",
+      "options": ["Autoboxing", "Unboxing", "Typecasting", "Serialization"],
+      "answer": "Autoboxing",
+      "explanation": "The automatic conversion of a primitive data type into an instance of its matching wrapper class is termed autoboxing."
     },
     {
       "id": 8,
       "type": "mcq",
       "difficulty": "Challenging",
-      "question": "Which of the following method signatures successfully overloads 'void obj(int a, double b)'?",
-      "options": ["int obj(int a, double b)", "void obj(double a, int b)", "void obj(int x, double y)", "void Obj(int a, double b)"],
-      "answer": "void obj(double a, int b)",
-      "explanation": "Function overloading can be effortlessly implemented by rearranging or altering the strict order of parameters within two identically named methods[cite: 1]."
+      "question": "Which of the following creates an object of class Student using its default constructor?",
+      "options": ["Student s = Student();", "Student s = new Student();", "new s = Student();", "Student s = alloc Student();"],
+      "answer": "Student s = new Student();",
+      "explanation": "Instantiation requires declaring the reference variable type, using the 'new' operator, and calling the constructor."
     },
     {
       "id": 9,
       "type": "mcq",
       "difficulty": "Easy",
-      "question": "Which String method deletes whitespace from both endpoints of the text?",
-      "options": ["delete()", "clear()", "trim()", "clean()"],
-      "answer": "trim()",
-      "explanation": "The trim() function aggressively removes all white/blank spaces situated at the beginning as well as the end of a string[cite: 2]."
+      "question": "Which escape sequence character produces a horizontal tab space?",
+      "options": ["\\n", "\\b", "\\t", "\\r"],
+      "answer": "\\t",
+      "explanation": "'\\t' inserts a standard tab spacing in character and string output."
     },
     {
       "id": 10,
       "type": "mcq",
-      "difficulty": "Easy",
-      "question": "What operates as the system-enforced default value for all standalone boolean variables?",
-      "options": ["true", "null", "false", "0"],
-      "answer": "false",
-      "explanation": "In standard Java protocol, uninitialized boolean fields natively default to false[cite: 2]."
+      "difficulty": "Medium",
+      "question": "What does a method returning 'boolean' produce if it evaluates an equality check between two primitive integers?",
+      "options": ["0 or 1", "true or false", "null", "A byte flag"],
+      "answer": "true or false",
+      "explanation": "Primitive boolean types in Java strictly accept and evaluate to either 'true' or 'false'."
     },
     {
       "id": 11,
       "type": "mcq",
       "difficulty": "Easy",
-      "question": "Which specific method generates a new string by extracting characters from an existing string?",
-      "options": ["slice()", "substring()", "extract()", "chop()"],
-      "answer": "substring()",
-      "explanation": "The substring() method returns the extracted sequence securely starting from the designated initial index[cite: 2]."
+      "question": "What is the index position of the final character in a String called 'str'?",
+      "options": ["str.length()", "str.length() - 1", "str.size()", "str.length - 1"],
+      "answer": "str.length() - 1",
+      "explanation": "Since Java strings use zero-based indexing, the last index is always one less than str.length()."
     },
     {
       "id": 12,
       "type": "mcq",
       "difficulty": "Medium",
-      "question": "Which specific keyword commands dynamic memory allocation for newly instantiated arrays?",
-      "options": ["create", "alloc", "new", "array"],
-      "answer": "new",
-      "explanation": "The keyword 'new' natively commands the compiler to allocate dynamic block space specifically tailored for data storage operations[cite: 2]."
+      "question": "Which of these variables is shared uniformly across all instances of a class?",
+      "options": ["Local variable", "Instance variable", "Static variable", "Parameter variable"],
+      "answer": "Static variable",
+      "explanation": "A static (class) variable belongs to the class itself rather than any specific instance and is shared among all objects."
     },
     {
       "id": 13,
       "type": "mcq",
-      "difficulty": "Medium",
-      "question": "Are Java Strings capable of being internally modified after creation?",
-      "options": ["Yes, unconditionally", "No, they are strictly immutable", "Yes, utilizing append()", "No, they are primitive"],
-      "answer": "No, they are strictly immutable",
-      "explanation": "In Java architecture, standard String objects firmly remain immutable, signaling that their internal state decisively cannot be modified posthumously[cite: 2]."
+      "difficulty": "Challenging",
+      "question": "What does the expression (int)'A' produce?",
+      "options": ["65", "97", "0", "A"],
+      "answer": "65",
+      "explanation": "Casting uppercase character 'A' to an integer evaluates to its standard ASCII code value, which is 65."
     },
     {
       "id": 14,
       "type": "mcq",
-      "difficulty": "Medium",
-      "question": "What is the technical terminology for the data values actually transmitted to a method during invocation?",
-      "options": ["Formal parameters", "Static parameters", "Actual parameters", "Instance variables"],
-      "answer": "Actual parameters",
-      "explanation": "The raw values that are functionally dispatched to the method directly during its call operation are globally recognized as 'Actual parameters'[cite: 2]."
+      "difficulty": "Easy",
+      "question": "Which loop guarantees execution of its body at least once, even if the condition is initially false?",
+      "options": ["for", "while", "do-while", "nested-for"],
+      "answer": "do-while",
+      "explanation": "The do-while loop evaluates its conditional guard at the bottom, guaranteeing at least one execution pass."
     },
     {
       "id": 15,
       "type": "mcq",
-      "difficulty": "Challenging",
-      "question": "Which of these accurately outlines a key feature of a Pure Function (Accessor)?",
-      "options": ["It modifies memory completely", "It completely alters its parameters", "It forcefully changes the state of an object", "It does not cause any internal change in the state of an object"],
-      "answer": "It does not cause any internal change in the state of an object",
-      "explanation": "A pure function, upon invocation, safely maintains data integrity by ensuring zero internal change registers in the foundational state of an object[cite: 2]."
+      "difficulty": "Medium",
+      "question": "Which method tests if a character is an alphabetical letter in Java?",
+      "options": ["Character.isAlpha()", "Character.isLetter()", "Character.isChar()", "Character.letterCheck()"],
+      "answer": "Character.isLetter()",
+      "explanation": "The standard Character wrapper library method to check for alphabetic characters is Character.isLetter(char ch)."
     },
     {
       "id": 16,
       "type": "mcq",
-      "difficulty": "Challenging",
-      "question": "During a Binary Search algorithm, what exact mathematical formula reliably determines the middle index marker?",
-      "options": ["(First - Last) / 2", "(First + Last) * 2", "(First + Last) / 2", "Last - First"],
-      "answer": "(First + Last) / 2",
-      "explanation": "The algorithmic process routinely demands calculating the central pivot precisely via (First + Last) / 2[cite: 2]."
+      "difficulty": "Easy",
+      "question": "What is the default initial value of an uninitialized element in a float array?",
+      "options": ["0.0f", "0", "null", "Garbage value"],
+      "answer": "0.0f",
+      "explanation": "Primitive floating-point arrays fill all uninitialized slots with default 0.0f."
     },
     {
       "id": 17,
       "type": "mcq",
-      "difficulty": "Easy",
-      "question": "Which of the following represents an exit-controlled loop in Java?",
-      "options": ["for", "while", "do-while", "if-else"],
-      "answer": "do-while",
-      "explanation": "A do-while loop evaluates its testing condition after executing the loop body at least once, making it strictly exit-controlled."
+      "difficulty": "Challenging",
+      "question": "What is the result of Math.floor(-5.8)?",
+      "options": ["-5.0", "-6.0", "-5", "-6"],
+      "answer": "-6.0",
+      "explanation": "Math.floor() returns the largest double value less than or equal to the argument; -6.0 is less than -5.8."
     },
     {
       "id": 18,
       "type": "mcq",
-      "difficulty": "Easy",
-      "question": "Which keyword is used to refer directly to the current invoking object within an instance method?",
-      "options": ["super", "this", "class", "instanceof"],
-      "answer": "this",
-      "explanation": "The 'this' keyword acts as a reference to the current object whose method or constructor is being invoked."
+      "difficulty": "Medium",
+      "question": "Which feature enables multiple methods to share the exact same name with differing parameter signatures?",
+      "options": ["Method Overloading", "Method Overriding", "Dynamic Binding", "Inheritance"],
+      "answer": "Method Overloading",
+      "explanation": "Method overloading allows methods within the same class to share a name provided their parameter lists differ in type, count, or order[cite: 1]."
     },
     {
       "id": 19,
       "type": "mcq",
-      "difficulty": "Medium",
-      "question": "What is the return type of the comparison expression (10 > 5 && 4 < 2)?",
-      "options": ["int", "double", "boolean", "void"],
-      "answer": "boolean",
-      "explanation": "Logical operators combined with relational operators always evaluate to a primitive boolean value (true or false)."
+      "difficulty": "Easy",
+      "question": "Which keyword prevents class inheritance by stopping other classes from extending it?",
+      "options": ["static", "final", "abstract", "private"],
+      "answer": "final",
+      "explanation": "A class declared as 'final' cannot be extended or subclassed."
     },
     {
       "id": 20,
       "type": "mcq",
       "difficulty": "Medium",
-      "question": "Which package is automatically imported by default into every Java compilation unit?",
-      "options": ["java.util", "java.io", "java.lang", "java.awt"],
-      "answer": "java.lang",
-      "explanation": "The java.lang package contains core classes (such as System, String, and Math) and is automatically imported into every Java program without explicit import statements."
+      "question": "What will be the output of 15 / 2 in Java?",
+      "options": ["7.5", "7", "8", "7.0"],
+      "answer": "7",
+      "explanation": "Dividing two integers performs integer division, truncating any fractional part to return 7."
     },
     {
       "id": 21,
       "type": "error_finding",
       "difficulty": "Easy",
       "error_type": "Syntax",
-      "question": "Identify the syntax error in this Double Dimensional Array initialization:",
-      "code_snippet": "int m[][] = new int[2, 2];",
+      "question": "Identify the syntax error in this single-dimensional array declaration:",
+      "code_snippet": "int arr[] = new int();",
       "options": [
-        "int[][] is invalid",
-        "Array brackets should be completely empty",
-        "Separate square brackets [2][2] must be used",
+        "Array instantiation must specify capacity inside square brackets [], not parentheses ()",
+        "int[] is not supported with arr[]",
+        "new keyword is illegal for arrays",
         "No error"
       ],
-      "answer": "Separate square brackets [2][2] must be used",
-      "explanation": "In Java, double dimensional arrays strictly require separate, sequential square brackets for allocating rows and columns[cite: 1]."
+      "answer": "Array instantiation must specify capacity inside square brackets [], not parentheses ()",
+      "explanation": "Arrays allocate memory using dimension brackets specifying the size (e.g., new int[10]), not round parentheses."
     },
     {
       "id": 22,
       "type": "error_finding",
       "difficulty": "Easy",
       "error_type": "Syntax",
-      "question": "Identify the syntax error in this conditional check:",
-      "code_snippet": "int x = 10;\nif (x = 10) { }",
+      "question": "Identify the syntax error in this boolean variable evaluation:",
+      "code_snippet": "boolean flag = FALSE;",
       "options": [
-        "Condition demands ==, not standard assignment =",
-        "10 must be enclosed in quotes",
-        "if must begin with an uppercase 'I'",
+        "Boolean literal must be in lowercase (false)",
+        "boolean must be capitalized",
+        "flag must be an integer",
         "No error"
       ],
-      "answer": "Condition demands ==, not standard assignment =",
-      "explanation": "The single '=' aggressively triggers value assignments; logical evaluation blocks uniformly require dual '=='[cite: 1]."
+      "answer": "Boolean literal must be in lowercase (false)",
+      "explanation": "Java keywords and boolean literals are strictly lowercase ('true' and 'false')."
     },
     {
       "id": 23,
       "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "Syntax",
-      "question": "Identify the syntax error in this object blueprint:",
-      "code_snippet": "String s = new String('Hello');",
+      "difficulty": "Medium",
+      "error_type": "Logical",
+      "question": "Identify the logical bug preventing the loop from printing values 1 to 5:",
+      "code_snippet": "for (int i = 1; i <= 5; i++);\n{\n    System.out.println(i);\n}",
       "options": [
-        "String objects actively reject single quotes, necessitating double quotes",
-        "new is completely unnecessary",
-        "String must be totally lowercase",
+        "Semicolon at the end of the for header terminates the loop body prematurely",
+        "i must start at 0",
+        "Curly braces are illegal after for",
         "No error"
       ],
-      "answer": "String objects actively reject single quotes, necessitating double quotes",
-      "explanation": "Character sequences stretching beyond singular letters universally depend upon standard double quote encapsulation[cite: 1]."
+      "answer": "Semicolon at the end of the for header terminates the loop body prematurely",
+      "explanation": "The semicolon immediately following the loop definition acts as an empty statement, causing the block below to run once after the loop finishes."
     },
     {
       "id": 24,
       "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "Logical",
-      "question": "Identify the logical error in this iterative setup:",
-      "code_snippet": "int a[] = new int[3];\nfor(int i = 0; i <= a.length; i++) { }",
+      "difficulty": "Medium",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "String s = \"hello\";\nString res = s.toUpper();",
       "options": [
-        "i must commence at 1",
-        "The condition i <= a.length forcefully causes an ArrayIndexOutOfBoundsException",
-        "length must have parentheses length()",
+        "The String class method is toUpperCase(), not toUpper()",
+        "hello cannot be lowercased",
+        "toUpper requires arguments",
         "No error"
       ],
-      "answer": "The condition i <= a.length forcefully causes an ArrayIndexOutOfBoundsException",
-      "explanation": "Array indices cap precisely at length minus 1. Utilizing '<=' enables the loop to breach the array's absolute bounds[cite: 1]."
+      "answer": "The String class method is toUpperCase(), not toUpper()",
+      "explanation": "The Java String method to convert characters to uppercase is strictly toUpperCase()."
     },
     {
       "id": 25,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "Logical",
-      "question": "Identify the logical error in this math assignment:",
-      "code_snippet": "int c = Math.sqrt(25);",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this method definition:",
+      "code_snippet": "public static int display() {\n    System.out.println(\"Testing\");\n}",
       "options": [
-        "Math.sqrt fundamentally returns a double, which refuses implicit assignment to an int",
-        "25 should be carefully wrapped in quotes",
-        "Math.sqrt is invalid syntax",
+        "A method with a non-void return type (int) must include a return statement returning a matching value",
+        "display cannot be static",
+        "println requires int arguments here",
         "No error"
       ],
-      "answer": "Math.sqrt fundamentally returns a double, which refuses implicit assignment to an int",
-      "explanation": "Without manual down-casting, a double output explicitly rejects slipping inside a smaller integer constraint[cite: 1]."
+      "answer": "A method with a non-void return type (int) must include a return statement returning a matching value",
+      "explanation": "Declaring an int return type requires a return statement that returns an integer on all reachable code paths[cite: 2]."
     },
     {
       "id": 26,
       "type": "error_finding",
-      "difficulty": "Easy",
+      "difficulty": "Medium",
       "error_type": "Logical",
-      "question": "Identify the logical error in this core arithmetic implementation:",
-      "code_snippet": "int a = 10;\na = a / 0;",
+      "question": "Identify the logical flaw in this maximum value selection:",
+      "code_snippet": "int a = 12, b = 25;\nint max = (a > b) ? b : a;",
       "options": [
-        "a must be float",
-        "Dividing by zero forcefully generates a fatal ArithmeticException",
-        "Cannot reassign a",
+        "The ternary branches are inverted; it assigns the smaller value instead of the maximum",
+        "Ternary operator cannot assign to int",
+        "Parentheses are mandatory around the whole statement",
         "No error"
       ],
-      "answer": "Dividing by zero forcefully generates a fatal ArithmeticException",
-      "explanation": "Division equations leveraging zeroes aggressively break foundational runtime arithmetic constraints[cite: 1]."
+      "answer": "The ternary branches are inverted; it assigns the smaller value instead of the maximum",
+      "explanation": "If a > b, max receives b (the smaller value), and if false, it receives a, logically selecting the minimum rather than the maximum."
+    },
+    {
+      "id": 27,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the error in this Math method call:",
+      "code_snippet": "double val = Math.Power(2, 3);",
+      "options": [
+        "Method name must follow camelCase: Math.pow()",
+        "Power takes three parameters",
+        "2 and 3 must be strings",
+        "No error"
+      ],
+      "answer": "Method name must follow camelCase: Math.pow()",
+      "explanation": "The exponential method in the java.lang.Math class is 'pow()', not 'Power()'[cite: 1]."
     },
     {
       "id": 28,
       "type": "error_finding",
       "difficulty": "Easy",
-      "error_type": "OOP/Library",
-      "question": "Identify the library method error:",
-      "code_snippet": "Double d = Double.valueof(\"1.5\");",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this character assignment:",
+      "code_snippet": "char code = \"K\";",
       "options": [
-        "Double should be entirely lowercase",
-        "Method should be camelCase: valueOf()",
-        "1.5 cannot have encompassing quotes",
+        "Character literals must be enclosed in single quotes 'K', not double quotes",
+        "char cannot store letter K",
+        "code is a reserved keyword",
         "No error"
       ],
-      "answer": "Method should be camelCase: valueOf()",
-      "explanation": "Java methods strictly adhere to camelCase parameters, meaning it must be valueOf() featuring a capital 'O'[cite: 1]."
-    },
-    {
-      "id": 28,
-      "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "OOP/Library",
-      "question": "Identify the library method error:",
-      "code_snippet": "boolean b = character.isDigit('5');",
-      "options": [
-        "isDigit mandates a String",
-        "character wrapper class must aggressively begin with an uppercase 'C'",
-        "boolean must be Boolean",
-        "No error"
-      ],
-      "answer": "character wrapper class must aggressively begin with an uppercase 'C'",
-      "explanation": "Consistent with all Java OOP environments, built-in library classes strictly mandate an uppercase starting character[cite: 1]."
+      "answer": "Character literals must be enclosed in single quotes 'K', not double quotes",
+      "explanation": "Single quotes are mandatory for single char literals; double quotes define a String literal[cite: 1, 2]."
     },
     {
       "id": 29,
-      "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "Syntax",
-      "question": "Identify the syntax error in this method structure:",
-      "code_snippet": "Public void run() {}",
-      "options": [
-        "run must be capitalized",
-        "Public is invalid and must start completely lowercase",
-        "Void cannot be used with Public",
-        "No error"
-      ],
-      "answer": "Public is invalid and must start completely lowercase",
-      "explanation": "Java access specifier conventions strictly mandate entirely lowercase syntax structuring[cite: 2]."
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this String trimming and length check:",
+      "code_snippet": "String s = \"  Exam 2026  \";\nSystem.out.println(s.trim().length());",
+      "options": ["9", "13", "11", "Error"],
+      "answer": "9",
+      "explanation": "s.trim() removes both the two leading and two trailing spaces, leaving \"Exam 2026\", which has 9 characters."
     },
     {
       "id": 30,
-      "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "Syntax",
-      "question": "Identify the syntax error in this array instantiation:",
-      "code_snippet": "String arr[] = new String(5);",
-      "options": [
-        "String objects actively forbid array creation",
-        "Size designation necessitates strict square brackets [5]",
-        "5 must possess encapsulating quotes",
-        "No error"
-      ],
-      "answer": "Size designation necessitates strict square brackets [5]",
-      "explanation": "Dimensional sizing inside standard array declarations relies entirely on square bracket enclosures[cite: 2]."
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of this chained String manipulation:",
+      "code_snippet": "String s = \"Information\";\nSystem.out.println(s.substring(2, 6).concat(\"tech\"));",
+      "options": ["formtech", "formattech", "ormatech", "formatech"],
+      "answer": "formtech",
+      "explanation": "s.substring(2, 6) extracts characters from index 2 up to index 5 ('f', 'o', 'r', 'm'). Appending \"tech\" produces \"formtech\"."
     },
     {
       "id": 31,
-      "type": "error_finding",
+      "type": "output_prediction",
       "difficulty": "Easy",
-      "error_type": "Logical",
-      "question": "Identify the logical error in this sequence:",
-      "code_snippet": "int a[] = new int[3];\na[0]=1; a[1]=2; a[2]=3; a[3]=4;",
-      "options": [
-        "Indices must begin at 1",
-        "Index 3 significantly breaches the maximum threshold",
-        "Arrays cannot sequentially assign values",
-        "No error"
-      ],
-      "answer": "Index 3 significantly breaches the maximum threshold",
-      "explanation": "An array size parameter of 3 limits valid indices exclusively to 0, 1, and 2. Appending data to index 3 causes catastrophic bounds violations[cite: 2]."
+      "concept": "Array",
+      "question": "Predict the output of accessing the designated array position:",
+      "code_snippet": "int[] val = {5, 10, 15, 20};\nSystem.out.println(val[3] / val[1]);",
+      "options": ["2", "4", "1", "0"],
+      "answer": "2",
+      "explanation": "val[3] is 20 and val[1] is 10. 20 / 10 yields 2."
     },
     {
       "id": 32,
-      "type": "error_finding",
-      "difficulty": "Easy",
-      "error_type": "Logical",
-      "question": "Identify the logical error in this character declaration:",
-      "code_snippet": "char c = 'AB';",
-      "options": [
-        "char data type natively restricts payload size to a singular enclosed character",
-        "c must aggressively be String",
-        "AB demands double quotes",
-        "No error"
-      ],
-      "answer": "char data type natively restricts payload size to a singular enclosed character",
-      "explanation": "The foundational char type purely handles independent, isolated singular characters, not multi-character sequences[cite: 2]."
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of the array cumulative assignment:",
+      "code_snippet": "int[] a = {1, 2, 3};\na[1] += a[0] + a[2];\nSystem.out.println(a[1]);",
+      "options": ["6", "5", "4", "3"],
+      "answer": "6",
+      "explanation": "a[1] = a[1] + (a[0] + a[2]) = 2 + (1 + 3) = 6."
     },
     {
       "id": 33,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "String",
-      "question": "Predict the exact output of this String length traversal:",
-      "code_snippet": "String s = \"ICSE\";\nSystem.out.println(s.charAt(s.length() - 1));",
-      "options": ["S", "E", "C", "Error"],
-      "answer": "E",
-      "explanation": "s.length() is 4. Subtracting 1 gives index 3. The character situated cleanly at index 3 is 'E'[cite: 1]."
+      "concept": "Loop/Function",
+      "question": "Predict the printed output of this while loop:",
+      "code_snippet": "int p = 1;\nwhile (p <= 8) {\n    p *= 2;\n}\nSystem.out.println(p);",
+      "options": ["8", "16", "4", "32"],
+      "answer": "16",
+      "explanation": "p doubles across iterations: 1 -> 2 -> 4 -> 8 -> 16. At 16, the loop condition (16 <= 8) evaluates to false and terminates."
     },
     {
       "id": 34,
       "type": "output_prediction",
       "difficulty": "Challenging",
-      "concept": "String",
-      "question": "Predict the output of this StringBuffer insertion:",
-      "code_snippet": "StringBuffer sb = new StringBuffer(\"Java\");\nsb.insert(2, \"x\");\nSystem.out.println(sb);",
-      "options": ["Jaxva", "Javxa", "Jxava", "Error"],
-      "answer": "Jaxva",
-      "explanation": "The insert(offset, string) pushes the given substring directly into the target index, effectively pushing 'v' and 'a' rightward, generating \"Jaxva\"[cite: 1]."
+      "concept": "Loop/Function",
+      "question": "Predict the output of this prefix/postfix arithmetic expression:",
+      "code_snippet": "int a = 4;\nint b = ++a * 2 + a++;\nSystem.out.println(b + \" \" + a);",
+      "options": ["15 6", "14 6", "15 5", "16 6"],
+      "answer": "15 6",
+      "explanation": "++a increments a from 4 to 5; ++a * 2 evaluates to 5 * 2 = 10. Then a++ uses 5 and increments a to 6. Thus b = 10 + 5 = 15, and a is 6."
     },
     {
       "id": 35,
       "type": "output_prediction",
-      "difficulty": "Medium",
-      "concept": "Array",
-      "question": "Predict the exact output of this internal array movement:",
-      "code_snippet": "int m[] = {1, 2, 3, 4};\nm[1] = m[2];\nSystem.out.println(m[1]);",
-      "options": ["1", "2", "3", "4"],
-      "answer": "3",
-      "explanation": "m[2] houses the integer 3. The code actively duplicates this value directly atop index 1, making m[1] distinctly 3[cite: 1]."
+      "difficulty": "Easy",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed data type evaluation:",
+      "code_snippet": "int x = 9;\ndouble y = 2.0;\nSystem.out.println(x / y);",
+      "options": ["4.5", "4", "4.0", "Error"],
+      "answer": "4.5",
+      "explanation": "When an integer is divided by a double, Java implicitly promotes the integer to a double, resulting in 4.5."
     },
     {
       "id": 36,
       "type": "output_prediction",
-      "difficulty": "Challenging",
-      "concept": "Array",
-      "question": "Predict the output of this 2D Array boundary inspection:",
-      "code_snippet": "int m[][] = {{1, 2, 3}, {4, 5, 6}};\nSystem.out.println(m.length + m[0].length);",
-      "options": ["4", "5", "6", "Error"],
-      "answer": "5",
-      "explanation": "m.length determines the row amount (2). m[0].length determines the column volume present in row 0 (3). Simple mathematical addition equates to 5[cite: 1]."
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this character wrapper evaluation:",
+      "code_snippet": "char c = '9';\nSystem.out.println(Character.isDigit(c) ? \"Digit\" : \"Letter\");",
+      "options": ["Digit", "Letter", "true", "Error"],
+      "answer": "Digit",
+      "explanation": "'9' is a numeric character literal, so Character.isDigit('9') returns true, printing \"Digit\"."
     },
     {
       "id": 37,
       "type": "output_prediction",
-      "difficulty": "Medium",
+      "difficulty": "Challenging",
       "concept": "Loop/Function",
-      "question": "Predict the output of these simultaneous pure method calls:",
-      "code_snippet": "int m(int a) { return a * a; }\n// Inside main:\nSystem.out.println(ob.m(2) + ob.m(3));",
-      "options": ["5", "13", "25", "Error"],
-      "answer": "13",
-      "explanation": "ob.m(2) predictably bounces back 4. ob.m(3) bounces back 9. Combining them dynamically computes to 13[cite: 1]."
+      "question": "Predict the output of this nested loop snippet:",
+      "code_snippet": "int count = 0;\nfor (int i = 1; i <= 2; i++) {\n    for (int j = 1; j <= 3; j++) {\n        count++;\n    }\n}\nSystem.out.println(count);",
+      "options": ["5", "6", "9", "4"],
+      "answer": "6",
+      "explanation": "The outer loop runs 2 times and the inner loop runs 3 times for each outer pass, executing count++ 2 * 3 = 6 times."
     },
     {
       "id": 38,
       "type": "output_prediction",
-      "difficulty": "Challenging",
-      "concept": "Loop/Function",
-      "question": "Predict the exact termination output of this exit-controlled loop:",
-      "code_snippet": "int x = 2;\ndo {\n    x *= 2;\n} while(x < 5);\nSystem.out.println(x);",
-      "options": ["4", "8", "2", "Error"],
-      "answer": "8",
-      "explanation": "Iteration 1 executes: x becomes 4. Condition 4 < 5 evaluates True. Iteration 2 executes: x leaps to 8. Condition 8 < 5 evaluates False. The loop cleanly terminates, printing 8[cite: 1]."
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of this String equality check using equals():",
+      "code_snippet": "String s1 = \"Computer\";\nString s2 = \"computer\";\nSystem.out.println(s1.equals(s2));",
+      "options": ["true", "false", "0", "1"],
+      "answer": "false",
+      "explanation": "equals() is case-sensitive. Because 'C' and 'c' differ in ASCII value, the comparison returns false."
     },
     {
       "id": 39,
       "type": "output_prediction",
       "difficulty": "Medium",
-      "concept": "Mixed",
-      "question": "Predict the output of this blended concatenation snippet:",
-      "code_snippet": "System.out.println(\"5\" + 5 + 5);",
-      "options": ["15", "510", "555", "Error"],
-      "answer": "555",
-      "explanation": "Whenever an evaluation visibly originates with a literal String, Java forces all trailing '+' operators directly into text-based concatenation[cite: 1]."
+      "concept": "Array",
+      "question": "Predict the output from this 2D Array row size verification:",
+      "code_snippet": "int[][] matrix = new int[4][5];\nSystem.out.println(matrix.length * matrix[0].length);",
+      "options": ["20", "9", "4", "5"],
+      "answer": "20",
+      "explanation": "matrix.length gives the row count (4), and matrix[0].length gives the column count (5). 4 * 5 = 20."
     },
     {
       "id": 40,
       "type": "output_prediction",
       "difficulty": "Challenging",
       "concept": "Mixed",
-      "question": "Predict the output of this combined mathematical manipulation:",
-      "code_snippet": "System.out.println(Math.round(4.6) + Math.floor(4.6));",
-      "options": ["9", "9.0", "10", "10.0"],
-      "answer": "9.0",
-      "explanation": "Math.round(4.6) scales up to the long value 5. Math.floor(4.6) scales down to the double 4.0. Adding a long and a double actively forces promotion, returning 9.0[cite: 1]."
+      "question": "Predict the final mathematical aggregation within this snippet:",
+      "code_snippet": "System.out.println(Math.pow(2, 3) + Math.sqrt(49));",
+      "options": ["15.0", "15", "13.0", "Error"],
+      "answer": "15.0",
+      "explanation": "Math.pow(2, 3) yields 8.0, and Math.sqrt(49) yields 7.0. Adding them gives 15.0."
     }
   ]
 }
