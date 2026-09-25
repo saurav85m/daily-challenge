@@ -354,3 +354,112 @@ graph_table.rename(
 )
 
 st.line_chart(graph_table)
+
+st.divider()
+
+# ====================================================
+# Difficulty Level Analysis
+# ====================================================
+
+st.subheader("📊 Performance by Difficulty Level")
+
+difficulty_summary = (
+    df.groupby("difficulty")
+    .agg(
+        Correct=("is_correct", "sum"),
+        Total=("is_correct", "count")
+    )
+    .reset_index()
+)
+
+difficulty_summary["Accuracy"] = (
+    difficulty_summary["Correct"]
+    / difficulty_summary["Total"]
+    * 100
+).round(2)
+
+# Order difficulty levels
+difficulty_order = ["Easy", "Medium", "Challenging"]
+difficulty_summary["difficulty"] = pd.Categorical(
+    difficulty_summary["difficulty"],
+    categories=difficulty_order,
+    ordered=True
+)
+difficulty_summary = difficulty_summary.sort_values("difficulty")
+
+# Display table
+st.write("### Accuracy by Difficulty Level")
+col1, col2 = st.columns(2)
+
+with col1:
+    st.dataframe(
+        difficulty_summary[["difficulty", "Correct", "Total", "Accuracy"]].rename(
+            columns={
+                "difficulty": "Difficulty",
+                "Correct": "Correct Answers",
+                "Total": "Total Questions",
+                "Accuracy": "Accuracy (%)"
+            }
+        ),
+        use_container_width=True,
+        hide_index=True
+    )
+
+# Bar chart for difficulty accuracy
+with col2:
+    difficulty_chart = difficulty_summary.set_index("difficulty")["Accuracy"]
+    st.bar_chart(difficulty_chart)
+
+st.divider()
+
+# ====================================================
+# Sub-Category Analysis
+# ====================================================
+
+st.subheader("📊 Performance by Sub-Category")
+
+# Check if sub_category column exists
+if "sub_category" in df.columns:
+    sub_category_summary = (
+        df.groupby("sub_category")
+        .agg(
+            Correct=("is_correct", "sum"),
+            Total=("is_correct", "count")
+        )
+        .reset_index()
+    )
+    
+    sub_category_summary["Accuracy"] = (
+        sub_category_summary["Correct"]
+        / sub_category_summary["Total"]
+        * 100
+    ).round(2)
+    
+    # Sort by accuracy (descending)
+    sub_category_summary = sub_category_summary.sort_values("Accuracy", ascending=False)
+    
+    # Display table
+    st.write("### Accuracy by Sub-Category")
+    col1, col2 = st.columns([1.5, 1])
+    
+    with col1:
+        st.dataframe(
+            sub_category_summary.rename(
+                columns={
+                    "sub_category": "Sub-Category",
+                    "Correct": "Correct Answers",
+                    "Total": "Total Questions",
+                    "Accuracy": "Accuracy (%)"
+                }
+            ),
+            use_container_width=True,
+            hide_index=True
+        )
+    
+    # Horizontal bar chart for sub-categories
+    with col2:
+        st.write("### Accuracy Ranking")
+        sub_cat_chart = sub_category_summary.set_index("sub_category")["Accuracy"]
+        st.bar_chart(sub_cat_chart)
+else:
+    st.info("⚠️ Sub-category data not available in current dataset")
