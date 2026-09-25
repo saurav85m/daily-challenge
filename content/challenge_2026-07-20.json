@@ -1,0 +1,294 @@
+{
+  "date": "2026-08-04",
+  "topic": "Library Classes, Arrays, String Handling, and User-Defined Methods",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What will the Math.floor(2.9) function output?",
+      "options": ["3.0", "2.0", "2.9", "2"],
+      "answer": "2.0",
+      "explanation": "Math.floor() strictly forces a rounding downwards toward the nearest mathematical integer."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which of these iterative loops is inherently categorized as entry-controlled?",
+      "options": ["do-while", "switch", "while", "if-else"],
+      "answer": "while",
+      "explanation": "A while loop validates its condition at entry. If false, it strictly denies execution of its inner block."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which string method calculates the ASCII difference to determine lexical ordering?",
+      "options": ["compareTo()", "equals()", "diff()", "compareASCII()"],
+      "answer": "compareTo()",
+      "explanation": "The compareTo() function systematically generates the arithmetic ASCII gap between mismatched characters[cite: 16]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What specifically does Math.round(4.5) return?",
+      "options": ["4", "5", "4.0", "5.0"],
+      "answer": "5",
+      "explanation": "Math.round() directly pushes halfway .5 decimals upwards to the nearest solid integer value."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What does Character.toLowerCase('A') return?",
+      "options": ["'A'", "Error", "'a'", "97"],
+      "answer": "'a'",
+      "explanation": "The method processes the uppercase 'A' and converts it strictly to its lowercase counterpart 'a'[cite: 16]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "Which specific StringBuffer method allows for wiping the entire buffer clean?",
+      "options": ["clear()", "delete()", "setLength(0)", "empty()"],
+      "answer": "setLength(0)",
+      "explanation": "Utilizing setLength(0) on a StringBuffer forcefully trims its internal length marker back to an empty zero state[cite: 16]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What is the technical term for declaring multiple methods utilizing the exact same name but differing parameter sequences?",
+      "options": ["Method Overloading", "Encapsulation", "Method Overriding", "Abstraction"],
+      "answer": "Method Overloading",
+      "explanation": "Function overloading implements logical flexibility by defining functions bearing matching names but contrasting parameters[cite: 15]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What precise data type does Float.valueOf(\"3.14\") return?",
+      "options": ["float primitive", "Float object", "String", "double primitive"],
+      "answer": "Float object",
+      "explanation": "Methods labeled valueOf() natively generate the fully wrapped object version of the respective primitive data type."
+    },
+    {
+      "id": 9,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in this variable assignment:",
+      "code_snippet": "float f = 3.14;",
+      "options": [
+        "Float literals inherently require an 'f' suffix, e.g., 3.14f",
+        "f must be double",
+        "3.14 must be wrapped in quotes",
+        "No error"
+      ],
+      "answer": "Float literals inherently require an 'f' suffix, e.g., 3.14f",
+      "explanation": "By default, raw decimals are identified as doubles. To secure float precision, an 'f' suffix is mandatory."
+    },
+    {
+      "id": 10,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the method header:",
+      "code_snippet": "Public void calc() { }",
+      "options": [
+        "Public must begin strictly with a lowercase 'p'",
+        "Method must contain parameters",
+        "void cannot be combined with public",
+        "No error"
+      ],
+      "answer": "Public must begin strictly with a lowercase 'p'",
+      "explanation": "All fundamental Java keywords (like public, class, void) strictly enforce lowercase formatting."
+    },
+    {
+      "id": 11,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Syntax",
+      "question": "Identify the syntax error in the String invocation:",
+      "code_snippet": "String s = \"Hi\";\ns.charAt[1];",
+      "options": [
+        "charAt demands round parentheses ()",
+        "Strings do not possess charAt",
+        "Index must be 0",
+        "No error"
+      ],
+      "answer": "charAt demands round parentheses ()",
+      "explanation": "Because charAt is fundamentally a method, it is entirely restricted to utilizing round parentheses, not square ones[cite: 16]."
+    },
+    {
+      "id": 12,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this method:",
+      "code_snippet": "void print() {\n    return 5;\n}",
+      "options": [
+        "void implies non-returnable; it cannot throw back a 5",
+        "5 must be float",
+        "print is a restricted keyword",
+        "No error"
+      ],
+      "answer": "void implies non-returnable; it cannot throw back a 5",
+      "explanation": "Void completely bars a method from actively generating or returning any sort of numeric or textual value[cite: 15]."
+    },
+    {
+      "id": 13,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this array initialization:",
+      "code_snippet": "int a[] = new int[2];\na[2] = 5;",
+      "options": [
+        "An array sized 2 holds indices 0 and 1, making index 2 Out Of Bounds",
+        "Array brackets should be empty",
+        "5 cannot be passed",
+        "No error"
+      ],
+      "answer": "An array sized 2 holds indices 0 and 1, making index 2 Out Of Bounds",
+      "explanation": "Trying to plant data directly onto the index matching the size threshold triggers a fatal bounds exception[cite: 17]."
+    },
+    {
+      "id": 14,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "Logical",
+      "question": "Identify the logical error in this math statement:",
+      "code_snippet": "int x = Math.pow(2, 3);",
+      "options": [
+        "Math.pow strictly returns a double, which refuses implicit assignment to an int",
+        "pow requires 3 arguments",
+        "x must be String",
+        "No error"
+      ],
+      "answer": "Math.pow strictly returns a double, which refuses implicit assignment to an int",
+      "explanation": "Without manually down-casting, a double output explicitly rejects slipping inside a smaller integer constraint."
+    },
+    {
+      "id": 15,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "String s = \"abc\";\ns.reverse();",
+      "options": [
+        "Standard Strings lack a reverse() method; it belongs strictly to StringBuffer",
+        "s must be an array",
+        "abc must be uppercase",
+        "No error"
+      ],
+      "answer": "Standard Strings lack a reverse() method; it belongs strictly to StringBuffer",
+      "explanation": "Because core Java strings are utterly immutable, they do not feature native flipping tools like reverse()[cite: 16]."
+    },
+    {
+      "id": 16,
+      "type": "error_finding",
+      "difficulty": "Easy",
+      "error_type": "OOP/Library",
+      "question": "Identify the library method error:",
+      "code_snippet": "int val = math.max(1, 2);",
+      "options": [
+        "Library classes like Math must aggressively begin with a capital 'M'",
+        "max requires a double",
+        "val must be Boolean",
+        "No error"
+      ],
+      "answer": "Library classes like Math must aggressively begin with a capital 'M'",
+      "explanation": "Consistent with all Java OOP environments, built-in library classes strictly mandate an uppercase starting character."
+    },
+    {
+      "id": 17,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "String",
+      "question": "Predict the output of the following string operation:",
+      "code_snippet": "System.out.println(\"Gagu\".length() + \"Neha\".length());",
+      "options": ["GaguNeha", "8", "44", "Error"],
+      "answer": "8",
+      "explanation": "Extracting the numeric length of 'Gagu' yields 4. Extracting 'Neha' yields 4. Adding them structurally produces 8."
+    },
+    {
+      "id": 18,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "String",
+      "question": "Predict the output of the following string extraction:",
+      "code_snippet": "System.out.println(\"School\".substring(0, 3));",
+      "options": ["Scho", "Sch", "cho", "Error"],
+      "answer": "Sch",
+      "explanation": "Grabbing characters directly from index 0 safely captures 'S', 'c', and 'h', stopping precisely before index 3[cite: 16]."
+    },
+    {
+      "id": 19,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Array",
+      "question": "Predict the output of this nested array access:",
+      "code_snippet": "int a[] = {0, 1, 2, 3};\nSystem.out.println(a[a[1]]);",
+      "options": ["0", "1", "2", "Error"],
+      "answer": "1",
+      "explanation": "Evaluating the inside brackets, a[1] yields 1. Moving outward, accessing a[1] predictably outputs 1 once more."
+    },
+    {
+      "id": 20,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Array",
+      "question": "Predict the output of this 2D Array code:",
+      "code_snippet": "int a[][] = {{1, 1}, {1, 1}};\nSystem.out.println(a.length);",
+      "options": ["4", "2", "1", "Error"],
+      "answer": "2",
+      "explanation": "Executing length straight on the root matrix variable structurally retrieves the precise count of primary rows, which is 2."
+    },
+    {
+      "id": 21,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Loop/Function",
+      "question": "Predict the output of the following pure method call:",
+      "code_snippet": "public int process(int a) {\n    return a * 2;\n}\n// Inside main:\nSystem.out.println(ob.process(5));",
+      "options": ["5", "10", "25", "Error"],
+      "answer": "10",
+      "explanation": "The pure function accepts 5, cleanly multiplies it, and transparently bounces the unadulterated 10 back to print[cite: 15]."
+    },
+    {
+      "id": 22,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Loop/Function",
+      "question": "Predict the output of this iterative block:",
+      "code_snippet": "for (int i = 0; i < 3; i += 2) {\n    System.out.print(i);\n}",
+      "options": ["012", "02", "0", "Error"],
+      "answer": "02",
+      "explanation": "Initially 0 prints. The iterator artificially leaps by 2, prompting 2 to print. A subsequent jump reaches 4, shattering the < 3 constraint."
+    },
+    {
+      "id": 23,
+      "type": "output_prediction",
+      "difficulty": "Medium",
+      "concept": "Mixed",
+      "question": "Predict the output of this mixed concept code:",
+      "code_snippet": "StringBuffer sb = new StringBuffer(\"Hi\");\nsb.append(\"ya\");\nSystem.out.println(sb);",
+      "options": ["Hi", "ya", "Hiya", "Error"],
+      "answer": "Hiya",
+      "explanation": "Append structurally locks the string fragment 'ya' tightly against the tail-end of the existing buffer sequence[cite: 16]."
+    },
+    {
+      "id": 24,
+      "type": "output_prediction",
+      "difficulty": "Challenging",
+      "concept": "Mixed",
+      "question": "Predict the output of this char analysis snippet:",
+      "code_snippet": "char c = '1';\nSystem.out.println(Character.isDigit(c));",
+      "options": ["true", "false", "Error", "1"],
+      "answer": "true",
+      "explanation": "Since '1' constitutes a numeric numeral despite being safely sheltered inside single quotes, the wrapper reliably confirms its status."
+    }
+  ]
+}

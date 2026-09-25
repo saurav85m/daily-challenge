@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-25",
+  "topic": "ICSE 10th Board Section A - General Pattern & MCQs (20 Marks)",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "What type of data structures are Arrays and Classes considered?",
+      "options": ["Primitive data types", "Composite data types", "Boolean data types", "Void data types"],
+      "answer": "Composite data types",
+      "explanation": "A data type that represents a number of similar or different data under a single declaration is called a composite data type (or non-primitive type)[cite: 1]."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which Wrapper Class corresponds to the primitive type 'char'?",
+      "options": ["Char", "String", "Character", "Characters"],
+      "answer": "Character",
+      "explanation": "The Java wrapper class explicitly designated for the primitive data type 'char' is 'Character'[cite: 1]."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which math function is utilized to compute exponents (base raised to a power)?",
+      "options": ["Math.cbrt()", "Math.sqrt()", "Math.pow()", "Math.exp()"],
+      "answer": "Math.pow()",
+      "explanation": "The Math.pow() function handles exponentiation, accurately taking two parameters: base and power[cite: 1]."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is the technical description of 'Unboxing' in Java?",
+      "options": ["Converting an object to an array", "Converting wrapper class objects into primitive data types", "Deleting objects securely", "Typecasting a double to an int"],
+      "answer": "Converting wrapper class objects into primitive data types",
+      "explanation": "Unboxing is the system of converting an object of a wrapper class completely into primitive data type[cite: 1]."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What is an absolute necessity before utilizing Binary Search on an array?",
+      "options": ["Array must be empty", "Array must contain strings", "Array must be sorted in an order", "Array must have even elements"],
+      "answer": "Array must be sorted in an order",
+      "explanation": "Binary search technique can be used exclusively when the array elements are completely sorted in an order[cite: 1]."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "difficulty": "Medium",
+      "question": "What happens if a method is strictly defined with a return type of 'void'?",
+      "options": ["It returns zero", "It returns null", "It performs actions but does not return any output value", "It returns an error"],
+      "answer": "It performs actions but does not return any output value",
+      "explanation": "A procedural function defined with the return type void fundamentally performs some actions but definitively does not return any output value[cite: 1]."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "What precisely does the compareTo() string method calculate to determine output?",
+      "options": ["Memory gap", "Difference in string lengths", "ASCII difference between characters", "Number of vowels"],
+      "answer": "ASCII difference between characters",
+      "explanation": "The compareTo() method calculates and returns an integer representing the exact ASCII difference between the two strings[cite: 1]."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "difficulty": "Challenging",
+      "question": "Which of the following method signatures successfully overloads 'void obj(int a, double b)'?",
+      "options": ["int obj(int a, double b)", "void obj(double a, int b)", "void obj(int x, double y)", "void Obj(int a, double b)"],
+      "answer": "void obj(double a, int b)",
+      "explanation": "Function overloading can be effortlessly implemented by rearranging or altering the strict order of parameters within two identically named methods[cite: 1]."
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "difficulty": "Easy",
+      "question": "Which String method deletes whitespace from both endpoints of the text?",
+      "options": ["delete()", "clear()", "trim()", "clean()"],
+      "answer": "trim()",
+      "explanation": "The trim() function aggressively removes all white/blank spaces situated at the beginning as well as the end of a string[cite: 2]."
+    }
+  ]
+}

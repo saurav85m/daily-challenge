@@ -67,13 +67,14 @@ with st.spinner("Fetching today's challenge..."):
     )
     #st.write(date_str) #Saurav
     challenge_data = fetch_daily_challenge(date_str)
-    topic = challenge_data.get("topic", "")
 
-if not challenge_data:
-    st.warning(
-        f"⏳ No challenge found for **{date_str}** yet! Please add the challenge JSON file to your Google Drive content folder."
-    )
-    st.stop()
+    if not challenge_data:
+        st.warning(
+            f"⏳ No challenge found for **{date_str}** yet! Please add the challenge JSON file to your Google Drive content folder."
+        )
+        st.stop()
+
+    topic = challenge_data.get("topic", "")
 
 st.success(f"Loaded challenge for **{challenge_data.get('date')}**!")
 
@@ -200,15 +201,80 @@ if submitted:
         
         # Display Results Dashboard
         st.balloons()
-        st.success(f"🎉 Great job! You scored **{score} / {len(questions)}**!")
-        st.info(f"⏱ Time Taken: {duration_display}")
         
-        st.markdown("### 📝 Review Explanations:")
+        # Calculate accuracy percentage
+        accuracy_percent = (score / len(questions)) * 100
+        
+        # Results header with metrics
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Score", f"{score}/{len(questions)}")
+        with col2:
+            st.metric("Accuracy", f"{accuracy_percent:.1f}%")
+        with col3:
+            st.metric("Time Taken", duration_display)
+        
+        st.divider()
+        
+        # Create tabular summary of all answers
+        st.markdown("### 📊 Answer Summary Table")
+        st.write(f"Complete overview of all {len(questions)} questions and your responses:")
+        
+        # Prepare data for table
+        table_data = []
         for qid, val in user_answers.items():
-            status = "✅ Correct!" if val["selected"] == val["correct"] else "❌ Incorrect."
-            st.write(f"**Q{qid}:** {status}")
-            if val["selected"] != val["correct"]:
-                st.write(f"- **Your Answer:** {val['selected']}")
-                st.write(f"- **Correct Answer:** {val['correct']}")
-            st.info(f"💡 **Explanation:** {val['explanation']}")
-            st.markdown("---")
+            is_correct = val["selected"] == val["correct"]
+            status = "✅ Correct" if is_correct else "❌ Wrong"
+            
+            table_data.append({
+                "Q#": qid,
+                "Type": val["question_type"].replace('_', ' ').title(),
+                "Your Answer": val["selected"],
+                "Correct Answer": val["correct"],
+                "Status": status
+            })
+        
+        # Display as Streamlit dataframe (sortable, filterable)
+        import pandas as pd
+        df_results = pd.DataFrame(table_data)
+        
+        # Style the dataframe with conditional coloring
+        def highlight_status(row):
+            if "✅" in row["Status"]:
+                return ["background-color: #d4edda"] * len(row)
+            else:
+                return ["background-color: #f8d7da"] * len(row)
+        
+        # Apply styling
+        styled_df = df_results.style.apply(highlight_status, axis=1)
+        
+        st.dataframe(styled_df, use_container_width=True, hide_index=True)
+        
+        st.divider()
+        
+        # Detailed review section
+        st.markdown("### 📝 Detailed Review with Explanations")
+        
+        # Create tabs or expanders for each question
+        for qid, val in user_answers.items():
+            is_correct = val["selected"] == val["correct"]
+            status = "✅ Correct!" if is_correct else "❌ Incorrect."
+            
+            # Use expander for cleaner UI
+            with st.expander(f"**Question {qid}** - {status}", expanded=is_correct==False):
+                # Question details
+                col1, col2 = st.columns([1, 1])
+                
+                with col1:
+                    st.write(f"**Question Type:** {val['question_type'].replace('_', ' ').title()}")
+                    st.write(f"**Your Answer:** {val['selected']}")
+                
+                with col2:
+                    if is_correct:
+                        st.success(f"**Result:** ✅ Correct!")
+                    else:
+                        st.error(f"**Result:** ❌ Wrong")
+                        st.write(f"**Correct Answer:** {val['correct']}")
+                
+                st.divider()
+                st.info(f"💡 **Explanation:** {val['explanation']}")
