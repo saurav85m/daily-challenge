@@ -70,7 +70,7 @@ with st.spinner("Fetching today's challenge..."):
 
     if not challenge_data:
         st.warning(
-            f"⏳ No challenge found for **{date_str}** yet! Please add the challenge JSON file to your Google Drive content folder."
+            f"⏳ No challenge found for **{date_str}** yet! Please ask Sir to add the challenge Question to for you."
         )
         st.stop()
 
