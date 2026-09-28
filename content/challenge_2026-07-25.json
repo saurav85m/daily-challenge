@@ -5,42 +5,77 @@
     {
       "id": 1,
       "type": "mcq",
-      "question": "What is the automatic conversion of a primitive data type into an object of its equivalent wrapper class called?",
-      "options": ["Unboxing", "Typecasting", "Autoboxing", "Wrapping"],
-      "answer": "Autoboxing",
-      "explanation": "Autoboxing automatically converts primitive types (like int) into their wrapper objects (like Integer)."
+      "difficulty": "Easy",
+      "sub_category": "Control Structures (Loops & Conditionals)",
+      "question": "Which of the following is an example of an entry-controlled loop?",
+      "options": [
+        "do-while",
+        "while",
+        "goto",
+        "switch"
+      ],
+      "answer": "while",
+      "explanation": "A 'while' loop tests its condition before executing the loop body, making it an entry-controlled loop."
     },
     {
       "id": 2,
       "type": "mcq",
-      "question": "In a double dimensional array m[3][4], what does the number 3 represent?",
-      "options": ["Number of columns", "Number of elements", "Number of rows", "Number of bytes"],
-      "answer": "Number of rows",
-      "explanation": "In a double dimensional array, the first subscript always represents the number of rows."
+      "difficulty": "Easy",
+      "sub_category": "Library Methods (Math/Character)",
+      "question": "What is the return type of the method Character.toUpperCase(char ch)?",
+      "options": [
+        "int",
+        "char",
+        "String",
+        "boolean"
+      ],
+      "answer": "char",
+      "explanation": "Character.toUpperCase() converts the input character and returns its uppercase char value."
     },
     {
       "id": 3,
       "type": "mcq",
-      "question": "What is the return type of the compareTo() string function?",
-      "options": ["int", "boolean", "String", "char"],
-      "answer": "int",
-      "explanation": "The compareTo() method returns an integer representing the ASCII difference between the two strings."
+      "difficulty": "Easy",
+      "sub_category": "Data Types & Variables",
+      "question": "Which keyword is used to allocate memory dynamically for objects and arrays?",
+      "options": [
+        "malloc",
+        "create",
+        "new",
+        "allocate"
+      ],
+      "answer": "new",
+      "explanation": "The 'new' operator dynamically allocates memory at runtime for objects and arrays in Java[cite: 2]."
     },
     {
       "id": 4,
       "type": "mcq",
-      "question": "Which of the following functions adds one string to the end of another string?",
-      "options": ["add()", "merge()", "append()", "concat()"],
-      "answer": "concat()",
-      "explanation": "The concat() function is used to concatenate (add) two strings together."
+      "difficulty": "Medium",
+      "sub_category": "Library Methods (Math/Character)",
+      "question": "What does Math.cbrt(27.0) evaluate to?",
+      "options": [
+        "3.0",
+        "3",
+        "9.0",
+        "9"
+      ],
+      "answer": "3.0",
+      "explanation": "Math.cbrt() calculates the cube root of a number and returns a double value, so the cube root of 27.0 is 3.0."
     },
     {
       "id": 5,
       "type": "mcq",
-      "question": "What is the ASCII code for the uppercase letter 'A'?",
-      "options": ["97", "65", "48", "32"],
-      "answer": "65",
-      "explanation": "The ASCII code range for uppercase letters A-Z is 65 to 90."
+      "difficulty": "Medium",
+      "sub_category": "OOP Principles & Modifiers",
+      "question": "Which access specifier makes a member visible only within its own class?",
+      "options": [
+        "public",
+        "protected",
+        "private",
+        "default"
+      ],
+      "answer": "private",
+      "explanation": "Members declared as 'private' are accessible strictly within the declaring class and hidden from all other classes."
     }
   ]
 }

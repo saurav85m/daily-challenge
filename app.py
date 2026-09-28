@@ -129,7 +129,9 @@ with st.form("challenge_form"):
             "question_type": q.get("type"),
             "selected": user_choice,
             "correct": q.get("answer"),
-            "explanation": q.get("explanation")
+            "explanation": q.get("explanation"),
+            "difficulty": q.get("difficulty"),       # Fetches from JSON
+            "sub_category": q.get("sub_category")    # Fetches from JSON
         }
         st.divider()
 
@@ -161,11 +163,13 @@ if submitted:
 
         timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
 
-        with st.spinner("Saving your progress to Google Drive..."):
+        with st.spinner("Saving your progress to GitHub..."):
             for qid, val in user_answers.items():
                 is_correct = (val["selected"] == val["correct"])
                 if is_correct:
                     score += 1
+
+                print(f"question_type: {val['selected']}, difficulty: {val['difficulty']}, sub_category: {val['sub_category']}")
                 
                 # Prepare result row dictionary for Google Drive CSV logging
                 result_row = {
@@ -177,8 +181,8 @@ if submitted:
                     "duration_display": duration_display,
                     "question_id": qid,
                     "question_type": val["question_type"],
-                    "difficulty": "12", #val["difficulty"],
-                    "sub_category": "12", #val["sub_category"],
+                    "difficulty": val["difficulty"],
+                    "sub_category": val["sub_category"],
                     "selected_option": val["selected"],
                     "correct_answer": val["correct"],
                     "is_correct": is_correct
