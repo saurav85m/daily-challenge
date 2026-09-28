@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-22",
+  "topic": "Library Classes Arrays and String Handling",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "question": "What is the automatic conversion of a primitive data type into an object of its equivalent wrapper class called?",
+      "options": ["Unboxing", "Typecasting", "Autoboxing", "Wrapping"],
+      "answer": "Autoboxing",
+      "explanation": "Autoboxing automatically converts primitive types (like int) into their wrapper objects (like Integer)."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "question": "In a double dimensional array m[3][4], what does the number 3 represent?",
+      "options": ["Number of columns", "Number of elements", "Number of rows", "Number of bytes"],
+      "answer": "Number of rows",
+      "explanation": "In a double dimensional array, the first subscript always represents the number of rows."
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "question": "What is the return type of the compareTo() string function?",
+      "options": ["int", "boolean", "String", "char"],
+      "answer": "int",
+      "explanation": "The compareTo() method returns an integer representing the ASCII difference between the two strings."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "question": "Which of the following functions adds one string to the end of another string?",
+      "options": ["add()", "merge()", "append()", "concat()"],
+      "answer": "concat()",
+      "explanation": "The concat() function is used to concatenate (add) two strings together."
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "question": "What is the ASCII code for the uppercase letter 'A'?",
+      "options": ["97", "65", "48", "32"],
+      "answer": "65",
+      "explanation": "The ASCII code range for uppercase letters A-Z is 65 to 90."
+    }
+  ]
+}
