@@ -130,8 +130,8 @@ with st.form("challenge_form"):
             "selected": user_choice,
             "correct": q.get("answer"),
             "explanation": q.get("explanation"),
-            "difficulty": q.get("difficulty"),       # Fetches from JSON
-            "sub_category": q.get("sub_category")    # Fetches from JSON
+            "difficulty": q.get("difficulty"),       
+            "sub_category": q.get("sub_category")   
         }
         st.divider()
 
