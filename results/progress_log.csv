@@ -306,3 +306,8 @@ timestamp,student_name,date,topic,question_id,question_type,selected_option,corr
 2026-09-26 21:38:32,Gagu,2026-09-26,ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20),38,output_prediction,false,false,True,0.0,0 min 0 sec,,
 2026-09-26 21:38:32,Gagu,2026-09-26,ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20),39,output_prediction,4,20,False,0.0,0 min 0 sec,,
 2026-09-26 21:38:32,Gagu,2026-09-26,ICSE 10th Board Section A - Part 1: Multiple Choice Questions (Marks: 20),40,output_prediction,15,15.0,False,0.0,0 min 0 sec,,
+2026-09-28 14:14:24,Gagu,2026-07-20,Library Classes Arrays and String Handling,1,mcq,while,while,True,86.0,1 min 26 sec,Easy,Control Structures (Loops & Conditionals)
+2026-09-28 14:14:24,Gagu,2026-07-20,Library Classes Arrays and String Handling,2,mcq,char,char,True,86.0,1 min 26 sec,Easy,Library Methods (Math/Character)
+2026-09-28 14:14:24,Gagu,2026-07-20,Library Classes Arrays and String Handling,3,mcq,new,new,True,86.0,1 min 26 sec,Easy,Data Types & Variables
+2026-09-28 14:14:24,Gagu,2026-07-20,Library Classes Arrays and String Handling,4,mcq,3.0,3.0,True,86.0,1 min 26 sec,Medium,Library Methods (Math/Character)
+2026-09-28 14:14:24,Gagu,2026-07-20,Library Classes Arrays and String Handling,5,mcq,public,private,False,86.0,1 min 26 sec,Medium,OOP Principles & Modifiers
