@@ -177,8 +177,8 @@ if submitted:
                     "duration_display": duration_display,
                     "question_id": qid,
                     "question_type": val["question_type"],
-                    "difficulty": "11", #val["difficulty"],
-                    "sub_category": "11", #val["sub_category"],
+                    "difficulty": "12", #val["difficulty"],
+                    "sub_category": "12", #val["sub_category"],
                     "selected_option": val["selected"],
                     "correct_answer": val["correct"],
                     "is_correct": is_correct
